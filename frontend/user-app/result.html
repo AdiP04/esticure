@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cost Estimate – Esticure</title>
+  <meta name="description" content="Your personalised hospital cost estimate from Esticure." />
+  <meta name="theme-color" content="#0d9488" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    /* ── Result page extras ─────────────────────────────────── */
+
+    /* Hero */
+    .result-hero {
+      background: var(--gradient);
+      padding: 100px 24px 56px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .result-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -2px; left: 0; right: 0;
+      height: 56px;
+      background: var(--c-bg);
+      clip-path: ellipse(55% 100% at 50% 100%);
+    }
+    .result-hero__eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,.15);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+    }
+    .result-hero__cost-label {
+      color: rgba(255,255,255,.75);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .result-hero__range {
+      font-size: clamp(30px, 6vw, 52px);
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: -.02em;
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+    .result-hero__service {
+      font-size: 16px;
+      font-weight: 600;
+      color: rgba(255,255,255,.85);
+      margin-bottom: 22px;
+    }
+    .result-hero__meta {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px 20px;
+    }
+    .result-hero__meta span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      color: rgba(255,255,255,.8);
+      background: rgba(255,255,255,.12);
+      padding: 5px 12px;
+      border-radius: 20px;
+    }
+
+    /* ── Loading ─────────────────────────────── */
+    .result-loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      padding: 40px;
+    }
+    .spinner {
+      width: 44px; height: 44px;
+      border: 4px solid rgba(255,255,255,.25);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    /* ── Section ─────────────────────────────── */
+    .results-section {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+    .results-section__header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    .results-section__title {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--c-text);
+      letter-spacing: -.02em;
+      margin-bottom: 6px;
+    }
+    .results-section__sub {
+      font-size: 14px;
+      color: var(--c-muted);
+    }
+
+    /* ── Hospital Card ───────────────────────── */
+    .hc-list { display: flex; flex-direction: column; gap: 20px; }
+
+    .hc-card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: var(--shadow-sm);
+      border: 1.5px solid var(--c-border);
+      overflow: hidden;
+      animation: fadeInUp .5s ease both;
+      transition: box-shadow .25s ease, transform .25s ease;
+    }
+    .hc-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    /* Top accent bar */
+    .hc-card__bar {
+      height: 4px;
+      background: var(--gradient);
+    }
+    .hc-card__bar--1 { background: linear-gradient(90deg,#0d9488,#0ea5e9); }
+    .hc-card__bar--2 { background: linear-gradient(90deg,#7c3aed,#0d9488); }
+    .hc-card__bar--3 { background: linear-gradient(90deg,#ea580c,#f59e0b); }
+    .hc-card__bar--4 { background: linear-gradient(90deg,#0369a1,#0d9488); }
+    .hc-card__bar--5 { background: linear-gradient(90deg,#16a34a,#0d9488); }
+
+    .hc-card__body { padding: 22px 24px 20px; }
+
+    /* Top row: avatar + name + rating + rank */
+    .hc-card__top {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+    .hc-card__avatar {
+      width: 50px; height: 50px;
+      border-radius: 14px;
+      background: var(--gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 800;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .hc-card__info { flex: 1; min-width: 0; }
+    .hc-card__name {
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--c-text);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 3px;
+    }
+    .hc-card__address {
+      font-size: 13px;
+      color: var(--c-muted);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .hc-card__rating {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 5px;
+    }
+    .hc-card__stars { color: #f59e0b; font-size: 13px; letter-spacing: 1px; }
+    .hc-card__rating-num {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--c-text);
+    }
+    .hc-card__rank {
+      background: var(--gradient);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 20px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    /* Price row */
+    .hc-card__price-row {
+      background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+      border: 1.5px solid #bbf7d0;
+      border-radius: 14px;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .hc-card__price-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: #15803d;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+    .hc-card__price-range {
+      font-size: 20px;
+      font-weight: 900;
+      color: #15803d;
+      letter-spacing: -.01em;
+    }
+    .hc-card__price-note {
+      font-size: 11px;
+      color: #6ee7b7;
+      text-align: right;
+    }
+
+    /* Features */
+    .hc-card__features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-bottom: 14px;
+    }
+    .hc-feat {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 11px;
+      border-radius: 20px;
+    }
+    .hc-feat--green  { background: #dcfce7; color: #15803d; }
+    .hc-feat--blue   { background: #dbeafe; color: #1d4ed8; }
+    .hc-feat--teal   { background: #ccfbf1; color: #0d9488; }
+    .hc-feat--gold   { background: #fef3c7; color: #92400e; }
+    .hc-feat--purple { background: #ede9fe; color: #6d28d9; }
+    .hc-feat--orange { background: #ffedd5; color: #c2410c; }
+
+    /* Doctors row */
+    .hc-card__doctors {
+      font-size: 13px;
+      color: var(--c-muted);
+      display: flex;
+      align-items: flex-start;
+      gap: 7px;
+      margin-bottom: 18px;
+      line-height: 1.5;
+    }
+    .hc-card__doctors i { color: var(--c-teal); margin-top: 2px; flex-shrink: 0; }
+
+    /* CTA button */
+    .hc-card__cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 14px 24px;
+      background: var(--gradient);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      border-radius: 14px;
+      border: none;
+      cursor: pointer;
+      transition: opacity .2s ease, transform .2s ease, box-shadow .2s ease;
+      box-shadow: 0 4px 16px rgba(13,148,136,.35);
+      letter-spacing: .01em;
+    }
+    .hc-card__cta:hover {
+      opacity: .92;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 24px rgba(13,148,136,.45);
+    }
+    .hc-card__cta:active { transform: scale(.98); }
+
+    /* ── Expert Banner ────────────────────────── */
+    .expert-banner {
+      background: var(--gradient);
+      border-radius: 20px;
+      padding: 36px 32px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .expert-banner__icon {
+      width: 64px; height: 64px;
+      background: rgba(255,255,255,.2);
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .expert-banner__text { flex: 1; }
+    .expert-banner__title {
+      font-size: 20px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 6px;
+      line-height: 1.2;
+    }
+    .expert-banner__sub {
+      font-size: 14px;
+      color: rgba(255,255,255,.8);
+      line-height: 1.5;
+    }
+    .expert-banner__btn {
+      flex-shrink: 0;
+      background: #fff;
+      color: var(--c-teal-d);
+      font-size: 14px;
+      font-weight: 700;
+      padding: 12px 22px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+    .expert-banner__btn:hover { transform: translateY(-1px); box-shadow: 0 4px 14px rgba(0,0,0,.15); }
+
+    /* ── Insurance callout ────────────────────── */
+    .insurance-callout {
+      background: #fffbeb;
+      border: 1.5px solid #fde68a;
+      border-radius: 16px;
+      padding: 20px 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-top: 20px;
+    }
+    .insurance-callout i { color: #f59e0b; font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+    .insurance-callout__title { font-weight: 700; color: #92400e; margin-bottom: 4px; font-size: 14px; }
+    .insurance-callout__sub { font-size: 13px; color: #b45309; line-height: 1.5; }
+    .insurance-callout__btn {
+      margin-top: 10px;
+      background: #f59e0b;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 16px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition);
+    }
+    .insurance-callout__btn:hover { background: #d97706; }
+
+    /* ── Connect modal ────────────────────────── */
+    .connect-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      background: rgba(0,0,0,.55);
+      backdrop-filter: blur(6px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .25s ease;
+    }
+    .connect-modal.active { opacity: 1; pointer-events: all; }
+    .connect-modal__card {
+      background: #fff;
+      border-radius: 24px;
+      padding: 36px 32px;
+      max-width: 420px;
+      width: 100%;
+      position: relative;
+      box-shadow: 0 24px 64px rgba(0,0,0,.18);
+      animation: fadeInUp .3s ease both;
+    }
+    .connect-modal__close {
+      position: absolute;
+      top: 16px; right: 16px;
+      width: 34px; height: 34px;
+      background: var(--c-bg);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      color: var(--c-muted);
+      cursor: pointer;
+      border: none;
+      transition: var(--transition);
+    }
+    .connect-modal__close:hover { background: var(--c-border); color: var(--c-text); }
+    .connect-modal__icon {
+      width: 60px; height: 60px;
+      background: linear-gradient(135deg,#0f766e,#0d9488);
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: #fff;
+      margin-bottom: 18px;
+    }
+    .connect-modal__title {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--c-text);
+      margin-bottom: 6px;
+    }
+    .connect-modal__hospital {
+      font-size: 14px;
+      color: var(--c-teal);
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .connect-modal__sub {
+      font-size: 14px;
+      color: var(--c-muted);
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    .connect-modal__actions { display: flex; flex-direction: column; gap: 10px; }
+    .connect-modal__btn-primary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px;
+      background: var(--gradient);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      border-radius: 13px;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .connect-modal__btn-primary:hover { opacity: .9; transform: translateY(-1px); }
+    .connect-modal__btn-secondary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px;
+      background: var(--c-bg);
+      color: var(--c-text);
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 13px;
+      border: 1.5px solid var(--c-border);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .connect-modal__btn-secondary:hover { background: var(--c-border); }
+    .connect-modal__note {
+      font-size: 12px;
+      color: var(--c-subtle);
+      text-align: center;
+      margin-top: 12px;
+    }
+
+    /* ── No results ───────────────────────────── */
+    .no-results {
+      text-align: center;
+      padding: 60px 24px;
+    }
+    .no-results__icon {
+      width: 80px; height: 80px;
+      background: var(--c-bg);
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      color: var(--c-border);
+      margin: 0 auto 20px;
+    }
+    .no-results h3 { font-size: 20px; font-weight: 800; margin-bottom: 8px; color: var(--c-text); }
+    .no-results p { font-size: 14px; color: var(--c-muted); margin-bottom: 24px; }
+
+    @media (max-width: 600px) {
+      .hc-card__body { padding: 18px 16px 16px; }
+      .hc-card__price-row { flex-direction: column; align-items: flex-start; gap: 6px; }
+      .expert-banner { flex-direction: column; text-align: center; }
+      .expert-banner__btn { width: 100%; justify-content: center; }
+      .connect-modal__card { padding: 28px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── NAVBAR ─────────────────────────────────────────────── -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="navbar__logo">
+    <div class="logo-icon"><i class="fas fa-compass-medical"></i></div>
+    Esti<span>cure</span>
+  </a>
+  <ul class="navbar__links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#how-it-works">How it Works</a></li>
+    <li><a href="index.html#hospitals">Hospitals</a></li>
+  </ul>
+  <button class="navbar__cta btn-ripple" onclick="window.location.href='index.html'">
+    <i class="fas fa-plus" style="margin-right:6px"></i>New Estimate
+  </button>
+  <button class="navbar__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ── RESULT HERO ─────────────────────────────────────────── -->
+<section class="result-hero" id="result-hero" aria-live="polite">
+  <!-- Loading -->
+  <div id="result-loading" class="result-loading">
+    <div class="spinner" aria-hidden="true"></div>
+    <p style="color:rgba(255,255,255,.8);font-size:15px;font-weight:500">Loading your results…</p>
+  </div>
+
+  <!-- Loaded (hidden initially) -->
+  <div id="result-content" style="display:none">
+    <div class="result-hero__eyebrow">
+      <i class="fas fa-check-circle"></i> Estimate Ready
+    </div>
+    <div class="result-hero__cost-label">Estimated Treatment Cost</div>
+    <div class="result-hero__range" id="cost-range">—</div>
+    <div class="result-hero__service" id="service-name">—</div>
+    <div class="result-hero__meta">
+      <span><i class="fas fa-user" style="opacity:.7"></i> <span id="patient-name">—</span></span>
+      <span><i class="fas fa-map-marker-alt" style="opacity:.7"></i> <span id="patient-city">—</span></span>
+      <span><i class="fas fa-hospital" style="opacity:.7"></i> <span id="hospitals-count">—</span> hospitals matched</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── HOSPITAL LIST ───────────────────────────────────────── -->
+<section class="results-section">
+  <div class="results-section__header" id="results-header" style="display:none">
+    <h2 class="results-section__title" id="section-title">Matched Hospitals</h2>
+    <p class="results-section__sub" id="section-sub"></p>
+  </div>
+
+  <div id="hospital-list" class="hc-list">
+    <!-- Populated by JS -->
+  </div>
+
+  <!-- Expert Connect Banner -->
+  <div class="expert-banner" id="expert-banner" style="display:none">
+    <div class="expert-banner__icon">
+      <i class="fas fa-headset"></i>
+    </div>
+    <div class="expert-banner__text">
+      <div class="expert-banner__title">Still unsure which hospital to choose?</div>
+      <div class="expert-banner__sub">Our healthcare experts will guide you for free — comparing costs, doctors, and insurance coverage.</div>
+    </div>
+    <button class="expert-banner__btn" onclick="openExpertModal(null, 'Our Team')">
+      <i class="fas fa-phone"></i> Talk to an Expert
+    </button>
+  </div>
+
+  <!-- Insurance callout (if no insurance) -->
+  <div class="insurance-callout" id="insurance-callout" style="display:none">
+    <i class="fas fa-lightbulb"></i>
+    <div>
+      <div class="insurance-callout__title">Save up to 80% with health insurance</div>
+      <div class="insurance-callout__sub">Insurance can dramatically reduce your out-of-pocket cost. Explore plans that cover your treatment and suit your budget.</div>
+      <button class="insurance-callout__btn" onclick="alert('Insurance consultation coming soon! Our team will reach out.')">
+        <i class="fas fa-shield-halved"></i> Explore Insurance Plans
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ──────────────────────────────────────────────── -->
+<footer>
+  <div class="footer__inner">
+    <div>
+      <div class="footer__brand">Esti<span>cure</span></div>
+      <p class="footer__tagline">India's smartest healthcare cost discovery platform. Helping patients make informed, confident decisions — always free.</p>
+      <div class="footer__social">
+        <a href="#" class="footer__social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="footer__social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="footer__social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="footer__col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#how-it-works">How it Works</a></li>
+        <li><a href="index.html#hospitals">Hospitals</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>For Hospitals</h4>
+      <ul>
+        <li><a href="../hospital-crm/login.html">Hospital Login</a></li>
+        <li><a href="#">Partner With Us</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:hello@esticure.in">hello@esticure.in</a></li>
+        <li><a href="tel:+919000000000">+91 90000 00000</a></li>
+        <li><a href="#">Mumbai, India</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>© 2025 Esticure. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ── CONNECT WITH EXPERT MODAL ──────────────────────────── -->
+<div id="connect-modal" class="connect-modal" role="dialog" aria-modal="true">
+  <div class="connect-modal__card">
+    <button class="connect-modal__close" onclick="closeExpertModal()" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="connect-modal__icon">
+      <i class="fas fa-headset"></i>
+    </div>
+    <div class="connect-modal__title">Connect with an Expert</div>
+    <div class="connect-modal__hospital" id="modal-hospital-name"></div>
+    <div class="connect-modal__sub">
+      Our healthcare advisors will call you within <strong>30 minutes</strong> to help you book the best option — comparing costs, doctors, and insurance benefits. <strong>Completely free.</strong>
+    </div>
+    <div class="connect-modal__actions">
+      <button class="connect-modal__btn-primary" id="modal-call-btn">
+        <i class="fas fa-phone-volume"></i> Request a Callback
+      </button>
+      <button class="connect-modal__btn-secondary" onclick="closeExpertModal()">
+        <i class="fas fa-arrow-left"></i> Back to Results
+      </button>
+    </div>
+    <p class="connect-modal__note">
+      <i class="fas fa-lock" style="margin-right:4px"></i>Your details are 100% private and secure.
+    </p>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+<script>
+// ══════════════════════════════════════════════════════════════
+// Result page JS
+// ══════════════════════════════════════════════════════════════
+
+document.addEventListener('DOMContentLoaded', async () => {
+  // Navbar scroll shadow
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar')?.classList.toggle('scrolled', window.scrollY > 10);
+  }, { passive: true });
+
+  // Mobile hamburger
+  const hamburger = document.getElementById('hamburger');
+  const navLinks  = document.getElementById('nav-links');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+    });
+  }
+
+  // ── Try URL param first, then sessionStorage fallback ──────
+  const params = new URLSearchParams(window.location.search);
+  const userId = params.get('userId');
+
+  if (userId) {
+    try {
+      const user = await getUserById(userId);
+      renderResults(user);
+      // Update cache
+      try { sessionStorage.setItem('esticure_result', JSON.stringify(user)); } catch {}
+    } catch (err) {
+      // Try sessionStorage fallback before showing error
+      const cached = tryLoadCache();
+      if (cached) {
+        renderResults(cached);
+      } else {
+        renderError(`Could not load results: ${err.message}`);
+      }
+    }
+  } else {
+    // No userId in URL — try sessionStorage cache
+    const cached = tryLoadCache();
+    if (cached) {
+      renderResults(cached);
+    } else {
+      renderError('No results found. Please complete the form to get your estimate.');
+    }
+  }
+});
+
+function tryLoadCache() {
+  try {
+    const raw = sessionStorage.getItem('esticure_result');
+    if (raw) return JSON.parse(raw);
+  } catch {}
+  return null;
+}
+
+// ── Render results ─────────────────────────────────────────
+function renderResults(user) {
+  document.getElementById('result-loading').style.display = 'none';
+  document.getElementById('result-content').style.display = 'block';
+
+  const match   = user.hospitalMatch || {};
+  const minCost = match.estimatedCostMin || 0;
+  const maxCost = match.estimatedCostMax || 0;
+
+  // Hero
+  document.getElementById('cost-range').textContent =
+    `₹${fmtINR(minCost)} – ₹${fmtINR(maxCost)}`;
+  document.getElementById('service-name').textContent =
+    user.medical?.service || user.medical?.problem || 'Treatment';
+  document.getElementById('patient-name').textContent = user.name || '—';
+  document.getElementById('patient-city').textContent = user.city || '—';
+
+  const hospitals = match.matchedHospitalDetails || [];
+  document.getElementById('hospitals-count').textContent = hospitals.length;
+
+  // Section header
+  const header = document.getElementById('results-header');
+  header.style.display = 'block';
+  document.getElementById('section-title').textContent =
+    `${hospitals.length} Hospital${hospitals.length !== 1 ? 's' : ''} Matched For You`;
+  document.getElementById('section-sub').textContent =
+    `Sorted by best match · ${user.city} · ${user.medical?.service || user.medical?.problem || 'your treatment'}`;
+
+  // Cards
+  const list = document.getElementById('hospital-list');
+  if (!hospitals.length) {
+    list.innerHTML = `
+      <div class="no-results">
+        <div class="no-results__icon"><i class="fas fa-hospital-slash"></i></div>
+        <h3>No hospitals found</h3>
+        <p>Try adjusting your city or treatment, or contact us for personalised assistance.</p>
+        <a href="index.html" class="hc-card__cta" style="display:inline-flex;width:auto;text-decoration:none;padding:13px 28px">
+          <i class="fas fa-arrow-left"></i> Try Again
+        </a>
+      </div>`;
+    return;
+  }
+
+  const barClasses = ['--1','--2','--3','--4','--5'];
+  hospitals.forEach((h, idx) => {
+    const card = buildCard(h, user, idx, barClasses[idx % barClasses.length]);
+    list.appendChild(card);
+  });
+
+  // Expert banner & insurance callout
+  document.getElementById('expert-banner').style.display = 'flex';
+  if (!user.insurance?.hasInsurance) {
+    document.getElementById('insurance-callout').style.display = 'flex';
+  }
+}
+
+// ── Build hospital card ─────────────────────────────────────
+function buildCard(h, user, idx, barSuffix) {
+  const card = document.createElement('div');
+  card.className = 'hc-card';
+  card.style.animationDelay = `${idx * 0.09}s`;
+
+  const initials = h.name.split(' ').slice(0,2).map(w => w[0]).join('').toUpperCase();
+  const stars    = renderStars(h.rating);
+  const features = buildFeatures(h, user);
+  const doctors  = (h.doctors || []).join(', ') || 'Available on request';
+  const rank     = idx === 0 ? '🏆 Best Match' : idx === 1 ? '⭐ Top Choice' : `#${idx + 1} Match`;
+
+  card.innerHTML = `
+    <div class="hc-card__bar hc-card__bar${barSuffix}"></div>
+    <div class="hc-card__body">
+      <div class="hc-card__top">
+        <div class="hc-card__avatar">${escHtml(initials)}</div>
+        <div class="hc-card__info">
+          <div class="hc-card__name">${escHtml(h.name)}</div>
+          <div class="hc-card__address">
+            <i class="fas fa-map-marker-alt" style="font-size:11px"></i>
+            ${escHtml(h.address || h.city || '')}
+          </div>
+          <div class="hc-card__rating">
+            <span class="hc-card__stars">${stars}</span>
+            <span class="hc-card__rating-num">${h.rating?.toFixed(1) || '—'}</span>
+          </div>
+        </div>
+        <span class="hc-card__rank">${rank}</span>
+      </div>
+
+      <div class="hc-card__price-row">
+        <div>
+          <div class="hc-card__price-label"><i class="fas fa-indian-rupee-sign" style="margin-right:4px"></i>Estimated Cost</div>
+          <div class="hc-card__price-range">₹${fmtINR(h.priceMin)} – ₹${fmtINR(h.priceMax)}</div>
+        </div>
+        <div class="hc-card__price-note" style="color:#15803d;font-size:12px;font-weight:600">
+          All-inclusive<br>estimate
+        </div>
+      </div>
+
+      <div class="hc-card__features">${features}</div>
+
+      <div class="hc-card__doctors">
+        <i class="fas fa-user-doctor"></i>
+        <div><strong>Doctors:</strong> ${escHtml(doctors)}</div>
+      </div>
+
+      <button class="hc-card__cta btn-ripple" data-id="${escHtml(h.id || '')}" data-name="${escHtml(h.name)}">
+        <i class="fas fa-headset"></i> Connect with Expert
+      </button>
+    </div>
+  `;
+
+  card.querySelector('.hc-card__cta').addEventListener('click', (e) => {
+    const { id, name } = e.currentTarget.dataset;
+    openExpertModal(id, name);
+  });
+
+  return card;
+}
+
+// ── Feature chips ───────────────────────────────────────────
+function buildFeatures(h, user) {
+  const chips = [];
+
+  if (h.insuranceMatched) {
+    chips.push(`<span class="hc-feat hc-feat--green"><i class="fas fa-shield-check"></i> Covered by your insurance</span>`);
+  }
+  if (h.rating >= 4.5) {
+    chips.push(`<span class="hc-feat hc-feat--gold"><i class="fas fa-trophy"></i> Top Rated</span>`);
+  } else if (h.rating >= 4.3) {
+    chips.push(`<span class="hc-feat hc-feat--gold"><i class="fas fa-star"></i> Highly Rated</span>`);
+  }
+  if ((h.insuranceAccepted || []).length >= 3) {
+    chips.push(`<span class="hc-feat hc-feat--teal"><i class="fas fa-certificate"></i> NABH Accredited</span>`);
+  }
+  if ((h.doctors || []).length >= 2) {
+    chips.push(`<span class="hc-feat hc-feat--blue"><i class="fas fa-user-doctor"></i> ${h.doctors.length}+ Specialists</span>`);
+  }
+  chips.push(`<span class="hc-feat hc-feat--purple"><i class="fas fa-clock"></i> 24x7 Available</span>`);
+  if ((h.insuranceAccepted || []).length > 0) {
+    chips.push(`<span class="hc-feat hc-feat--orange"><i class="fas fa-credit-card"></i> EMI Available</span>`);
+  }
+
+  return chips.join('');
+}
+
+// ── Expert modal ────────────────────────────────────────────
+let _currentHospitalId   = null;
+let _currentHospitalName = null;
+
+function openExpertModal(id, name) {
+  _currentHospitalId   = id;
+  _currentHospitalName = name;
+
+  const modal      = document.getElementById('connect-modal');
+  const hospitalEl = document.getElementById('modal-hospital-name');
+  const callBtn    = document.getElementById('modal-call-btn');
+
+  hospitalEl.textContent = name ? `for ${name}` : '';
+
+  callBtn.onclick = () => {
+    callBtn.innerHTML = '<i class="fas fa-check"></i> Request Sent!';
+    callBtn.style.background = 'linear-gradient(135deg,#16a34a,#15803d)';
+    callBtn.disabled = true;
+    console.log('Expert connect requested:', { hospitalId: _currentHospitalId, hospitalName: _currentHospitalName });
+    setTimeout(closeExpertModal, 1800);
+  };
+
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeExpertModal() {
+  document.getElementById('connect-modal').classList.remove('active');
+  document.body.style.overflow = '';
+  // Reset button
+  const callBtn = document.getElementById('modal-call-btn');
+  callBtn.innerHTML = '<i class="fas fa-phone-volume"></i> Request a Callback';
+  callBtn.style.background = '';
+  callBtn.disabled = false;
+}
+
+// Close modal on backdrop click
+document.getElementById('connect-modal').addEventListener('click', (e) => {
+  if (e.target.id === 'connect-modal') closeExpertModal();
+});
+
+// ── Helpers ─────────────────────────────────────────────────
+function renderStars(rating) {
+  const r    = rating || 0;
+  const full = Math.floor(r);
+  const half = (r % 1) >= 0.5 ? 1 : 0;
+  const empty = 5 - full - half;
+  return '★'.repeat(full) + (half ? '½' : '') + '☆'.repeat(empty);
+}
+
+function fmtINR(n) {
+  return Number(n || 0).toLocaleString('en-IN');
+}
+
+function escHtml(str) {
+  const d = document.createElement('div');
+  d.textContent = str || '';
+  return d.innerHTML;
+}
+
+function renderError(msg) {
+  document.getElementById('result-loading').innerHTML = `
+    <div style="text-align:center;padding:48px 32px">
+      <i class="fas fa-triangle-exclamation" style="font-size:48px;color:rgba(255,255,255,.5);margin-bottom:16px;display:block"></i>
+      <h3 style="color:#fff;font-size:22px;font-weight:800;margin-bottom:10px">Something went wrong</h3>
+      <p style="color:rgba(255,255,255,.75);font-size:15px;margin-bottom:28px">${escHtml(msg)}</p>
+      <a href="index.html" style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#0d9488;font-weight:700;font-size:14px;padding:12px 24px;border-radius:12px;text-decoration:none">
+        <i class="fas fa-arrow-left"></i> Start Over
+      </a>
+    </div>`;
+}
+</script>
+</body>
+</html>

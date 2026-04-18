@@ -1,0 +1,198 @@
+[
+  {
+    "Department Summary — Esticure App": "#",
+    "field2": "Dept ID",
+    "field3": "Department",
+    "field4": "Subsections",
+    "field5": "Services"
+  },
+  {
+    "Department Summary — Esticure App": "1",
+    "field2": "PROC",
+    "field3": "Proctology (Piles & Anorectal)",
+    "field4": "6",
+    "field5": "36"
+  },
+  {
+    "Department Summary — Esticure App": "2",
+    "field2": "GSUR",
+    "field3": "General Surgery",
+    "field4": "7",
+    "field5": "44"
+  },
+  {
+    "Department Summary — Esticure App": "3",
+    "field2": "CARD",
+    "field3": "Cardiology & Cardiac Surgery",
+    "field4": "6",
+    "field5": "33"
+  },
+  {
+    "Department Summary — Esticure App": "4",
+    "field2": "NEUR",
+    "field3": "Neurology & Neurosurgery",
+    "field4": "5",
+    "field5": "30"
+  },
+  {
+    "Department Summary — Esticure App": "5",
+    "field2": "ORTH",
+    "field3": "Orthopedics",
+    "field4": "5",
+    "field5": "33"
+  },
+  {
+    "Department Summary — Esticure App": "6",
+    "field2": "PATH",
+    "field3": "Pathology & Lab Medicine",
+    "field4": "6",
+    "field5": "43"
+  },
+  {
+    "Department Summary — Esticure App": "7",
+    "field2": "RADI",
+    "field3": "Radiology & Imaging",
+    "field4": "7",
+    "field5": "44"
+  },
+  {
+    "Department Summary — Esticure App": "8",
+    "field2": "WELL",
+    "field3": "Wellness & Preventive Health",
+    "field4": "5",
+    "field5": "26"
+  },
+  {
+    "Department Summary — Esticure App": "9",
+    "field2": "PULM",
+    "field3": "Pulmonology / Respiratory",
+    "field4": "3",
+    "field5": "15"
+  },
+  {
+    "Department Summary — Esticure App": "10",
+    "field2": "GAST",
+    "field3": "Gastroenterology & GI Surgery",
+    "field4": "4",
+    "field5": "27"
+  },
+  {
+    "Department Summary — Esticure App": "11",
+    "field2": "NEPH",
+    "field3": "Nephrology & Urology",
+    "field4": "4",
+    "field5": "26"
+  },
+  {
+    "Department Summary — Esticure App": "12",
+    "field2": "GENM",
+    "field3": "General Medicine & Internal Medicine",
+    "field4": "3",
+    "field5": "18"
+  },
+  {
+    "Department Summary — Esticure App": "13",
+    "field2": "OBGY",
+    "field3": "Obstetrics & Gynecology",
+    "field4": "4",
+    "field5": "25"
+  },
+  {
+    "Department Summary — Esticure App": "14",
+    "field2": "PEDI",
+    "field3": "Pediatrics & Neonatology",
+    "field4": "4",
+    "field5": "26"
+  },
+  {
+    "Department Summary — Esticure App": "15",
+    "field2": "DENT",
+    "field3": "Dental & Oral Health",
+    "field4": "5",
+    "field5": "31"
+  },
+  {
+    "Department Summary — Esticure App": "16",
+    "field2": "OPHT",
+    "field3": "Ophthalmology",
+    "field4": "4",
+    "field5": "24"
+  },
+  {
+    "Department Summary — Esticure App": "17",
+    "field2": "ENTD",
+    "field3": "ENT (Ear, Nose & Throat)",
+    "field4": "4",
+    "field5": "23"
+  },
+  {
+    "Department Summary — Esticure App": "18",
+    "field2": "ONCO",
+    "field3": "Oncology / Cancer Care",
+    "field4": "4",
+    "field5": "23"
+  },
+  {
+    "Department Summary — Esticure App": "19",
+    "field2": "PSYC",
+    "field3": "Psychiatry & Mental Health",
+    "field4": "3",
+    "field5": "14"
+  },
+  {
+    "Department Summary — Esticure App": "20",
+    "field2": "PHYS",
+    "field3": "Physiotherapy & Rehabilitation",
+    "field4": "3",
+    "field5": "19"
+  },
+  {
+    "Department Summary — Esticure App": "21",
+    "field2": "ANES",
+    "field3": "Anesthesia & Pain Management",
+    "field4": "2",
+    "field5": "12"
+  },
+  {
+    "Department Summary — Esticure App": "22",
+    "field2": "EMER",
+    "field3": "Emergency & Critical Care",
+    "field4": "3",
+    "field5": "17"
+  },
+  {
+    "Department Summary — Esticure App": "23",
+    "field2": "PHAR",
+    "field3": "Pharmacy & Drug Services",
+    "field4": "2",
+    "field5": "9"
+  },
+  {
+    "Department Summary — Esticure App": "24",
+    "field2": "VASC",
+    "field3": "Vascular & Endovascular Surgery",
+    "field4": "2",
+    "field5": "11"
+  },
+  {
+    "Department Summary — Esticure App": "25",
+    "field2": "PLAS",
+    "field3": "Plastic & Reconstructive Surgery",
+    "field4": "2",
+    "field5": "13"
+  },
+  {
+    "Department Summary — Esticure App": "26",
+    "field2": "SURG_ONC",
+    "field3": "Surgical Oncology",
+    "field4": "1",
+    "field5": "8"
+  },
+  {
+    "Department Summary — Esticure App": "TOTAL",
+    "field2": "",
+    "field3": "",
+    "field4": "104",
+    "field5": "630"
+  }
+]

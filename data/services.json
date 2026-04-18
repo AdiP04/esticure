@@ -1,0 +1,5672 @@
+[
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Piles / Hemorrhoids",
+    "Service / Test Name": "OPD Consultation",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 80,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Piles / Hemorrhoids",
+    "Service / Test Name": "Grade Assessment (Proctoscopy)",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 80,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Piles / Hemorrhoids",
+    "Service / Test Name": "Rubber Band Ligation",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 80,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Piles / Hemorrhoids",
+    "Service / Test Name": "Sclerotherapy Injection",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 80,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Piles / Hemorrhoids",
+    "Service / Test Name": "Infrared Coagulation",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 80,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Piles / Hemorrhoids",
+    "Service / Test Name": "Laser Hemorrhoidectomy",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 80,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Piles / Hemorrhoids",
+    "Service / Test Name": "Stapler Hemorrhoidectomy (MIPH)",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 80,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Piles / Hemorrhoids",
+    "Service / Test Name": "Open Hemorrhoidectomy",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 80,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Piles / Hemorrhoids",
+    "Service / Test Name": "Post-op Follow-up",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 80,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Anal Fissure",
+    "Service / Test Name": "OPD Consultation",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 40,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Anal Fissure",
+    "Service / Test Name": "Lateral Internal Sphincterotomy (LIS)",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 40,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Anal Fissure",
+    "Service / Test Name": "Chemical Sphincterotomy (Botox)",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 40,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Anal Fissure",
+    "Service / Test Name": "Laser Fissurectomy",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 40,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Anal Fissure",
+    "Service / Test Name": "Topical Medication",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 40,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Anal Fistula",
+    "Service / Test Name": "OPD Consultation",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Anal Fistula",
+    "Service / Test Name": "MRI Fistulogram",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Anal Fistula",
+    "Service / Test Name": "Fistulotomy",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Anal Fistula",
+    "Service / Test Name": "LIFT Procedure",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Anal Fistula",
+    "Service / Test Name": "Video-Assisted Anal Fistula Treatment (VAAFT)",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Anal Fistula",
+    "Service / Test Name": "Laser Fistula Treatment",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Anal Fistula",
+    "Service / Test Name": "Seton Placement",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Pilonidal Sinus",
+    "Service / Test Name": "OPD Consultation",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 60,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Pilonidal Sinus",
+    "Service / Test Name": "Pilonidal Sinus Excision",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 60,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Pilonidal Sinus",
+    "Service / Test Name": "Laser Pilonidal Sinus Surgery",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 60,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Pilonidal Sinus",
+    "Service / Test Name": "Wound Dressing",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 60,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Pilonidal Sinus",
+    "Service / Test Name": "Post-op Care",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 60,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Anorectal Abscess",
+    "Service / Test Name": "Emergency OPD",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 30,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Anorectal Abscess",
+    "Service / Test Name": "Incision & Drainage (I&D)",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 30,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Anorectal Abscess",
+    "Service / Test Name": "Pus Culture & Sensitivity",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 30,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Anorectal Abscess",
+    "Service / Test Name": "Wound Dressing",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 30,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Anorectal Abscess",
+    "Service / Test Name": "Post-op Follow-up",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 30,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Rectal Prolapse",
+    "Service / Test Name": "OPD Consultation",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "1,000 – 1,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Rectal Prolapse",
+    "Service / Test Name": "Colonoscopy",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "1,000 – 1,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Rectal Prolapse",
+    "Service / Test Name": "Delorme Procedure",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "1,000 – 1,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Rectal Prolapse",
+    "Service / Test Name": "Rectopexy (Laparoscopic)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "1,000 – 1,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PROC",
+    "Department": "Proctology (Piles & Anorectal)",
+    "Subsection": "Rectal Prolapse",
+    "Service / Test Name": "Post-op Care",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "1,000 – 1,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Hernia Repair",
+    "Service / Test Name": "OPD Consultation",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,20,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Hernia Repair",
+    "Service / Test Name": "USG Abdomen",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,20,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Hernia Repair",
+    "Service / Test Name": "Open Hernioplasty",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,20,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Hernia Repair",
+    "Service / Test Name": "Laparoscopic Hernia Repair (TEP/TAPP)",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,20,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Hernia Repair",
+    "Service / Test Name": "Mesh Implant",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,20,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Hernia Repair",
+    "Service / Test Name": "Day Care Surgery",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,20,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Appendectomy",
+    "Service / Test Name": "Emergency Consultation",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,000 – 1,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Appendectomy",
+    "Service / Test Name": "USG / CT Abdomen",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,000 – 1,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Appendectomy",
+    "Service / Test Name": "Open Appendectomy",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,000 – 1,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Appendectomy",
+    "Service / Test Name": "Laparoscopic Appendectomy",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,000 – 1,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Appendectomy",
+    "Service / Test Name": "ICU Stay (if needed)",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,000 – 1,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Appendectomy",
+    "Service / Test Name": "Post-op Care",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,000 – 1,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Cholecystectomy (Gallbladder)",
+    "Service / Test Name": "OPD Consultation",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Cholecystectomy (Gallbladder)",
+    "Service / Test Name": "USG Abdomen",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Cholecystectomy (Gallbladder)",
+    "Service / Test Name": "LFT / Blood Tests",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Cholecystectomy (Gallbladder)",
+    "Service / Test Name": "Laparoscopic Cholecystectomy",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Cholecystectomy (Gallbladder)",
+    "Service / Test Name": "Open Cholecystectomy",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Cholecystectomy (Gallbladder)",
+    "Service / Test Name": "Post-op Care",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Thyroid Surgery",
+    "Service / Test Name": "OPD Consultation",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 2,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Thyroid Surgery",
+    "Service / Test Name": "USG Neck",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 2,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Thyroid Surgery",
+    "Service / Test Name": "FNAC / Biopsy",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 2,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Thyroid Surgery",
+    "Service / Test Name": "TFT Blood Tests",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 2,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Thyroid Surgery",
+    "Service / Test Name": "Hemithyroidectomy",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 2,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Thyroid Surgery",
+    "Service / Test Name": "Total Thyroidectomy",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 2,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Thyroid Surgery",
+    "Service / Test Name": "Post-op Calcium Monitoring",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 2,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Breast Surgery",
+    "Service / Test Name": "OPD Consultation",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Breast Surgery",
+    "Service / Test Name": "Mammography",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Breast Surgery",
+    "Service / Test Name": "USG Breast",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Breast Surgery",
+    "Service / Test Name": "FNAC / Core Biopsy",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Breast Surgery",
+    "Service / Test Name": "Lumpectomy",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Breast Surgery",
+    "Service / Test Name": "Mastectomy",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Breast Surgery",
+    "Service / Test Name": "Breast Abscess Drainage",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Wound Care & Minor OT",
+    "Service / Test Name": "Wound Dressing",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 15,000",
+    "Category": "Minor Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Wound Care & Minor OT",
+    "Service / Test Name": "Suturing",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 15,000",
+    "Category": "Minor Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Wound Care & Minor OT",
+    "Service / Test Name": "Abscess I&D",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 15,000",
+    "Category": "Minor Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Wound Care & Minor OT",
+    "Service / Test Name": "Foreign Body Removal",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 15,000",
+    "Category": "Minor Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Wound Care & Minor OT",
+    "Service / Test Name": "Skin Tag / Lipoma Excision",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 15,000",
+    "Category": "Minor Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Wound Care & Minor OT",
+    "Service / Test Name": "Minor OT Procedure",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 15,000",
+    "Category": "Minor Procedure"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Trauma Surgery",
+    "Service / Test Name": "Emergency Consultation",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "2,000 – 5,00,000",
+    "Category": "Emergency / Surgical"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Trauma Surgery",
+    "Service / Test Name": "X-Ray / CT Scan",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "2,000 – 5,00,000",
+    "Category": "Emergency / Surgical"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Trauma Surgery",
+    "Service / Test Name": "Exploratory Laparotomy",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "2,000 – 5,00,000",
+    "Category": "Emergency / Surgical"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Trauma Surgery",
+    "Service / Test Name": "Splenectomy",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "2,000 – 5,00,000",
+    "Category": "Emergency / Surgical"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Trauma Surgery",
+    "Service / Test Name": "Bowel Repair",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "2,000 – 5,00,000",
+    "Category": "Emergency / Surgical"
+  },
+  {
+    "Department ID": "GSUR",
+    "Department": "General Surgery",
+    "Subsection": "Trauma Surgery",
+    "Service / Test Name": "ICU Stay",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "2,000 – 5,00,000",
+    "Category": "Emergency / Surgical"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "General Cardiology OPD",
+    "Service / Test Name": "Cardiologist Consultation",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 8,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "General Cardiology OPD",
+    "Service / Test Name": "ECG",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 8,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "General Cardiology OPD",
+    "Service / Test Name": "2D Echocardiography",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 8,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "General Cardiology OPD",
+    "Service / Test Name": "Stress Test (TMT)",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 8,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "General Cardiology OPD",
+    "Service / Test Name": "Holter Monitoring",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 8,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "General Cardiology OPD",
+    "Service / Test Name": "Blood Pressure Monitoring",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 8,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Interventional Cardiology",
+    "Service / Test Name": "Coronary Angiography",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "20,000 – 5,00,000",
+    "Category": "Interventional / Surgical"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Interventional Cardiology",
+    "Service / Test Name": "Angioplasty (PTCA)",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "20,000 – 5,00,000",
+    "Category": "Interventional / Surgical"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Interventional Cardiology",
+    "Service / Test Name": "Stent Placement (Drug Eluting)",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "20,000 – 5,00,000",
+    "Category": "Interventional / Surgical"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Interventional Cardiology",
+    "Service / Test Name": "Balloon Valvuloplasty",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "20,000 – 5,00,000",
+    "Category": "Interventional / Surgical"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Interventional Cardiology",
+    "Service / Test Name": "Pacemaker Implantation",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "20,000 – 5,00,000",
+    "Category": "Interventional / Surgical"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Interventional Cardiology",
+    "Service / Test Name": "ICD Implantation",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "20,000 – 5,00,000",
+    "Category": "Interventional / Surgical"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Cardiac Imaging",
+    "Service / Test Name": "2D Echo",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,500 – 25,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Cardiac Imaging",
+    "Service / Test Name": "Stress Echo",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,500 – 25,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Cardiac Imaging",
+    "Service / Test Name": "Cardiac MRI",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,500 – 25,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Cardiac Imaging",
+    "Service / Test Name": "CT Coronary Angiography",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,500 – 25,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Cardiac Imaging",
+    "Service / Test Name": "Nuclear Stress Test",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,500 – 25,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Cardiac Imaging",
+    "Service / Test Name": "Carotid Doppler",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,500 – 25,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Cardiac Surgery",
+    "Service / Test Name": "CABG (Bypass Surgery)",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "2,00,000 – 10,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Cardiac Surgery",
+    "Service / Test Name": "Valve Replacement (Mechanical / Bioprosthetic)",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "2,00,000 – 10,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Cardiac Surgery",
+    "Service / Test Name": "Valve Repair",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "2,00,000 – 10,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Cardiac Surgery",
+    "Service / Test Name": "ASD / VSD Closure",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "2,00,000 – 10,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Cardiac Surgery",
+    "Service / Test Name": "Aortic Surgery",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "2,00,000 – 10,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Electrophysiology",
+    "Service / Test Name": "EP Study",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "10,000 – 3,00,000",
+    "Category": "Interventional"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Electrophysiology",
+    "Service / Test Name": "Radiofrequency Ablation (RFA)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "10,000 – 3,00,000",
+    "Category": "Interventional"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Electrophysiology",
+    "Service / Test Name": "Cryoablation",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "10,000 – 3,00,000",
+    "Category": "Interventional"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Electrophysiology",
+    "Service / Test Name": "Pacemaker Check",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "10,000 – 3,00,000",
+    "Category": "Interventional"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Electrophysiology",
+    "Service / Test Name": "Loop Recorder Implant",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "10,000 – 3,00,000",
+    "Category": "Interventional"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Cardiac Rehabilitation",
+    "Service / Test Name": "Cardiac Rehab Assessment",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "500 – 5,000",
+    "Category": "Wellness / Rehab"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Cardiac Rehabilitation",
+    "Service / Test Name": "Exercise Program",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "500 – 5,000",
+    "Category": "Wellness / Rehab"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Cardiac Rehabilitation",
+    "Service / Test Name": "Diet Counseling",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "500 – 5,000",
+    "Category": "Wellness / Rehab"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Cardiac Rehabilitation",
+    "Service / Test Name": "Lipid Management",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "500 – 5,000",
+    "Category": "Wellness / Rehab"
+  },
+  {
+    "Department ID": "CARD",
+    "Department": "Cardiology & Cardiac Surgery",
+    "Subsection": "Cardiac Rehabilitation",
+    "Service / Test Name": "Smoking Cessation Program",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "500 – 5,000",
+    "Category": "Wellness / Rehab"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "General Neurology OPD",
+    "Service / Test Name": "Neurologist Consultation",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 15,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "General Neurology OPD",
+    "Service / Test Name": "EEG",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 15,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "General Neurology OPD",
+    "Service / Test Name": "NCV / EMG",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 15,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "General Neurology OPD",
+    "Service / Test Name": "MRI Brain",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 15,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "General Neurology OPD",
+    "Service / Test Name": "CT Brain",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 15,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "General Neurology OPD",
+    "Service / Test Name": "Lumbar Puncture (CSF Analysis)",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 15,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "Stroke & Cerebrovascular",
+    "Service / Test Name": "Emergency Consultation",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 5,00,000",
+    "Category": "Emergency / Surgical"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "Stroke & Cerebrovascular",
+    "Service / Test Name": "CT / MRI Brain",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 5,00,000",
+    "Category": "Emergency / Surgical"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "Stroke & Cerebrovascular",
+    "Service / Test Name": "IV Thrombolysis (tPA)",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 5,00,000",
+    "Category": "Emergency / Surgical"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "Stroke & Cerebrovascular",
+    "Service / Test Name": "Mechanical Thrombectomy",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 5,00,000",
+    "Category": "Emergency / Surgical"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "Stroke & Cerebrovascular",
+    "Service / Test Name": "Carotid Endarterectomy",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 5,00,000",
+    "Category": "Emergency / Surgical"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "Stroke & Cerebrovascular",
+    "Service / Test Name": "ICU Stay",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 5,00,000",
+    "Category": "Emergency / Surgical"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "Epilepsy",
+    "Service / Test Name": "Neurology Consultation",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 50,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "Epilepsy",
+    "Service / Test Name": "EEG (Routine / Video EEG)",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 50,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "Epilepsy",
+    "Service / Test Name": "MRI Brain with Epilepsy Protocol",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 50,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "Epilepsy",
+    "Service / Test Name": "Anti-epileptic Drug Monitoring",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 50,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "Epilepsy",
+    "Service / Test Name": "Vagus Nerve Stimulation",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 50,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "Spine Surgery",
+    "Service / Test Name": "Spine Surgeon Consultation",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 5,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "Spine Surgery",
+    "Service / Test Name": "MRI Spine",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 5,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "Spine Surgery",
+    "Service / Test Name": "Discectomy",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 5,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "Spine Surgery",
+    "Service / Test Name": "Spinal Fusion",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 5,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "Spine Surgery",
+    "Service / Test Name": "Laminectomy",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 5,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "Spine Surgery",
+    "Service / Test Name": "Vertebroplasty / Kyphoplasty",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 5,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "Spine Surgery",
+    "Service / Test Name": "TLIF / PLIF Procedure",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 5,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "Brain Tumor Surgery",
+    "Service / Test Name": "Neurosurgeon Consultation",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 8,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "Brain Tumor Surgery",
+    "Service / Test Name": "MRI Brain with Contrast",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 8,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "Brain Tumor Surgery",
+    "Service / Test Name": "Craniotomy",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 8,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "Brain Tumor Surgery",
+    "Service / Test Name": "Stereotactic Biopsy",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 8,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "Brain Tumor Surgery",
+    "Service / Test Name": "Gamma Knife Radiosurgery",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 8,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "NEUR",
+    "Department": "Neurology & Neurosurgery",
+    "Subsection": "Brain Tumor Surgery",
+    "Service / Test Name": "Post-op ICU Stay",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 8,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Joint Replacement",
+    "Service / Test Name": "Orthopedic Consultation",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 5,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Joint Replacement",
+    "Service / Test Name": "X-Ray / MRI Joint",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 5,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Joint Replacement",
+    "Service / Test Name": "Total Knee Replacement (TKR)",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 5,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Joint Replacement",
+    "Service / Test Name": "Total Hip Replacement (THR)",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 5,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Joint Replacement",
+    "Service / Test Name": "Partial Knee Replacement",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 5,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Joint Replacement",
+    "Service / Test Name": "Shoulder Replacement",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 5,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Joint Replacement",
+    "Service / Test Name": "Implant Cost (Cemented / Cementless)",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 5,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Sports Medicine",
+    "Service / Test Name": "Sports Medicine Consultation",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Sports Medicine",
+    "Service / Test Name": "MRI Joint",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Sports Medicine",
+    "Service / Test Name": "ACL Reconstruction",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Sports Medicine",
+    "Service / Test Name": "Meniscus Repair",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Sports Medicine",
+    "Service / Test Name": "Rotator Cuff Repair",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Sports Medicine",
+    "Service / Test Name": "PRP Injection",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Sports Medicine",
+    "Service / Test Name": "Arthroscopy",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Trauma & Fracture",
+    "Service / Test Name": "Emergency Consultation",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 2,00,000",
+    "Category": "Emergency / Surgical"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Trauma & Fracture",
+    "Service / Test Name": "X-Ray",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 2,00,000",
+    "Category": "Emergency / Surgical"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Trauma & Fracture",
+    "Service / Test Name": "Fracture Reduction",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 2,00,000",
+    "Category": "Emergency / Surgical"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Trauma & Fracture",
+    "Service / Test Name": "Casting / Splinting",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 2,00,000",
+    "Category": "Emergency / Surgical"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Trauma & Fracture",
+    "Service / Test Name": "ORIF (Open Reduction Internal Fixation)",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 2,00,000",
+    "Category": "Emergency / Surgical"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Trauma & Fracture",
+    "Service / Test Name": "Intramedullary Nailing",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 2,00,000",
+    "Category": "Emergency / Surgical"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Trauma & Fracture",
+    "Service / Test Name": "External Fixator",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 2,00,000",
+    "Category": "Emergency / Surgical"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Spine (Ortho)",
+    "Service / Test Name": "Consultation",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 3,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Spine (Ortho)",
+    "Service / Test Name": "X-Ray / MRI Spine",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 3,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Spine (Ortho)",
+    "Service / Test Name": "Epidural Steroid Injection",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 3,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Spine (Ortho)",
+    "Service / Test Name": "Nerve Block",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 3,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Spine (Ortho)",
+    "Service / Test Name": "Discectomy",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 3,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Spine (Ortho)",
+    "Service / Test Name": "Spinal Instrumentation",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 3,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Foot & Ankle",
+    "Service / Test Name": "Consultation",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Foot & Ankle",
+    "Service / Test Name": "X-Ray Foot / Ankle",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Foot & Ankle",
+    "Service / Test Name": "Bunionectomy",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Foot & Ankle",
+    "Service / Test Name": "Ankle Arthroscopy",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Foot & Ankle",
+    "Service / Test Name": "Achilles Tendon Repair",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ORTH",
+    "Department": "Orthopedics",
+    "Subsection": "Foot & Ankle",
+    "Service / Test Name": "Flat Foot Correction",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Clinical Biochemistry",
+    "Service / Test Name": "Blood Glucose (Fasting / PP)",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "50 – 2,500",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Clinical Biochemistry",
+    "Service / Test Name": "HbA1c",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "50 – 2,500",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Clinical Biochemistry",
+    "Service / Test Name": "Lipid Profile",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "50 – 2,500",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Clinical Biochemistry",
+    "Service / Test Name": "LFT (Liver Function Test)",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "50 – 2,500",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Clinical Biochemistry",
+    "Service / Test Name": "KFT (Kidney Function Test)",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "50 – 2,500",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Clinical Biochemistry",
+    "Service / Test Name": "Thyroid Profile (T3/T4/TSH)",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "50 – 2,500",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Clinical Biochemistry",
+    "Service / Test Name": "Serum Electrolytes",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "50 – 2,500",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Clinical Biochemistry",
+    "Service / Test Name": "Uric Acid",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "50 – 2,500",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Clinical Biochemistry",
+    "Service / Test Name": "CRP / ESR",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "50 – 2,500",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Hematology",
+    "Service / Test Name": "CBC (Complete Blood Count)",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "100 – 5,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Hematology",
+    "Service / Test Name": "Peripheral Blood Smear",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "100 – 5,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Hematology",
+    "Service / Test Name": "Coagulation Profile (PT / INR / APTT)",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "100 – 5,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Hematology",
+    "Service / Test Name": "Reticulocyte Count",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "100 – 5,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Hematology",
+    "Service / Test Name": "Hemoglobin Electrophoresis",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "100 – 5,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Hematology",
+    "Service / Test Name": "Bone Marrow Biopsy",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "100 – 5,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Microbiology",
+    "Service / Test Name": "Blood Culture & Sensitivity",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "100 – 3,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Microbiology",
+    "Service / Test Name": "Urine Culture",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "100 – 3,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Microbiology",
+    "Service / Test Name": "Sputum Culture",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "100 – 3,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Microbiology",
+    "Service / Test Name": "Throat Swab",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "100 – 3,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Microbiology",
+    "Service / Test Name": "Stool Culture",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "100 – 3,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Microbiology",
+    "Service / Test Name": "AFB Smear / Culture",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "100 – 3,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Microbiology",
+    "Service / Test Name": "Widal Test",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "100 – 3,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Microbiology",
+    "Service / Test Name": "Dengue NS1 / IgM / IgG",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "100 – 3,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Microbiology",
+    "Service / Test Name": "Malaria Antigen",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "100 – 3,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Microbiology",
+    "Service / Test Name": "COVID-19 RT-PCR",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "100 – 3,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Histopathology & Cytology",
+    "Service / Test Name": "Biopsy Processing & Report",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "300 – 8,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Histopathology & Cytology",
+    "Service / Test Name": "FNAC (Fine Needle Aspiration)",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "300 – 8,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Histopathology & Cytology",
+    "Service / Test Name": "Pap Smear",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "300 – 8,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Histopathology & Cytology",
+    "Service / Test Name": "Frozen Section",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "300 – 8,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Histopathology & Cytology",
+    "Service / Test Name": "IHC (Immunohistochemistry)",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "300 – 8,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Histopathology & Cytology",
+    "Service / Test Name": "HPV Testing",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "300 – 8,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Molecular Diagnostics",
+    "Service / Test Name": "PCR Testing",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 20,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Molecular Diagnostics",
+    "Service / Test Name": "HBV / HCV DNA Quantification",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 20,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Molecular Diagnostics",
+    "Service / Test Name": "HIV Viral Load",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 20,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Molecular Diagnostics",
+    "Service / Test Name": "TB GeneXpert",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 20,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Molecular Diagnostics",
+    "Service / Test Name": "Tumour Marker Panel (CEA, CA-125, AFP, PSA)",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 20,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Molecular Diagnostics",
+    "Service / Test Name": "BRCA1 / BRCA2 Gene Testing",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 20,000",
+    "Category": "Diagnostic / Lab"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Blood Bank",
+    "Service / Test Name": "Blood Grouping & Cross-match",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 10,000",
+    "Category": "Transfusion Service"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Blood Bank",
+    "Service / Test Name": "Whole Blood Transfusion",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 10,000",
+    "Category": "Transfusion Service"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Blood Bank",
+    "Service / Test Name": "Packed RBC Transfusion",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 10,000",
+    "Category": "Transfusion Service"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Blood Bank",
+    "Service / Test Name": "Platelet Transfusion",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 10,000",
+    "Category": "Transfusion Service"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Blood Bank",
+    "Service / Test Name": "Plasma (FFP) Transfusion",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 10,000",
+    "Category": "Transfusion Service"
+  },
+  {
+    "Department ID": "PATH",
+    "Department": "Pathology & Lab Medicine",
+    "Subsection": "Blood Bank",
+    "Service / Test Name": "Apheresis / Plasmapheresis",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 10,000",
+    "Category": "Transfusion Service"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "X-Ray",
+    "Service / Test Name": "Chest X-Ray",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "100 – 800",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "X-Ray",
+    "Service / Test Name": "X-Ray Abdomen",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "100 – 800",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "X-Ray",
+    "Service / Test Name": "X-Ray Spine",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "100 – 800",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "X-Ray",
+    "Service / Test Name": "X-Ray Extremity",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "100 – 800",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "X-Ray",
+    "Service / Test Name": "Dental X-Ray (OPG)",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "100 – 800",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "X-Ray",
+    "Service / Test Name": "X-Ray KUB",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "100 – 800",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "Ultrasound",
+    "Service / Test Name": "USG Abdomen",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "300 – 5,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "Ultrasound",
+    "Service / Test Name": "USG Pelvis",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "300 – 5,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "Ultrasound",
+    "Service / Test Name": "USG Obstetric / Anomaly Scan",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "300 – 5,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "Ultrasound",
+    "Service / Test Name": "USG Neck / Thyroid",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "300 – 5,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "Ultrasound",
+    "Service / Test Name": "USG Breast",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "300 – 5,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "Ultrasound",
+    "Service / Test Name": "Doppler Study",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "300 – 5,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "Ultrasound",
+    "Service / Test Name": "USG-guided FNAC / Biopsy",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "300 – 5,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "CT Scan",
+    "Service / Test Name": "CT Brain",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "1,500 – 12,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "CT Scan",
+    "Service / Test Name": "CT Chest",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "1,500 – 12,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "CT Scan",
+    "Service / Test Name": "CT Abdomen & Pelvis",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "1,500 – 12,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "CT Scan",
+    "Service / Test Name": "CT Angiography",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "1,500 – 12,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "CT Scan",
+    "Service / Test Name": "CT Spine",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "1,500 – 12,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "CT Scan",
+    "Service / Test Name": "CT PNS",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "1,500 – 12,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "CT Scan",
+    "Service / Test Name": "HRCT Chest",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "1,500 – 12,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "CT Scan",
+    "Service / Test Name": "CT Urography",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "1,500 – 12,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "MRI",
+    "Service / Test Name": "MRI Brain",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "3,000 – 20,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "MRI",
+    "Service / Test Name": "MRI Spine",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "3,000 – 20,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "MRI",
+    "Service / Test Name": "MRI Knee / Shoulder",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "3,000 – 20,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "MRI",
+    "Service / Test Name": "MRI Abdomen",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "3,000 – 20,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "MRI",
+    "Service / Test Name": "MRI Breast",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "3,000 – 20,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "MRI",
+    "Service / Test Name": "MRI Angiography (MRA)",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "3,000 – 20,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "MRI",
+    "Service / Test Name": "MRI with Contrast",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "3,000 – 20,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "Nuclear Medicine & PET",
+    "Service / Test Name": "PET-CT Scan",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "5,000 – 35,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "Nuclear Medicine & PET",
+    "Service / Test Name": "Bone Scan (Tc-99m)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "5,000 – 35,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "Nuclear Medicine & PET",
+    "Service / Test Name": "Thyroid Scan",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "5,000 – 35,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "Nuclear Medicine & PET",
+    "Service / Test Name": "Renal Scan (DTPA / DMSA)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "5,000 – 35,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "Nuclear Medicine & PET",
+    "Service / Test Name": "MUGA Scan",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "5,000 – 35,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "Nuclear Medicine & PET",
+    "Service / Test Name": "Gallium Scan",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "5,000 – 35,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "Interventional Radiology",
+    "Service / Test Name": "USG-guided Drainage",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "10,000 – 2,00,000",
+    "Category": "Interventional / Procedure"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "Interventional Radiology",
+    "Service / Test Name": "CT-guided Biopsy",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "10,000 – 2,00,000",
+    "Category": "Interventional / Procedure"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "Interventional Radiology",
+    "Service / Test Name": "TACE (Liver)",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "10,000 – 2,00,000",
+    "Category": "Interventional / Procedure"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "Interventional Radiology",
+    "Service / Test Name": "Embolization",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "10,000 – 2,00,000",
+    "Category": "Interventional / Procedure"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "Interventional Radiology",
+    "Service / Test Name": "IVC Filter Placement",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "10,000 – 2,00,000",
+    "Category": "Interventional / Procedure"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "Interventional Radiology",
+    "Service / Test Name": "Vertebroplasty",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "10,000 – 2,00,000",
+    "Category": "Interventional / Procedure"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "Mammography & DEXA",
+    "Service / Test Name": "Digital Mammography",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "800 – 6,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "Mammography & DEXA",
+    "Service / Test Name": "3D Tomosynthesis",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "800 – 6,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "Mammography & DEXA",
+    "Service / Test Name": "Stereotactic Biopsy",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "800 – 6,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "RADI",
+    "Department": "Radiology & Imaging",
+    "Subsection": "Mammography & DEXA",
+    "Service / Test Name": "DEXA Bone Density Scan",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "800 – 6,000",
+    "Category": "Diagnostic / Imaging"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "General Health Check-up",
+    "Service / Test Name": "Basic Health Package (CBC, Sugar, LFT, KFT, Lipid, ECG, X-Ray)",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 5,000",
+    "Category": "Package / Wellness"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "General Health Check-up",
+    "Service / Test Name": "Comprehensive Health Package",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 5,000",
+    "Category": "Package / Wellness"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "General Health Check-up",
+    "Service / Test Name": "Annual Health Screening",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 5,000",
+    "Category": "Package / Wellness"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "General Health Check-up",
+    "Service / Test Name": "Pre-employment Medical",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 5,000",
+    "Category": "Package / Wellness"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "Executive Health Package",
+    "Service / Test Name": "Full Body Check-up",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "5,000 – 50,000",
+    "Category": "Package / Wellness"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "Executive Health Package",
+    "Service / Test Name": "Cardiac Profile",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "5,000 – 50,000",
+    "Category": "Package / Wellness"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "Executive Health Package",
+    "Service / Test Name": "Cancer Marker Screen",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "5,000 – 50,000",
+    "Category": "Package / Wellness"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "Executive Health Package",
+    "Service / Test Name": "Whole Body CT / MRI",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "5,000 – 50,000",
+    "Category": "Package / Wellness"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "Executive Health Package",
+    "Service / Test Name": "Ophthalmology & Dental Screening",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "5,000 – 50,000",
+    "Category": "Package / Wellness"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "Executive Health Package",
+    "Service / Test Name": "Physician Consultation",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "5,000 – 50,000",
+    "Category": "Package / Wellness"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "Diet & Nutrition",
+    "Service / Test Name": "Dietitian Consultation",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 3,000",
+    "Category": "Wellness / Consultation"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "Diet & Nutrition",
+    "Service / Test Name": "BMI & Body Composition Analysis",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 3,000",
+    "Category": "Wellness / Consultation"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "Diet & Nutrition",
+    "Service / Test Name": "Personalized Diet Plan",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 3,000",
+    "Category": "Wellness / Consultation"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "Diet & Nutrition",
+    "Service / Test Name": "Diabetes Diet Program",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 3,000",
+    "Category": "Wellness / Consultation"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "Diet & Nutrition",
+    "Service / Test Name": "Weight Management Program",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 3,000",
+    "Category": "Wellness / Consultation"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "Vaccination",
+    "Service / Test Name": "Flu / Influenza Vaccine",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "200 – 6,000",
+    "Category": "Preventive"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "Vaccination",
+    "Service / Test Name": "Hepatitis B Vaccine",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "200 – 6,000",
+    "Category": "Preventive"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "Vaccination",
+    "Service / Test Name": "Typhoid Vaccine",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "200 – 6,000",
+    "Category": "Preventive"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "Vaccination",
+    "Service / Test Name": "Pneumococcal Vaccine",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "200 – 6,000",
+    "Category": "Preventive"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "Vaccination",
+    "Service / Test Name": "HPV Vaccine",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "200 – 6,000",
+    "Category": "Preventive"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "Vaccination",
+    "Service / Test Name": "COVID-19 Booster",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "200 – 6,000",
+    "Category": "Preventive"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "Vaccination",
+    "Service / Test Name": "Travel Vaccination Package",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "200 – 6,000",
+    "Category": "Preventive"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "Obesity / Weight Management",
+    "Service / Test Name": "Bariatric Surgery Consultation",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 10,000",
+    "Category": "Wellness / Consultation"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "Obesity / Weight Management",
+    "Service / Test Name": "Body Composition Analysis",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 10,000",
+    "Category": "Wellness / Consultation"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "Obesity / Weight Management",
+    "Service / Test Name": "Medical Weight Loss Program",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 10,000",
+    "Category": "Wellness / Consultation"
+  },
+  {
+    "Department ID": "WELL",
+    "Department": "Wellness & Preventive Health",
+    "Subsection": "Obesity / Weight Management",
+    "Service / Test Name": "Lap-Band / Sleeve Gastrectomy Assessment",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 10,000",
+    "Category": "Wellness / Consultation"
+  },
+  {
+    "Department ID": "PULM",
+    "Department": "Pulmonology / Respiratory",
+    "Subsection": "General Pulmonology OPD",
+    "Service / Test Name": "Pulmonologist Consultation",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 5,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "PULM",
+    "Department": "Pulmonology / Respiratory",
+    "Subsection": "General Pulmonology OPD",
+    "Service / Test Name": "Spirometry / PFT",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 5,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "PULM",
+    "Department": "Pulmonology / Respiratory",
+    "Subsection": "General Pulmonology OPD",
+    "Service / Test Name": "Chest X-Ray",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 5,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "PULM",
+    "Department": "Pulmonology / Respiratory",
+    "Subsection": "General Pulmonology OPD",
+    "Service / Test Name": "HRCT Chest",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 5,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "PULM",
+    "Department": "Pulmonology / Respiratory",
+    "Subsection": "General Pulmonology OPD",
+    "Service / Test Name": "Sputum AFB",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 5,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "PULM",
+    "Department": "Pulmonology / Respiratory",
+    "Subsection": "General Pulmonology OPD",
+    "Service / Test Name": "Allergy Testing",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 5,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "PULM",
+    "Department": "Pulmonology / Respiratory",
+    "Subsection": "Bronchoscopy",
+    "Service / Test Name": "Flexible Bronchoscopy",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "5,000 – 40,000",
+    "Category": "Procedure / Diagnostic"
+  },
+  {
+    "Department ID": "PULM",
+    "Department": "Pulmonology / Respiratory",
+    "Subsection": "Bronchoscopy",
+    "Service / Test Name": "BAL (Bronchoalveolar Lavage)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "5,000 – 40,000",
+    "Category": "Procedure / Diagnostic"
+  },
+  {
+    "Department ID": "PULM",
+    "Department": "Pulmonology / Respiratory",
+    "Subsection": "Bronchoscopy",
+    "Service / Test Name": "TBLB (Transbronchial Lung Biopsy)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "5,000 – 40,000",
+    "Category": "Procedure / Diagnostic"
+  },
+  {
+    "Department ID": "PULM",
+    "Department": "Pulmonology / Respiratory",
+    "Subsection": "Bronchoscopy",
+    "Service / Test Name": "Endobronchial Ultrasound (EBUS)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "5,000 – 40,000",
+    "Category": "Procedure / Diagnostic"
+  },
+  {
+    "Department ID": "PULM",
+    "Department": "Pulmonology / Respiratory",
+    "Subsection": "Sleep Apnea",
+    "Service / Test Name": "Sleep Physician Consultation",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 25,000",
+    "Category": "Diagnostic / Procedure"
+  },
+  {
+    "Department ID": "PULM",
+    "Department": "Pulmonology / Respiratory",
+    "Subsection": "Sleep Apnea",
+    "Service / Test Name": "Polysomnography (PSG)",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 25,000",
+    "Category": "Diagnostic / Procedure"
+  },
+  {
+    "Department ID": "PULM",
+    "Department": "Pulmonology / Respiratory",
+    "Subsection": "Sleep Apnea",
+    "Service / Test Name": "Home Sleep Test",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 25,000",
+    "Category": "Diagnostic / Procedure"
+  },
+  {
+    "Department ID": "PULM",
+    "Department": "Pulmonology / Respiratory",
+    "Subsection": "Sleep Apnea",
+    "Service / Test Name": "CPAP Trial & Titration",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 25,000",
+    "Category": "Diagnostic / Procedure"
+  },
+  {
+    "Department ID": "PULM",
+    "Department": "Pulmonology / Respiratory",
+    "Subsection": "Sleep Apnea",
+    "Service / Test Name": "CPAP Machine Supply",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 25,000",
+    "Category": "Diagnostic / Procedure"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Endoscopy",
+    "Service / Test Name": "Upper GI Endoscopy (OGD Scopy)",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,500 – 30,000",
+    "Category": "Diagnostic / Procedure"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Endoscopy",
+    "Service / Test Name": "Colonoscopy",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,500 – 30,000",
+    "Category": "Diagnostic / Procedure"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Endoscopy",
+    "Service / Test Name": "Capsule Endoscopy",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,500 – 30,000",
+    "Category": "Diagnostic / Procedure"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Endoscopy",
+    "Service / Test Name": "ERCP",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,500 – 30,000",
+    "Category": "Diagnostic / Procedure"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Endoscopy",
+    "Service / Test Name": "EUS (Endoscopic Ultrasound)",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,500 – 30,000",
+    "Category": "Diagnostic / Procedure"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Endoscopy",
+    "Service / Test Name": "Polypectomy",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,500 – 30,000",
+    "Category": "Diagnostic / Procedure"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Endoscopy",
+    "Service / Test Name": "Variceal Banding",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,500 – 30,000",
+    "Category": "Diagnostic / Procedure"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Hepatology (Liver)",
+    "Service / Test Name": "Hepatologist Consultation",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 25,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Hepatology (Liver)",
+    "Service / Test Name": "LFT",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 25,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Hepatology (Liver)",
+    "Service / Test Name": "HBsAg / HCV Antibody",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 25,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Hepatology (Liver)",
+    "Service / Test Name": "Fibroscan (Liver Stiffness)",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 25,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Hepatology (Liver)",
+    "Service / Test Name": "Liver Biopsy",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 25,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Hepatology (Liver)",
+    "Service / Test Name": "Ascitic Tap",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 25,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Hepatology (Liver)",
+    "Service / Test Name": "Liver Transplant Evaluation",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 25,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Bariatric Surgery",
+    "Service / Test Name": "Bariatric Surgeon Consultation",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "2,000 – 4,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Bariatric Surgery",
+    "Service / Test Name": "Pre-op Workup",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "2,000 – 4,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Bariatric Surgery",
+    "Service / Test Name": "Sleeve Gastrectomy",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "2,000 – 4,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Bariatric Surgery",
+    "Service / Test Name": "Roux-en-Y Gastric Bypass",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "2,000 – 4,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Bariatric Surgery",
+    "Service / Test Name": "Mini Gastric Bypass",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "2,000 – 4,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Bariatric Surgery",
+    "Service / Test Name": "Adjustable Gastric Band",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "2,000 – 4,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Colorectal Surgery",
+    "Service / Test Name": "Consultation",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 4,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Colorectal Surgery",
+    "Service / Test Name": "Colonoscopy",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 4,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Colorectal Surgery",
+    "Service / Test Name": "Anterior Resection",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 4,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Colorectal Surgery",
+    "Service / Test Name": "Hartmann's Procedure",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 4,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Colorectal Surgery",
+    "Service / Test Name": "Colostomy",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 4,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Colorectal Surgery",
+    "Service / Test Name": "Ileostomy Reversal",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 4,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "GAST",
+    "Department": "Gastroenterology & GI Surgery",
+    "Subsection": "Colorectal Surgery",
+    "Service / Test Name": "Laparoscopic Colectomy",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 4,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Nephrology OPD",
+    "Service / Test Name": "Nephrologist Consultation",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 8,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Nephrology OPD",
+    "Service / Test Name": "KFT (Creatinine / BUN / Uric Acid)",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 8,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Nephrology OPD",
+    "Service / Test Name": "Urine Routine & Microscopy",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 8,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Nephrology OPD",
+    "Service / Test Name": "24hr Urine Protein",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 8,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Nephrology OPD",
+    "Service / Test Name": "Renal USG",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 8,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Nephrology OPD",
+    "Service / Test Name": "Renal Biopsy",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 8,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Dialysis",
+    "Service / Test Name": "Hemodialysis (per session)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "1,500 – 15,000 per session",
+    "Category": "Procedure / Ongoing"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Dialysis",
+    "Service / Test Name": "Peritoneal Dialysis Setup",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "1,500 – 15,000 per session",
+    "Category": "Procedure / Ongoing"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Dialysis",
+    "Service / Test Name": "AV Fistula Creation",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "1,500 – 15,000 per session",
+    "Category": "Procedure / Ongoing"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Dialysis",
+    "Service / Test Name": "Tunneled Catheter Insertion",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "1,500 – 15,000 per session",
+    "Category": "Procedure / Ongoing"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Dialysis",
+    "Service / Test Name": "CRRT (ICU)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "1,500 – 15,000 per session",
+    "Category": "Procedure / Ongoing"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Urology",
+    "Service / Test Name": "Urologist Consultation",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 2,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Urology",
+    "Service / Test Name": "Uroflowmetry",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 2,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Urology",
+    "Service / Test Name": "Cystoscopy",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 2,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Urology",
+    "Service / Test Name": "TURP (Prostate)",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 2,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Urology",
+    "Service / Test Name": "TURBT (Bladder Tumor)",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 2,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Urology",
+    "Service / Test Name": "Laser Prostatectomy (HoLEP)",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 2,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Urology",
+    "Service / Test Name": "Ureterorenoscopy (URS)",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 2,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Urology",
+    "Service / Test Name": "PCNL (Kidney Stones)",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 2,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Stone Disease / Lithotripsy",
+    "Service / Test Name": "KUB X-Ray",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Stone Disease / Lithotripsy",
+    "Service / Test Name": "CT KUB",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Stone Disease / Lithotripsy",
+    "Service / Test Name": "USG KUB",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Stone Disease / Lithotripsy",
+    "Service / Test Name": "ESWL (Shock Wave Lithotripsy)",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Stone Disease / Lithotripsy",
+    "Service / Test Name": "URS with Laser Lithotripsy",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Stone Disease / Lithotripsy",
+    "Service / Test Name": "PCNL",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "NEPH",
+    "Department": "Nephrology & Urology",
+    "Subsection": "Stone Disease / Lithotripsy",
+    "Service / Test Name": "Stent (DJ Stent) Placement",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "GENM",
+    "Department": "General Medicine & Internal Medicine",
+    "Subsection": "General OPD",
+    "Service / Test Name": "Physician Consultation",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 2,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "GENM",
+    "Department": "General Medicine & Internal Medicine",
+    "Subsection": "General OPD",
+    "Service / Test Name": "CBC",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 2,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "GENM",
+    "Department": "General Medicine & Internal Medicine",
+    "Subsection": "General OPD",
+    "Service / Test Name": "Blood Sugar",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 2,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "GENM",
+    "Department": "General Medicine & Internal Medicine",
+    "Subsection": "General OPD",
+    "Service / Test Name": "ECG",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 2,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "GENM",
+    "Department": "General Medicine & Internal Medicine",
+    "Subsection": "General OPD",
+    "Service / Test Name": "Chest X-Ray",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 2,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "GENM",
+    "Department": "General Medicine & Internal Medicine",
+    "Subsection": "General OPD",
+    "Service / Test Name": "Urine Routine",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 2,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "GENM",
+    "Department": "General Medicine & Internal Medicine",
+    "Subsection": "Diabetes Management",
+    "Service / Test Name": "Diabetologist Consultation",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "300 – 5,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "GENM",
+    "Department": "General Medicine & Internal Medicine",
+    "Subsection": "Diabetes Management",
+    "Service / Test Name": "HbA1c",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "300 – 5,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "GENM",
+    "Department": "General Medicine & Internal Medicine",
+    "Subsection": "Diabetes Management",
+    "Service / Test Name": "Fasting & PP Sugar",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "300 – 5,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "GENM",
+    "Department": "General Medicine & Internal Medicine",
+    "Subsection": "Diabetes Management",
+    "Service / Test Name": "Insulin Profile",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "300 – 5,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "GENM",
+    "Department": "General Medicine & Internal Medicine",
+    "Subsection": "Diabetes Management",
+    "Service / Test Name": "Foot Examination",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "300 – 5,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "GENM",
+    "Department": "General Medicine & Internal Medicine",
+    "Subsection": "Diabetes Management",
+    "Service / Test Name": "Diabetes Education Program",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "300 – 5,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "GENM",
+    "Department": "General Medicine & Internal Medicine",
+    "Subsection": "Infectious Disease",
+    "Service / Test Name": "ID Specialist Consultation",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 8,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "GENM",
+    "Department": "General Medicine & Internal Medicine",
+    "Subsection": "Infectious Disease",
+    "Service / Test Name": "Blood Culture",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 8,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "GENM",
+    "Department": "General Medicine & Internal Medicine",
+    "Subsection": "Infectious Disease",
+    "Service / Test Name": "Serology Panel",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 8,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "GENM",
+    "Department": "General Medicine & Internal Medicine",
+    "Subsection": "Infectious Disease",
+    "Service / Test Name": "HIV Test",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 8,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "GENM",
+    "Department": "General Medicine & Internal Medicine",
+    "Subsection": "Infectious Disease",
+    "Service / Test Name": "TB Workup (CBNAAT / IGRA)",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 8,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "GENM",
+    "Department": "General Medicine & Internal Medicine",
+    "Subsection": "Infectious Disease",
+    "Service / Test Name": "Dengue / Malaria / Typhoid Panel",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 8,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Antenatal Care",
+    "Service / Test Name": "OB/GYN Consultation",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "300 – 10,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Antenatal Care",
+    "Service / Test Name": "USG Obstetric (Dating / Anomaly / Growth)",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "300 – 10,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Antenatal Care",
+    "Service / Test Name": "NT Scan",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "300 – 10,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Antenatal Care",
+    "Service / Test Name": "NIPT / Triple Marker",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "300 – 10,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Antenatal Care",
+    "Service / Test Name": "GCT / OGTT",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "300 – 10,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Antenatal Care",
+    "Service / Test Name": "TORCH Profile",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "300 – 10,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Delivery",
+    "Service / Test Name": "Normal Vaginal Delivery (NVD)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "10,000 – 2,00,000",
+    "Category": "Surgical / Package"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Delivery",
+    "Service / Test Name": "Cesarean Section (LSCS)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "10,000 – 2,00,000",
+    "Category": "Surgical / Package"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Delivery",
+    "Service / Test Name": "Assisted Delivery (Forceps / Vacuum)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "10,000 – 2,00,000",
+    "Category": "Surgical / Package"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Delivery",
+    "Service / Test Name": "Post-natal Care Package",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "10,000 – 2,00,000",
+    "Category": "Surgical / Package"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Delivery",
+    "Service / Test Name": "NICU Support (if needed)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "10,000 – 2,00,000",
+    "Category": "Surgical / Package"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Fertility & IVF",
+    "Service / Test Name": "Fertility Specialist Consultation",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Fertility & IVF",
+    "Service / Test Name": "Semen Analysis",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Fertility & IVF",
+    "Service / Test Name": "HSG (Hysterosalpingography)",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Fertility & IVF",
+    "Service / Test Name": "IUI (Intrauterine Insemination)",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Fertility & IVF",
+    "Service / Test Name": "IVF Cycle",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Fertility & IVF",
+    "Service / Test Name": "ICSI",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Fertility & IVF",
+    "Service / Test Name": "Embryo Freezing",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Gynecological Surgery",
+    "Service / Test Name": "Diagnostic Laparoscopy",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "2,000 – 2,50,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Gynecological Surgery",
+    "Service / Test Name": "Hysterectomy (Lap / Open)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "2,000 – 2,50,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Gynecological Surgery",
+    "Service / Test Name": "Myomectomy",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "2,000 – 2,50,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Gynecological Surgery",
+    "Service / Test Name": "Ovarian Cystectomy",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "2,000 – 2,50,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Gynecological Surgery",
+    "Service / Test Name": "D&C",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "2,000 – 2,50,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Gynecological Surgery",
+    "Service / Test Name": "Colposcopy & Biopsy",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "2,000 – 2,50,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "OBGY",
+    "Department": "Obstetrics & Gynecology",
+    "Subsection": "Gynecological Surgery",
+    "Service / Test Name": "LEEP Procedure",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "2,000 – 2,50,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "General Pediatrics OPD",
+    "Service / Test Name": "Pediatrician Consultation",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 2,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "General Pediatrics OPD",
+    "Service / Test Name": "CBC",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 2,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "General Pediatrics OPD",
+    "Service / Test Name": "Urine Routine",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 2,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "General Pediatrics OPD",
+    "Service / Test Name": "Growth Assessment",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 2,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "General Pediatrics OPD",
+    "Service / Test Name": "Developmental Assessment",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 2,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "General Pediatrics OPD",
+    "Service / Test Name": "Nebulization",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 2,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "NICU",
+    "Service / Test Name": "NICU Admission (per day)",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "3,000 – 25,000 per day",
+    "Category": "Critical Care"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "NICU",
+    "Service / Test Name": "Ventilator Support",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "3,000 – 25,000 per day",
+    "Category": "Critical Care"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "NICU",
+    "Service / Test Name": "Surfactant Therapy",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "3,000 – 25,000 per day",
+    "Category": "Critical Care"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "NICU",
+    "Service / Test Name": "Phototherapy",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "3,000 – 25,000 per day",
+    "Category": "Critical Care"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "NICU",
+    "Service / Test Name": "IV Fluids & TPN",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "3,000 – 25,000 per day",
+    "Category": "Critical Care"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "NICU",
+    "Service / Test Name": "Neonatal Blood Tests",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "3,000 – 25,000 per day",
+    "Category": "Critical Care"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "Pediatric Surgery",
+    "Service / Test Name": "Pediatric Surgeon Consultation",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "Pediatric Surgery",
+    "Service / Test Name": "Hernia Repair (Pediatric)",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "Pediatric Surgery",
+    "Service / Test Name": "Circumcision",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "Pediatric Surgery",
+    "Service / Test Name": "Appendectomy (Pediatric)",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "Pediatric Surgery",
+    "Service / Test Name": "Hypospadias Repair",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "Pediatric Surgery",
+    "Service / Test Name": "Tonsillectomy / Adenoidectomy",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "Immunization",
+    "Service / Test Name": "BCG Vaccine",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "100 – 3,000",
+    "Category": "Preventive"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "Immunization",
+    "Service / Test Name": "DPT / Pentavalent",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "100 – 3,000",
+    "Category": "Preventive"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "Immunization",
+    "Service / Test Name": "OPV / IPV",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "100 – 3,000",
+    "Category": "Preventive"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "Immunization",
+    "Service / Test Name": "MMR Vaccine",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "100 – 3,000",
+    "Category": "Preventive"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "Immunization",
+    "Service / Test Name": "Varicella Vaccine",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "100 – 3,000",
+    "Category": "Preventive"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "Immunization",
+    "Service / Test Name": "Rotavirus Vaccine",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "100 – 3,000",
+    "Category": "Preventive"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "Immunization",
+    "Service / Test Name": "Hepatitis B Series",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "100 – 3,000",
+    "Category": "Preventive"
+  },
+  {
+    "Department ID": "PEDI",
+    "Department": "Pediatrics & Neonatology",
+    "Subsection": "Immunization",
+    "Service / Test Name": "Typhoid Vaccine",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "100 – 3,000",
+    "Category": "Preventive"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "General Dentistry",
+    "Service / Test Name": "Dental Consultation",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 3,000",
+    "Category": "Consultation / Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "General Dentistry",
+    "Service / Test Name": "Scaling & Polishing",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 3,000",
+    "Category": "Consultation / Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "General Dentistry",
+    "Service / Test Name": "Tooth Extraction",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 3,000",
+    "Category": "Consultation / Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "General Dentistry",
+    "Service / Test Name": "Dental Filling (Composite)",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 3,000",
+    "Category": "Consultation / Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "General Dentistry",
+    "Service / Test Name": "Fluoride Treatment",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 3,000",
+    "Category": "Consultation / Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "General Dentistry",
+    "Service / Test Name": "X-Ray (IOPA / OPG)",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 3,000",
+    "Category": "Consultation / Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Root Canal Treatment",
+    "Service / Test Name": "RCT Consultation",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "1,500 – 20,000",
+    "Category": "Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Root Canal Treatment",
+    "Service / Test Name": "IOPA X-Ray",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "1,500 – 20,000",
+    "Category": "Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Root Canal Treatment",
+    "Service / Test Name": "Single Sitting RCT",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "1,500 – 20,000",
+    "Category": "Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Root Canal Treatment",
+    "Service / Test Name": "Multi-sitting RCT",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "1,500 – 20,000",
+    "Category": "Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Root Canal Treatment",
+    "Service / Test Name": "Post & Core",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "1,500 – 20,000",
+    "Category": "Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Root Canal Treatment",
+    "Service / Test Name": "Crown (Metal / Ceramic / Zirconia)",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "1,500 – 20,000",
+    "Category": "Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Orthodontics",
+    "Service / Test Name": "Orthodontist Consultation",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Orthodontics",
+    "Service / Test Name": "OPG / Cephalogram",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Orthodontics",
+    "Service / Test Name": "Metal Braces",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Orthodontics",
+    "Service / Test Name": "Ceramic Braces",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Orthodontics",
+    "Service / Test Name": "Lingual Braces",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Orthodontics",
+    "Service / Test Name": "Invisalign / Clear Aligners",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Orthodontics",
+    "Service / Test Name": "Retainers",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Dental Implants",
+    "Service / Test Name": "Implant Consultation",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 1,00,000 per implant",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Dental Implants",
+    "Service / Test Name": "CT Scan (CBCT)",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 1,00,000 per implant",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Dental Implants",
+    "Service / Test Name": "Implant Fixture Placement",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 1,00,000 per implant",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Dental Implants",
+    "Service / Test Name": "Abutment",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 1,00,000 per implant",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Dental Implants",
+    "Service / Test Name": "Implant Crown",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 1,00,000 per implant",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Dental Implants",
+    "Service / Test Name": "Bone Grafting",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 1,00,000 per implant",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Dental Implants",
+    "Service / Test Name": "Sinus Lift",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 1,00,000 per implant",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Cosmetic Dentistry",
+    "Service / Test Name": "Teeth Whitening / Bleaching",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,000 – 80,000",
+    "Category": "Aesthetic / Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Cosmetic Dentistry",
+    "Service / Test Name": "Veneers (Porcelain / Composite)",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,000 – 80,000",
+    "Category": "Aesthetic / Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Cosmetic Dentistry",
+    "Service / Test Name": "Smile Makeover Consultation",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,000 – 80,000",
+    "Category": "Aesthetic / Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Cosmetic Dentistry",
+    "Service / Test Name": "Gum Contouring",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,000 – 80,000",
+    "Category": "Aesthetic / Procedure"
+  },
+  {
+    "Department ID": "DENT",
+    "Department": "Dental & Oral Health",
+    "Subsection": "Cosmetic Dentistry",
+    "Service / Test Name": "Dental Bonding",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,000 – 80,000",
+    "Category": "Aesthetic / Procedure"
+  },
+  {
+    "Department ID": "OPHT",
+    "Department": "Ophthalmology",
+    "Subsection": "General Eye OPD",
+    "Service / Test Name": "Ophthalmologist Consultation",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 2,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "OPHT",
+    "Department": "Ophthalmology",
+    "Subsection": "General Eye OPD",
+    "Service / Test Name": "Vision Testing / Refraction",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 2,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "OPHT",
+    "Department": "Ophthalmology",
+    "Subsection": "General Eye OPD",
+    "Service / Test Name": "Slit Lamp Examination",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 2,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "OPHT",
+    "Department": "Ophthalmology",
+    "Subsection": "General Eye OPD",
+    "Service / Test Name": "IOP (Tonometry)",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 2,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "OPHT",
+    "Department": "Ophthalmology",
+    "Subsection": "General Eye OPD",
+    "Service / Test Name": "Fundus Examination",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 2,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "OPHT",
+    "Department": "Ophthalmology",
+    "Subsection": "General Eye OPD",
+    "Service / Test Name": "Spectacle / Contact Lens Prescription",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 2,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "OPHT",
+    "Department": "Ophthalmology",
+    "Subsection": "Cataract Surgery",
+    "Service / Test Name": "Pre-op Evaluation (IOL Master / Biometry)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "5,000 – 80,000 per eye",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "OPHT",
+    "Department": "Ophthalmology",
+    "Subsection": "Cataract Surgery",
+    "Service / Test Name": "Phacoemulsification (Phaco)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "5,000 – 80,000 per eye",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "OPHT",
+    "Department": "Ophthalmology",
+    "Subsection": "Cataract Surgery",
+    "Service / Test Name": "Monofocal IOL Implant",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "5,000 – 80,000 per eye",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "OPHT",
+    "Department": "Ophthalmology",
+    "Subsection": "Cataract Surgery",
+    "Service / Test Name": "Multifocal IOL",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "5,000 – 80,000 per eye",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "OPHT",
+    "Department": "Ophthalmology",
+    "Subsection": "Cataract Surgery",
+    "Service / Test Name": "MICS (Micro-incision Cataract)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "5,000 – 80,000 per eye",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "OPHT",
+    "Department": "Ophthalmology",
+    "Subsection": "Cataract Surgery",
+    "Service / Test Name": "Post-op Care",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "5,000 – 80,000 per eye",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "OPHT",
+    "Department": "Ophthalmology",
+    "Subsection": "LASIK & Refractive Surgery",
+    "Service / Test Name": "Pre-LASIK Workup (Corneal Topography / Pachymetry)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "10,000 – 1,20,000 per eye",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "OPHT",
+    "Department": "Ophthalmology",
+    "Subsection": "LASIK & Refractive Surgery",
+    "Service / Test Name": "LASIK",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "10,000 – 1,20,000 per eye",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "OPHT",
+    "Department": "Ophthalmology",
+    "Subsection": "LASIK & Refractive Surgery",
+    "Service / Test Name": "LASEK",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "10,000 – 1,20,000 per eye",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "OPHT",
+    "Department": "Ophthalmology",
+    "Subsection": "LASIK & Refractive Surgery",
+    "Service / Test Name": "PRK",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "10,000 – 1,20,000 per eye",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "OPHT",
+    "Department": "Ophthalmology",
+    "Subsection": "LASIK & Refractive Surgery",
+    "Service / Test Name": "SMILE Procedure",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "10,000 – 1,20,000 per eye",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "OPHT",
+    "Department": "Ophthalmology",
+    "Subsection": "LASIK & Refractive Surgery",
+    "Service / Test Name": "ICL Implant",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "10,000 – 1,20,000 per eye",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "OPHT",
+    "Department": "Ophthalmology",
+    "Subsection": "Retina & Vitreous",
+    "Service / Test Name": "Retina Consultation",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 1,00,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "OPHT",
+    "Department": "Ophthalmology",
+    "Subsection": "Retina & Vitreous",
+    "Service / Test Name": "OCT (Optical Coherence Tomography)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 1,00,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "OPHT",
+    "Department": "Ophthalmology",
+    "Subsection": "Retina & Vitreous",
+    "Service / Test Name": "FFA (Fluorescein Angiography)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 1,00,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "OPHT",
+    "Department": "Ophthalmology",
+    "Subsection": "Retina & Vitreous",
+    "Service / Test Name": "Intravitreal Injection (Anti-VEGF)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 1,00,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "OPHT",
+    "Department": "Ophthalmology",
+    "Subsection": "Retina & Vitreous",
+    "Service / Test Name": "Laser Photocoagulation",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 1,00,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "OPHT",
+    "Department": "Ophthalmology",
+    "Subsection": "Retina & Vitreous",
+    "Service / Test Name": "Vitrectomy",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 1,00,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "ENTD",
+    "Department": "ENT (Ear, Nose & Throat)",
+    "Subsection": "General ENT OPD",
+    "Service / Test Name": "ENT Consultation",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 3,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "ENTD",
+    "Department": "ENT (Ear, Nose & Throat)",
+    "Subsection": "General ENT OPD",
+    "Service / Test Name": "PTA (Pure Tone Audiometry)",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 3,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "ENTD",
+    "Department": "ENT (Ear, Nose & Throat)",
+    "Subsection": "General ENT OPD",
+    "Service / Test Name": "Tympanometry",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 3,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "ENTD",
+    "Department": "ENT (Ear, Nose & Throat)",
+    "Subsection": "General ENT OPD",
+    "Service / Test Name": "Nasal Endoscopy",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 3,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "ENTD",
+    "Department": "ENT (Ear, Nose & Throat)",
+    "Subsection": "General ENT OPD",
+    "Service / Test Name": "Throat Examination",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 3,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "ENTD",
+    "Department": "ENT (Ear, Nose & Throat)",
+    "Subsection": "General ENT OPD",
+    "Service / Test Name": "OAE / BERA",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 3,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "ENTD",
+    "Department": "ENT (Ear, Nose & Throat)",
+    "Subsection": "Ear (Otology)",
+    "Service / Test Name": "Myringotomy & Grommet",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "2,000 – 5,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ENTD",
+    "Department": "ENT (Ear, Nose & Throat)",
+    "Subsection": "Ear (Otology)",
+    "Service / Test Name": "Tympanoplasty",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "2,000 – 5,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ENTD",
+    "Department": "ENT (Ear, Nose & Throat)",
+    "Subsection": "Ear (Otology)",
+    "Service / Test Name": "Mastoidectomy",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "2,000 – 5,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ENTD",
+    "Department": "ENT (Ear, Nose & Throat)",
+    "Subsection": "Ear (Otology)",
+    "Service / Test Name": "Stapedectomy",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "2,000 – 5,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ENTD",
+    "Department": "ENT (Ear, Nose & Throat)",
+    "Subsection": "Ear (Otology)",
+    "Service / Test Name": "Cochlear Implant Surgery",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "2,000 – 5,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ENTD",
+    "Department": "ENT (Ear, Nose & Throat)",
+    "Subsection": "Ear (Otology)",
+    "Service / Test Name": "Hearing Aid Fitting",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "2,000 – 5,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ENTD",
+    "Department": "ENT (Ear, Nose & Throat)",
+    "Subsection": "Nose & Sinus (Rhinology)",
+    "Service / Test Name": "FESS (Functional Endoscopic Sinus Surgery)",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "2,000 – 1,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "ENTD",
+    "Department": "ENT (Ear, Nose & Throat)",
+    "Subsection": "Nose & Sinus (Rhinology)",
+    "Service / Test Name": "Septoplasty",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "2,000 – 1,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "ENTD",
+    "Department": "ENT (Ear, Nose & Throat)",
+    "Subsection": "Nose & Sinus (Rhinology)",
+    "Service / Test Name": "Turbinate Reduction",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "2,000 – 1,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "ENTD",
+    "Department": "ENT (Ear, Nose & Throat)",
+    "Subsection": "Nose & Sinus (Rhinology)",
+    "Service / Test Name": "Nasal Polypectomy",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "2,000 – 1,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "ENTD",
+    "Department": "ENT (Ear, Nose & Throat)",
+    "Subsection": "Nose & Sinus (Rhinology)",
+    "Service / Test Name": "Balloon Sinuplasty",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "2,000 – 1,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "ENTD",
+    "Department": "ENT (Ear, Nose & Throat)",
+    "Subsection": "Throat & Voice (Laryngology)",
+    "Service / Test Name": "Videolaryngoscopy",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,000 – 1,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ENTD",
+    "Department": "ENT (Ear, Nose & Throat)",
+    "Subsection": "Throat & Voice (Laryngology)",
+    "Service / Test Name": "Microlaryngoscopy",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,000 – 1,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ENTD",
+    "Department": "ENT (Ear, Nose & Throat)",
+    "Subsection": "Throat & Voice (Laryngology)",
+    "Service / Test Name": "Vocal Cord Surgery",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,000 – 1,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ENTD",
+    "Department": "ENT (Ear, Nose & Throat)",
+    "Subsection": "Throat & Voice (Laryngology)",
+    "Service / Test Name": "Tonsillectomy",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,000 – 1,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ENTD",
+    "Department": "ENT (Ear, Nose & Throat)",
+    "Subsection": "Throat & Voice (Laryngology)",
+    "Service / Test Name": "Adenoidectomy",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,000 – 1,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ENTD",
+    "Department": "ENT (Ear, Nose & Throat)",
+    "Subsection": "Throat & Voice (Laryngology)",
+    "Service / Test Name": "Sleep Snoring Surgery (UPPP)",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "1,000 – 1,00,000",
+    "Category": "Surgical / Procedure"
+  },
+  {
+    "Department ID": "ONCO",
+    "Department": "Oncology / Cancer Care",
+    "Subsection": "Medical Oncology",
+    "Service / Test Name": "Oncologist Consultation",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 3,00,000 per cycle",
+    "Category": "Medical / Ongoing"
+  },
+  {
+    "Department ID": "ONCO",
+    "Department": "Oncology / Cancer Care",
+    "Subsection": "Medical Oncology",
+    "Service / Test Name": "Tumour Marker Tests",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 3,00,000 per cycle",
+    "Category": "Medical / Ongoing"
+  },
+  {
+    "Department ID": "ONCO",
+    "Department": "Oncology / Cancer Care",
+    "Subsection": "Medical Oncology",
+    "Service / Test Name": "Chemotherapy (per cycle)",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 3,00,000 per cycle",
+    "Category": "Medical / Ongoing"
+  },
+  {
+    "Department ID": "ONCO",
+    "Department": "Oncology / Cancer Care",
+    "Subsection": "Medical Oncology",
+    "Service / Test Name": "Targeted Therapy",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 3,00,000 per cycle",
+    "Category": "Medical / Ongoing"
+  },
+  {
+    "Department ID": "ONCO",
+    "Department": "Oncology / Cancer Care",
+    "Subsection": "Medical Oncology",
+    "Service / Test Name": "Immunotherapy",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 3,00,000 per cycle",
+    "Category": "Medical / Ongoing"
+  },
+  {
+    "Department ID": "ONCO",
+    "Department": "Oncology / Cancer Care",
+    "Subsection": "Medical Oncology",
+    "Service / Test Name": "Bone Marrow Biopsy",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "1,000 – 3,00,000 per cycle",
+    "Category": "Medical / Ongoing"
+  },
+  {
+    "Department ID": "ONCO",
+    "Department": "Oncology / Cancer Care",
+    "Subsection": "Radiation Oncology",
+    "Service / Test Name": "Radiation Oncologist Consultation",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "10,000 – 5,00,000 per course",
+    "Category": "Procedure / Ongoing"
+  },
+  {
+    "Department ID": "ONCO",
+    "Department": "Oncology / Cancer Care",
+    "Subsection": "Radiation Oncology",
+    "Service / Test Name": "CT Simulation",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "10,000 – 5,00,000 per course",
+    "Category": "Procedure / Ongoing"
+  },
+  {
+    "Department ID": "ONCO",
+    "Department": "Oncology / Cancer Care",
+    "Subsection": "Radiation Oncology",
+    "Service / Test Name": "IMRT (Intensity Modulated RT)",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "10,000 – 5,00,000 per course",
+    "Category": "Procedure / Ongoing"
+  },
+  {
+    "Department ID": "ONCO",
+    "Department": "Oncology / Cancer Care",
+    "Subsection": "Radiation Oncology",
+    "Service / Test Name": "IGRT",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "10,000 – 5,00,000 per course",
+    "Category": "Procedure / Ongoing"
+  },
+  {
+    "Department ID": "ONCO",
+    "Department": "Oncology / Cancer Care",
+    "Subsection": "Radiation Oncology",
+    "Service / Test Name": "Stereotactic Body RT (SBRT)",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "10,000 – 5,00,000 per course",
+    "Category": "Procedure / Ongoing"
+  },
+  {
+    "Department ID": "ONCO",
+    "Department": "Oncology / Cancer Care",
+    "Subsection": "Radiation Oncology",
+    "Service / Test Name": "Brachytherapy",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "10,000 – 5,00,000 per course",
+    "Category": "Procedure / Ongoing"
+  },
+  {
+    "Department ID": "ONCO",
+    "Department": "Oncology / Cancer Care",
+    "Subsection": "Bone Marrow Transplant",
+    "Service / Test Name": "BMT Consultation",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,00,000 – 30,00,000",
+    "Category": "Surgical / Ongoing"
+  },
+  {
+    "Department ID": "ONCO",
+    "Department": "Oncology / Cancer Care",
+    "Subsection": "Bone Marrow Transplant",
+    "Service / Test Name": "HLA Typing",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,00,000 – 30,00,000",
+    "Category": "Surgical / Ongoing"
+  },
+  {
+    "Department ID": "ONCO",
+    "Department": "Oncology / Cancer Care",
+    "Subsection": "Bone Marrow Transplant",
+    "Service / Test Name": "Autologous BMT",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,00,000 – 30,00,000",
+    "Category": "Surgical / Ongoing"
+  },
+  {
+    "Department ID": "ONCO",
+    "Department": "Oncology / Cancer Care",
+    "Subsection": "Bone Marrow Transplant",
+    "Service / Test Name": "Allogeneic BMT",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,00,000 – 30,00,000",
+    "Category": "Surgical / Ongoing"
+  },
+  {
+    "Department ID": "ONCO",
+    "Department": "Oncology / Cancer Care",
+    "Subsection": "Bone Marrow Transplant",
+    "Service / Test Name": "Stem Cell Harvesting",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,00,000 – 30,00,000",
+    "Category": "Surgical / Ongoing"
+  },
+  {
+    "Department ID": "ONCO",
+    "Department": "Oncology / Cancer Care",
+    "Subsection": "Bone Marrow Transplant",
+    "Service / Test Name": "BMT ICU Stay",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,00,000 – 30,00,000",
+    "Category": "Surgical / Ongoing"
+  },
+  {
+    "Department ID": "ONCO",
+    "Department": "Oncology / Cancer Care",
+    "Subsection": "Palliative Care",
+    "Service / Test Name": "Palliative Physician Consultation",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 10,000",
+    "Category": "Supportive Care"
+  },
+  {
+    "Department ID": "ONCO",
+    "Department": "Oncology / Cancer Care",
+    "Subsection": "Palliative Care",
+    "Service / Test Name": "Pain Management",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 10,000",
+    "Category": "Supportive Care"
+  },
+  {
+    "Department ID": "ONCO",
+    "Department": "Oncology / Cancer Care",
+    "Subsection": "Palliative Care",
+    "Service / Test Name": "Hospice Care",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 10,000",
+    "Category": "Supportive Care"
+  },
+  {
+    "Department ID": "ONCO",
+    "Department": "Oncology / Cancer Care",
+    "Subsection": "Palliative Care",
+    "Service / Test Name": "Psychosocial Support",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 10,000",
+    "Category": "Supportive Care"
+  },
+  {
+    "Department ID": "ONCO",
+    "Department": "Oncology / Cancer Care",
+    "Subsection": "Palliative Care",
+    "Service / Test Name": "Home Care Program",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 10,000",
+    "Category": "Supportive Care"
+  },
+  {
+    "Department ID": "PSYC",
+    "Department": "Psychiatry & Mental Health",
+    "Subsection": "General Psychiatry OPD",
+    "Service / Test Name": "Psychiatrist Consultation",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 3,000",
+    "Category": "Consultation"
+  },
+  {
+    "Department ID": "PSYC",
+    "Department": "Psychiatry & Mental Health",
+    "Subsection": "General Psychiatry OPD",
+    "Service / Test Name": "Psychological Assessment",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 3,000",
+    "Category": "Consultation"
+  },
+  {
+    "Department ID": "PSYC",
+    "Department": "Psychiatry & Mental Health",
+    "Subsection": "General Psychiatry OPD",
+    "Service / Test Name": "Rating Scales (HAM-A / MADRS / PANSS)",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 3,000",
+    "Category": "Consultation"
+  },
+  {
+    "Department ID": "PSYC",
+    "Department": "Psychiatry & Mental Health",
+    "Subsection": "General Psychiatry OPD",
+    "Service / Test Name": "Medication Management",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 3,000",
+    "Category": "Consultation"
+  },
+  {
+    "Department ID": "PSYC",
+    "Department": "Psychiatry & Mental Health",
+    "Subsection": "Psychotherapy",
+    "Service / Test Name": "Individual CBT Sessions",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 3,000 per session",
+    "Category": "Therapy / Consultation"
+  },
+  {
+    "Department ID": "PSYC",
+    "Department": "Psychiatry & Mental Health",
+    "Subsection": "Psychotherapy",
+    "Service / Test Name": "Group Therapy",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 3,000 per session",
+    "Category": "Therapy / Consultation"
+  },
+  {
+    "Department ID": "PSYC",
+    "Department": "Psychiatry & Mental Health",
+    "Subsection": "Psychotherapy",
+    "Service / Test Name": "Family Therapy",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 3,000 per session",
+    "Category": "Therapy / Consultation"
+  },
+  {
+    "Department ID": "PSYC",
+    "Department": "Psychiatry & Mental Health",
+    "Subsection": "Psychotherapy",
+    "Service / Test Name": "Psychologist Consultation",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 3,000 per session",
+    "Category": "Therapy / Consultation"
+  },
+  {
+    "Department ID": "PSYC",
+    "Department": "Psychiatry & Mental Health",
+    "Subsection": "Psychotherapy",
+    "Service / Test Name": "Art / Play Therapy (Pediatric)",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 3,000 per session",
+    "Category": "Therapy / Consultation"
+  },
+  {
+    "Department ID": "PSYC",
+    "Department": "Psychiatry & Mental Health",
+    "Subsection": "De-addiction",
+    "Service / Test Name": "Addiction Psychiatrist Consultation",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "2,000 – 50,000",
+    "Category": "Program / Ongoing"
+  },
+  {
+    "Department ID": "PSYC",
+    "Department": "Psychiatry & Mental Health",
+    "Subsection": "De-addiction",
+    "Service / Test Name": "Detoxification Program",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "2,000 – 50,000",
+    "Category": "Program / Ongoing"
+  },
+  {
+    "Department ID": "PSYC",
+    "Department": "Psychiatry & Mental Health",
+    "Subsection": "De-addiction",
+    "Service / Test Name": "Inpatient Rehabilitation",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "2,000 – 50,000",
+    "Category": "Program / Ongoing"
+  },
+  {
+    "Department ID": "PSYC",
+    "Department": "Psychiatry & Mental Health",
+    "Subsection": "De-addiction",
+    "Service / Test Name": "Opioid Substitution Therapy",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "2,000 – 50,000",
+    "Category": "Program / Ongoing"
+  },
+  {
+    "Department ID": "PSYC",
+    "Department": "Psychiatry & Mental Health",
+    "Subsection": "De-addiction",
+    "Service / Test Name": "Naltrexone / Buprenorphine",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "2,000 – 50,000",
+    "Category": "Program / Ongoing"
+  },
+  {
+    "Department ID": "PHYS",
+    "Department": "Physiotherapy & Rehabilitation",
+    "Subsection": "Musculoskeletal Physiotherapy",
+    "Service / Test Name": "Physiotherapist Consultation",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 1,500 per session",
+    "Category": "Therapy / Ongoing"
+  },
+  {
+    "Department ID": "PHYS",
+    "Department": "Physiotherapy & Rehabilitation",
+    "Subsection": "Musculoskeletal Physiotherapy",
+    "Service / Test Name": "Manual Therapy",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 1,500 per session",
+    "Category": "Therapy / Ongoing"
+  },
+  {
+    "Department ID": "PHYS",
+    "Department": "Physiotherapy & Rehabilitation",
+    "Subsection": "Musculoskeletal Physiotherapy",
+    "Service / Test Name": "Ultrasound Therapy",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 1,500 per session",
+    "Category": "Therapy / Ongoing"
+  },
+  {
+    "Department ID": "PHYS",
+    "Department": "Physiotherapy & Rehabilitation",
+    "Subsection": "Musculoskeletal Physiotherapy",
+    "Service / Test Name": "TENS / IFT",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 1,500 per session",
+    "Category": "Therapy / Ongoing"
+  },
+  {
+    "Department ID": "PHYS",
+    "Department": "Physiotherapy & Rehabilitation",
+    "Subsection": "Musculoskeletal Physiotherapy",
+    "Service / Test Name": "Hot / Cold Pack",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 1,500 per session",
+    "Category": "Therapy / Ongoing"
+  },
+  {
+    "Department ID": "PHYS",
+    "Department": "Physiotherapy & Rehabilitation",
+    "Subsection": "Musculoskeletal Physiotherapy",
+    "Service / Test Name": "Dry Needling",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 1,500 per session",
+    "Category": "Therapy / Ongoing"
+  },
+  {
+    "Department ID": "PHYS",
+    "Department": "Physiotherapy & Rehabilitation",
+    "Subsection": "Musculoskeletal Physiotherapy",
+    "Service / Test Name": "Kinesio Taping",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "200 – 1,500 per session",
+    "Category": "Therapy / Ongoing"
+  },
+  {
+    "Department ID": "PHYS",
+    "Department": "Physiotherapy & Rehabilitation",
+    "Subsection": "Neurological Rehabilitation",
+    "Service / Test Name": "Neuro Physio Consultation",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 3,000 per session",
+    "Category": "Therapy / Ongoing"
+  },
+  {
+    "Department ID": "PHYS",
+    "Department": "Physiotherapy & Rehabilitation",
+    "Subsection": "Neurological Rehabilitation",
+    "Service / Test Name": "Gait Training",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 3,000 per session",
+    "Category": "Therapy / Ongoing"
+  },
+  {
+    "Department ID": "PHYS",
+    "Department": "Physiotherapy & Rehabilitation",
+    "Subsection": "Neurological Rehabilitation",
+    "Service / Test Name": "Balance Training",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 3,000 per session",
+    "Category": "Therapy / Ongoing"
+  },
+  {
+    "Department ID": "PHYS",
+    "Department": "Physiotherapy & Rehabilitation",
+    "Subsection": "Neurological Rehabilitation",
+    "Service / Test Name": "Bobath Therapy",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 3,000 per session",
+    "Category": "Therapy / Ongoing"
+  },
+  {
+    "Department ID": "PHYS",
+    "Department": "Physiotherapy & Rehabilitation",
+    "Subsection": "Neurological Rehabilitation",
+    "Service / Test Name": "Mirror Therapy",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 3,000 per session",
+    "Category": "Therapy / Ongoing"
+  },
+  {
+    "Department ID": "PHYS",
+    "Department": "Physiotherapy & Rehabilitation",
+    "Subsection": "Neurological Rehabilitation",
+    "Service / Test Name": "FES (Functional Electrical Stimulation)",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 3,000 per session",
+    "Category": "Therapy / Ongoing"
+  },
+  {
+    "Department ID": "PHYS",
+    "Department": "Physiotherapy & Rehabilitation",
+    "Subsection": "Speech & Language Therapy",
+    "Service / Test Name": "SLP Consultation",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 2,500 per session",
+    "Category": "Therapy / Ongoing"
+  },
+  {
+    "Department ID": "PHYS",
+    "Department": "Physiotherapy & Rehabilitation",
+    "Subsection": "Speech & Language Therapy",
+    "Service / Test Name": "Articulation Therapy",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 2,500 per session",
+    "Category": "Therapy / Ongoing"
+  },
+  {
+    "Department ID": "PHYS",
+    "Department": "Physiotherapy & Rehabilitation",
+    "Subsection": "Speech & Language Therapy",
+    "Service / Test Name": "Stuttering Therapy",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 2,500 per session",
+    "Category": "Therapy / Ongoing"
+  },
+  {
+    "Department ID": "PHYS",
+    "Department": "Physiotherapy & Rehabilitation",
+    "Subsection": "Speech & Language Therapy",
+    "Service / Test Name": "Voice Therapy",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 2,500 per session",
+    "Category": "Therapy / Ongoing"
+  },
+  {
+    "Department ID": "PHYS",
+    "Department": "Physiotherapy & Rehabilitation",
+    "Subsection": "Speech & Language Therapy",
+    "Service / Test Name": "Dysphagia (Swallowing) Therapy",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 2,500 per session",
+    "Category": "Therapy / Ongoing"
+  },
+  {
+    "Department ID": "PHYS",
+    "Department": "Physiotherapy & Rehabilitation",
+    "Subsection": "Speech & Language Therapy",
+    "Service / Test Name": "Augmentative Communication",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 2,500 per session",
+    "Category": "Therapy / Ongoing"
+  },
+  {
+    "Department ID": "ANES",
+    "Department": "Anesthesia & Pain Management",
+    "Subsection": "Pre-anesthesia Checkup (PAC)",
+    "Service / Test Name": "Anesthesiologist Consultation",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 2,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "ANES",
+    "Department": "Anesthesia & Pain Management",
+    "Subsection": "Pre-anesthesia Checkup (PAC)",
+    "Service / Test Name": "Pre-op Blood Tests",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 2,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "ANES",
+    "Department": "Anesthesia & Pain Management",
+    "Subsection": "Pre-anesthesia Checkup (PAC)",
+    "Service / Test Name": "ECG",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 2,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "ANES",
+    "Department": "Anesthesia & Pain Management",
+    "Subsection": "Pre-anesthesia Checkup (PAC)",
+    "Service / Test Name": "Echo (if indicated)",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 2,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "ANES",
+    "Department": "Anesthesia & Pain Management",
+    "Subsection": "Pre-anesthesia Checkup (PAC)",
+    "Service / Test Name": "Anesthesia Risk Assessment",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "300 – 2,000",
+    "Category": "Consultation / Diagnostic"
+  },
+  {
+    "Department ID": "ANES",
+    "Department": "Anesthesia & Pain Management",
+    "Subsection": "Chronic Pain Management",
+    "Service / Test Name": "Pain Specialist Consultation",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 80,000",
+    "Category": "Procedure / Ongoing"
+  },
+  {
+    "Department ID": "ANES",
+    "Department": "Anesthesia & Pain Management",
+    "Subsection": "Chronic Pain Management",
+    "Service / Test Name": "Epidural Steroid Injection",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 80,000",
+    "Category": "Procedure / Ongoing"
+  },
+  {
+    "Department ID": "ANES",
+    "Department": "Anesthesia & Pain Management",
+    "Subsection": "Chronic Pain Management",
+    "Service / Test Name": "Facet Joint Injection",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 80,000",
+    "Category": "Procedure / Ongoing"
+  },
+  {
+    "Department ID": "ANES",
+    "Department": "Anesthesia & Pain Management",
+    "Subsection": "Chronic Pain Management",
+    "Service / Test Name": "Nerve Block",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 80,000",
+    "Category": "Procedure / Ongoing"
+  },
+  {
+    "Department ID": "ANES",
+    "Department": "Anesthesia & Pain Management",
+    "Subsection": "Chronic Pain Management",
+    "Service / Test Name": "Radiofrequency Ablation (RFA)",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 80,000",
+    "Category": "Procedure / Ongoing"
+  },
+  {
+    "Department ID": "ANES",
+    "Department": "Anesthesia & Pain Management",
+    "Subsection": "Chronic Pain Management",
+    "Service / Test Name": "Spinal Cord Stimulation",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 80,000",
+    "Category": "Procedure / Ongoing"
+  },
+  {
+    "Department ID": "ANES",
+    "Department": "Anesthesia & Pain Management",
+    "Subsection": "Chronic Pain Management",
+    "Service / Test Name": "Trigger Point Injection",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 80,000",
+    "Category": "Procedure / Ongoing"
+  },
+  {
+    "Department ID": "EMER",
+    "Department": "Emergency & Critical Care",
+    "Subsection": "Emergency / Casualty",
+    "Service / Test Name": "Emergency Consultation",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 20,000",
+    "Category": "Emergency"
+  },
+  {
+    "Department ID": "EMER",
+    "Department": "Emergency & Critical Care",
+    "Subsection": "Emergency / Casualty",
+    "Service / Test Name": "Triage Assessment",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 20,000",
+    "Category": "Emergency"
+  },
+  {
+    "Department ID": "EMER",
+    "Department": "Emergency & Critical Care",
+    "Subsection": "Emergency / Casualty",
+    "Service / Test Name": "IV Line / Fluid Resuscitation",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 20,000",
+    "Category": "Emergency"
+  },
+  {
+    "Department ID": "EMER",
+    "Department": "Emergency & Critical Care",
+    "Subsection": "Emergency / Casualty",
+    "Service / Test Name": "Emergency Medications",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 20,000",
+    "Category": "Emergency"
+  },
+  {
+    "Department ID": "EMER",
+    "Department": "Emergency & Critical Care",
+    "Subsection": "Emergency / Casualty",
+    "Service / Test Name": "Wound Suturing",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 20,000",
+    "Category": "Emergency"
+  },
+  {
+    "Department ID": "EMER",
+    "Department": "Emergency & Critical Care",
+    "Subsection": "Emergency / Casualty",
+    "Service / Test Name": "Ambulance Charges",
+    "Pricing Tier": "Medium",
+    "Price Range (INR)": "500 – 20,000",
+    "Category": "Emergency"
+  },
+  {
+    "Department ID": "EMER",
+    "Department": "Emergency & Critical Care",
+    "Subsection": "ICU / ICCU",
+    "Service / Test Name": "ICU Bed Charges (per day)",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 50,000 per day",
+    "Category": "Critical Care / Ongoing"
+  },
+  {
+    "Department ID": "EMER",
+    "Department": "Emergency & Critical Care",
+    "Subsection": "ICU / ICCU",
+    "Service / Test Name": "Ventilator Charges",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 50,000 per day",
+    "Category": "Critical Care / Ongoing"
+  },
+  {
+    "Department ID": "EMER",
+    "Department": "Emergency & Critical Care",
+    "Subsection": "ICU / ICCU",
+    "Service / Test Name": "ABG Analysis",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 50,000 per day",
+    "Category": "Critical Care / Ongoing"
+  },
+  {
+    "Department ID": "EMER",
+    "Department": "Emergency & Critical Care",
+    "Subsection": "ICU / ICCU",
+    "Service / Test Name": "Central Line Insertion",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 50,000 per day",
+    "Category": "Critical Care / Ongoing"
+  },
+  {
+    "Department ID": "EMER",
+    "Department": "Emergency & Critical Care",
+    "Subsection": "ICU / ICCU",
+    "Service / Test Name": "Monitoring (Vitals / ECG)",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 50,000 per day",
+    "Category": "Critical Care / Ongoing"
+  },
+  {
+    "Department ID": "EMER",
+    "Department": "Emergency & Critical Care",
+    "Subsection": "ICU / ICCU",
+    "Service / Test Name": "ICU Medication",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 50,000 per day",
+    "Category": "Critical Care / Ongoing"
+  },
+  {
+    "Department ID": "EMER",
+    "Department": "Emergency & Critical Care",
+    "Subsection": "Burn Unit",
+    "Service / Test Name": "Burn Surgeon Consultation",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 5,00,000",
+    "Category": "Surgical / Critical Care"
+  },
+  {
+    "Department ID": "EMER",
+    "Department": "Emergency & Critical Care",
+    "Subsection": "Burn Unit",
+    "Service / Test Name": "Wound Assessment & Dressing",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 5,00,000",
+    "Category": "Surgical / Critical Care"
+  },
+  {
+    "Department ID": "EMER",
+    "Department": "Emergency & Critical Care",
+    "Subsection": "Burn Unit",
+    "Service / Test Name": "Skin Grafting",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 5,00,000",
+    "Category": "Surgical / Critical Care"
+  },
+  {
+    "Department ID": "EMER",
+    "Department": "Emergency & Critical Care",
+    "Subsection": "Burn Unit",
+    "Service / Test Name": "Fluid Resuscitation",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 5,00,000",
+    "Category": "Surgical / Critical Care"
+  },
+  {
+    "Department ID": "EMER",
+    "Department": "Emergency & Critical Care",
+    "Subsection": "Burn Unit",
+    "Service / Test Name": "Burn ICU Stay",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 5,00,000",
+    "Category": "Surgical / Critical Care"
+  },
+  {
+    "Department ID": "PHAR",
+    "Department": "Pharmacy & Drug Services",
+    "Subsection": "Outpatient Pharmacy",
+    "Service / Test Name": "OPD Prescription Dispensing",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "50 – 10,000",
+    "Category": "Pharmacy"
+  },
+  {
+    "Department ID": "PHAR",
+    "Department": "Pharmacy & Drug Services",
+    "Subsection": "Outpatient Pharmacy",
+    "Service / Test Name": "OTC Medicines",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "50 – 10,000",
+    "Category": "Pharmacy"
+  },
+  {
+    "Department ID": "PHAR",
+    "Department": "Pharmacy & Drug Services",
+    "Subsection": "Outpatient Pharmacy",
+    "Service / Test Name": "Chronic Disease Medications",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "50 – 10,000",
+    "Category": "Pharmacy"
+  },
+  {
+    "Department ID": "PHAR",
+    "Department": "Pharmacy & Drug Services",
+    "Subsection": "Outpatient Pharmacy",
+    "Service / Test Name": "Specialty Drug Supply",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "50 – 10,000",
+    "Category": "Pharmacy"
+  },
+  {
+    "Department ID": "PHAR",
+    "Department": "Pharmacy & Drug Services",
+    "Subsection": "Outpatient Pharmacy",
+    "Service / Test Name": "Drug Counseling",
+    "Pricing Tier": "Low",
+    "Price Range (INR)": "50 – 10,000",
+    "Category": "Pharmacy"
+  },
+  {
+    "Department ID": "PHAR",
+    "Department": "Pharmacy & Drug Services",
+    "Subsection": "Inpatient Pharmacy",
+    "Service / Test Name": "Inpatient Drug Supply",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 50,000",
+    "Category": "Pharmacy"
+  },
+  {
+    "Department ID": "PHAR",
+    "Department": "Pharmacy & Drug Services",
+    "Subsection": "Inpatient Pharmacy",
+    "Service / Test Name": "IV Preparation",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 50,000",
+    "Category": "Pharmacy"
+  },
+  {
+    "Department ID": "PHAR",
+    "Department": "Pharmacy & Drug Services",
+    "Subsection": "Inpatient Pharmacy",
+    "Service / Test Name": "Oncology Drug Reconstitution",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 50,000",
+    "Category": "Pharmacy"
+  },
+  {
+    "Department ID": "PHAR",
+    "Department": "Pharmacy & Drug Services",
+    "Subsection": "Inpatient Pharmacy",
+    "Service / Test Name": "Drug Interaction Review",
+    "Pricing Tier": "Low-Medium",
+    "Price Range (INR)": "500 – 50,000",
+    "Category": "Pharmacy"
+  },
+  {
+    "Department ID": "VASC",
+    "Department": "Vascular & Endovascular Surgery",
+    "Subsection": "Varicose Vein Treatment",
+    "Service / Test Name": "Vascular Surgeon Consultation",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "VASC",
+    "Department": "Vascular & Endovascular Surgery",
+    "Subsection": "Varicose Vein Treatment",
+    "Service / Test Name": "Duplex USG Doppler",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "VASC",
+    "Department": "Vascular & Endovascular Surgery",
+    "Subsection": "Varicose Vein Treatment",
+    "Service / Test Name": "Foam Sclerotherapy",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "VASC",
+    "Department": "Vascular & Endovascular Surgery",
+    "Subsection": "Varicose Vein Treatment",
+    "Service / Test Name": "Laser (EVLT) Treatment",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "VASC",
+    "Department": "Vascular & Endovascular Surgery",
+    "Subsection": "Varicose Vein Treatment",
+    "Service / Test Name": "Radiofrequency Ablation",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "VASC",
+    "Department": "Vascular & Endovascular Surgery",
+    "Subsection": "Varicose Vein Treatment",
+    "Service / Test Name": "Stripping & Ligation",
+    "Pricing Tier": "Medium-High",
+    "Price Range (INR)": "500 – 1,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "VASC",
+    "Department": "Vascular & Endovascular Surgery",
+    "Subsection": "Diabetic Foot",
+    "Service / Test Name": "Vascular Consultation",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "VASC",
+    "Department": "Vascular & Endovascular Surgery",
+    "Subsection": "Diabetic Foot",
+    "Service / Test Name": "ABI (Ankle Brachial Index)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "VASC",
+    "Department": "Vascular & Endovascular Surgery",
+    "Subsection": "Diabetic Foot",
+    "Service / Test Name": "Wound Care & Debridement",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "VASC",
+    "Department": "Vascular & Endovascular Surgery",
+    "Subsection": "Diabetic Foot",
+    "Service / Test Name": "Angioplasty (Peripheral)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "VASC",
+    "Department": "Vascular & Endovascular Surgery",
+    "Subsection": "Diabetic Foot",
+    "Service / Test Name": "Amputation (if needed)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "500 – 2,50,000",
+    "Category": "Procedure / Surgical"
+  },
+  {
+    "Department ID": "PLAS",
+    "Department": "Plastic & Reconstructive Surgery",
+    "Subsection": "Reconstructive Surgery",
+    "Service / Test Name": "Plastic Surgeon Consultation",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "1,000 – 3,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "PLAS",
+    "Department": "Plastic & Reconstructive Surgery",
+    "Subsection": "Reconstructive Surgery",
+    "Service / Test Name": "Skin Graft",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "1,000 – 3,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "PLAS",
+    "Department": "Plastic & Reconstructive Surgery",
+    "Subsection": "Reconstructive Surgery",
+    "Service / Test Name": "Flap Surgery",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "1,000 – 3,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "PLAS",
+    "Department": "Plastic & Reconstructive Surgery",
+    "Subsection": "Reconstructive Surgery",
+    "Service / Test Name": "Scar Revision",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "1,000 – 3,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "PLAS",
+    "Department": "Plastic & Reconstructive Surgery",
+    "Subsection": "Reconstructive Surgery",
+    "Service / Test Name": "Burn Reconstruction",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "1,000 – 3,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "PLAS",
+    "Department": "Plastic & Reconstructive Surgery",
+    "Subsection": "Reconstructive Surgery",
+    "Service / Test Name": "Cleft Lip & Palate Repair",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "1,000 – 3,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "PLAS",
+    "Department": "Plastic & Reconstructive Surgery",
+    "Subsection": "Cosmetic / Aesthetic Surgery",
+    "Service / Test Name": "Rhinoplasty (Nose Job)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "20,000 – 5,00,000",
+    "Category": "Surgical / Aesthetic"
+  },
+  {
+    "Department ID": "PLAS",
+    "Department": "Plastic & Reconstructive Surgery",
+    "Subsection": "Cosmetic / Aesthetic Surgery",
+    "Service / Test Name": "Blepharoplasty (Eyelid)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "20,000 – 5,00,000",
+    "Category": "Surgical / Aesthetic"
+  },
+  {
+    "Department ID": "PLAS",
+    "Department": "Plastic & Reconstructive Surgery",
+    "Subsection": "Cosmetic / Aesthetic Surgery",
+    "Service / Test Name": "Face Lift / Rhytidectomy",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "20,000 – 5,00,000",
+    "Category": "Surgical / Aesthetic"
+  },
+  {
+    "Department ID": "PLAS",
+    "Department": "Plastic & Reconstructive Surgery",
+    "Subsection": "Cosmetic / Aesthetic Surgery",
+    "Service / Test Name": "Liposuction",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "20,000 – 5,00,000",
+    "Category": "Surgical / Aesthetic"
+  },
+  {
+    "Department ID": "PLAS",
+    "Department": "Plastic & Reconstructive Surgery",
+    "Subsection": "Cosmetic / Aesthetic Surgery",
+    "Service / Test Name": "Abdominoplasty (Tummy Tuck)",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "20,000 – 5,00,000",
+    "Category": "Surgical / Aesthetic"
+  },
+  {
+    "Department ID": "PLAS",
+    "Department": "Plastic & Reconstructive Surgery",
+    "Subsection": "Cosmetic / Aesthetic Surgery",
+    "Service / Test Name": "Breast Augmentation",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "20,000 – 5,00,000",
+    "Category": "Surgical / Aesthetic"
+  },
+  {
+    "Department ID": "PLAS",
+    "Department": "Plastic & Reconstructive Surgery",
+    "Subsection": "Cosmetic / Aesthetic Surgery",
+    "Service / Test Name": "Gynecomastia Surgery",
+    "Pricing Tier": "High",
+    "Price Range (INR)": "20,000 – 5,00,000",
+    "Category": "Surgical / Aesthetic"
+  },
+  {
+    "Department ID": "SURG_ONC",
+    "Department": "Surgical Oncology",
+    "Subsection": "Cancer Surgery",
+    "Service / Test Name": "Surgical Oncologist Consultation",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 8,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "SURG_ONC",
+    "Department": "Surgical Oncology",
+    "Subsection": "Cancer Surgery",
+    "Service / Test Name": "Mastectomy (Breast Cancer)",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 8,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "SURG_ONC",
+    "Department": "Surgical Oncology",
+    "Subsection": "Cancer Surgery",
+    "Service / Test Name": "Thyroidectomy (Cancer)",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 8,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "SURG_ONC",
+    "Department": "Surgical Oncology",
+    "Subsection": "Cancer Surgery",
+    "Service / Test Name": "Gastrectomy",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 8,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "SURG_ONC",
+    "Department": "Surgical Oncology",
+    "Subsection": "Cancer Surgery",
+    "Service / Test Name": "Colectomy (Colon Cancer)",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 8,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "SURG_ONC",
+    "Department": "Surgical Oncology",
+    "Subsection": "Cancer Surgery",
+    "Service / Test Name": "Hepatic Resection",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 8,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "SURG_ONC",
+    "Department": "Surgical Oncology",
+    "Subsection": "Cancer Surgery",
+    "Service / Test Name": "Whipple Procedure (Pancreas)",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 8,00,000",
+    "Category": "Surgical"
+  },
+  {
+    "Department ID": "SURG_ONC",
+    "Department": "Surgical Oncology",
+    "Subsection": "Cancer Surgery",
+    "Service / Test Name": "Lymph Node Dissection",
+    "Pricing Tier": "Very High",
+    "Price Range (INR)": "5,000 – 8,00,000",
+    "Category": "Surgical"
+  }
+]

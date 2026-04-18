@@ -1,0 +1,463 @@
+[
+  {
+    "id": "72cd727f-b699-4612-8d80-f0558f5c2c40",
+    "name": "Aditya",
+    "mobile": "9876543210",
+    "email": "aditya@gmail.com",
+    "city": "Mumbai",
+    "insurance": {
+      "hasInsurance": true,
+      "company": "Star Health",
+      "limit": 100000
+    },
+    "medical": {
+      "problem": "piles pain",
+      "department": "Proctology",
+      "subsection": "Piles / Hemorrhoids",
+      "service": "Laser Hemorrhoidectomy",
+      "serviceId": "s1"
+    },
+    "context": {
+      "lastDoctor": "Dr.Mahesh",
+      "consultedBefore": false
+    },
+    "status": "new",
+    "hospitalMatch": {
+      "matchedHospitals": [
+        "mum_4",
+        "mum_1",
+        "mum_2",
+        "mum_3"
+      ],
+      "matchedHospitalDetails": [
+        {
+          "id": "mum_4",
+          "name": "Lilavati Hospital",
+          "city": "Mumbai",
+          "rating": 4.6,
+          "address": "Bandra, Mumbai",
+          "doctors": [
+            "Dr. Deepak Gupta",
+            "Dr. Anita Joshi"
+          ],
+          "insuranceAccepted": [
+            "Star Health",
+            "ICICI Lombard",
+            "New India Assurance",
+            "United India"
+          ],
+          "insuranceMatched": true,
+          "priceMin": 66000,
+          "priceMax": 99000
+        },
+        {
+          "id": "mum_1",
+          "name": "Apollo Spectra Hospital",
+          "city": "Mumbai",
+          "rating": 4.5,
+          "address": "Tardeo, Mumbai",
+          "doctors": [
+            "Dr. Rajesh Mehta",
+            "Dr. Sneha Patil"
+          ],
+          "insuranceAccepted": [
+            "Star Health",
+            "HDFC Ergo",
+            "New India Assurance"
+          ],
+          "insuranceMatched": true,
+          "priceMin": 57000,
+          "priceMax": 86000
+        },
+        {
+          "id": "mum_2",
+          "name": "Fortis Hospital",
+          "city": "Mumbai",
+          "rating": 4.4,
+          "address": "Mulund, Mumbai",
+          "doctors": [
+            "Dr. Anil Kumar",
+            "Dr. Priya Nair"
+          ],
+          "insuranceAccepted": [
+            "Star Health",
+            "ICICI Lombard",
+            "Bajaj Allianz"
+          ],
+          "insuranceMatched": true,
+          "priceMin": 61500,
+          "priceMax": 92500
+        },
+        {
+          "id": "mum_3",
+          "name": "Nanavati Max Hospital",
+          "city": "Mumbai",
+          "rating": 4.3,
+          "address": "Vile Parle, Mumbai",
+          "doctors": [
+            "Dr. Suresh Iyer",
+            "Dr. Meena Shah"
+          ],
+          "insuranceAccepted": [
+            "HDFC Ergo",
+            "Bajaj Allianz",
+            "United India"
+          ],
+          "insuranceMatched": false,
+          "priceMin": 53000,
+          "priceMax": 79000
+        }
+      ],
+      "estimatedCostMin": 53000,
+      "estimatedCostMax": 99000
+    },
+    "createdAt": "2026-04-11T23:27:50.748Z"
+  },
+  {
+    "id": "ed35e3d4-d342-45af-a44e-3fca8d91f92c",
+    "name": "Om",
+    "mobile": "9876543219",
+    "email": "om@gmail.com",
+    "city": "Mumbai",
+    "insurance": {
+      "hasInsurance": false,
+      "company": "",
+      "limit": 0
+    },
+    "medical": {
+      "problem": "kidney stone",
+      "department": "Urology",
+      "subsection": "Urolithiasis",
+      "service": "Laser Lithotripsy (RIRS / PCNL)",
+      "serviceId": "s4"
+    },
+    "context": {
+      "lastDoctor": "Dr.Bhanjan",
+      "consultedBefore": false
+    },
+    "status": "new",
+    "hospitalMatch": {
+      "matchedHospitals": [
+        "mum_4",
+        "mum_1",
+        "mum_2",
+        "mum_3"
+      ],
+      "matchedHospitalDetails": [
+        {
+          "id": "mum_4",
+          "name": "Lilavati Hospital",
+          "city": "Mumbai",
+          "rating": 4.6,
+          "address": "Bandra, Mumbai",
+          "doctors": [
+            "Dr. Deepak Gupta",
+            "Dr. Anita Joshi"
+          ],
+          "insuranceAccepted": [
+            "Star Health",
+            "ICICI Lombard",
+            "New India Assurance",
+            "United India"
+          ],
+          "insuranceMatched": false,
+          "priceMin": 90000,
+          "priceMax": 135000
+        },
+        {
+          "id": "mum_1",
+          "name": "Apollo Spectra Hospital",
+          "city": "Mumbai",
+          "rating": 4.5,
+          "address": "Tardeo, Mumbai",
+          "doctors": [
+            "Dr. Rajesh Mehta",
+            "Dr. Sneha Patil"
+          ],
+          "insuranceAccepted": [
+            "Star Health",
+            "HDFC Ergo",
+            "New India Assurance"
+          ],
+          "insuranceMatched": false,
+          "priceMin": 78000,
+          "priceMax": 117000
+        },
+        {
+          "id": "mum_2",
+          "name": "Fortis Hospital",
+          "city": "Mumbai",
+          "rating": 4.4,
+          "address": "Mulund, Mumbai",
+          "doctors": [
+            "Dr. Anil Kumar",
+            "Dr. Priya Nair"
+          ],
+          "insuranceAccepted": [
+            "Star Health",
+            "ICICI Lombard",
+            "Bajaj Allianz"
+          ],
+          "insuranceMatched": false,
+          "priceMin": 84000,
+          "priceMax": 126000
+        },
+        {
+          "id": "mum_3",
+          "name": "Nanavati Max Hospital",
+          "city": "Mumbai",
+          "rating": 4.3,
+          "address": "Vile Parle, Mumbai",
+          "doctors": [
+            "Dr. Suresh Iyer",
+            "Dr. Meena Shah"
+          ],
+          "insuranceAccepted": [
+            "HDFC Ergo",
+            "Bajaj Allianz",
+            "United India"
+          ],
+          "insuranceMatched": false,
+          "priceMin": 72000,
+          "priceMax": 108000
+        }
+      ],
+      "estimatedCostMin": 72000,
+      "estimatedCostMax": 135000
+    },
+    "createdAt": "2026-04-11T23:29:26.285Z"
+  },
+  {
+    "id": "e403b461-a5a6-4120-aaf5-2798b8f9196f",
+    "name": "kailash",
+    "mobile": "9876543210",
+    "email": "kailash@gmail.com",
+    "city": "Navi Mumbai",
+    "insurance": {
+      "hasInsurance": true,
+      "company": "HDFC Ergo",
+      "limit": 9999998
+    },
+    "medical": {
+      "problem": "fissure",
+      "department": "Proctology",
+      "subsection": "Anal Fissure",
+      "service": "Laser Fissurectomy",
+      "serviceId": "s2"
+    },
+    "context": {
+      "lastDoctor": "",
+      "consultedBefore": false
+    },
+    "status": "new",
+    "hospitalMatch": {
+      "matchedHospitals": [
+        "nm_2",
+        "nm_1",
+        "nm_3",
+        "nm_4"
+      ],
+      "matchedHospitalDetails": [
+        {
+          "id": "nm_2",
+          "name": "Kokilaben Hospital",
+          "city": "Navi Mumbai",
+          "rating": 4.5,
+          "address": "Kharghar, Navi Mumbai",
+          "doctors": [
+            "Dr. Vinod Sharma",
+            "Dr. Rekha Desai"
+          ],
+          "insuranceAccepted": [
+            "HDFC Ergo",
+            "ICICI Lombard",
+            "Star Health"
+          ],
+          "insuranceMatched": true,
+          "priceMin": 33500,
+          "priceMax": 50000
+        },
+        {
+          "id": "nm_1",
+          "name": "MGM Hospital",
+          "city": "Navi Mumbai",
+          "rating": 4.2,
+          "address": "Sector 3, Vashi, Navi Mumbai",
+          "doctors": [
+            "Dr. Ramesh Patil",
+            "Dr. Kavita More"
+          ],
+          "insuranceAccepted": [
+            "Star Health",
+            "New India Assurance",
+            "United India"
+          ],
+          "insuranceMatched": false,
+          "priceMin": 25500,
+          "priceMax": 38500
+        },
+        {
+          "id": "nm_3",
+          "name": "Terna Speciality Hospital",
+          "city": "Navi Mumbai",
+          "rating": 4.1,
+          "address": "Nerul, Navi Mumbai",
+          "doctors": [
+            "Dr. Prakash Naik",
+            "Dr. Sunita Kadam"
+          ],
+          "insuranceAccepted": [
+            "United India",
+            "New India Assurance"
+          ],
+          "insuranceMatched": false,
+          "priceMin": 24500,
+          "priceMax": 36500
+        },
+        {
+          "id": "nm_4",
+          "name": "NMMC Hospital",
+          "city": "Navi Mumbai",
+          "rating": 3.9,
+          "address": "Belapur, Navi Mumbai",
+          "doctors": [
+            "Dr. Santosh Rane",
+            "Dr. Lata Sawant"
+          ],
+          "insuranceAccepted": [
+            "United India",
+            "Bajaj Allianz"
+          ],
+          "insuranceMatched": false,
+          "priceMin": 20500,
+          "priceMax": 30500
+        }
+      ],
+      "estimatedCostMin": 20500,
+      "estimatedCostMax": 50000
+    },
+    "createdAt": "2026-04-11T23:36:55.929Z",
+    "updatedAt": "2026-04-11T23:51:36.285Z"
+  },
+  {
+    "id": "673a27a6-9c25-42f9-869a-631865da70b7",
+    "name": "jack",
+    "mobile": "9876543210",
+    "email": "jack@gmail.com",
+    "city": "Mumbai",
+    "insurance": {
+      "hasInsurance": true,
+      "company": "Bajaj Allianz",
+      "limit": 1000000
+    },
+    "medical": {
+      "problem": "kidney stone",
+      "department": "Urology",
+      "subsection": "Urolithiasis",
+      "service": "Laser Lithotripsy (RIRS / PCNL)",
+      "serviceId": "s4"
+    },
+    "context": {
+      "lastDoctor": "",
+      "consultedBefore": false
+    },
+    "status": "converted",
+    "hospitalMatch": {
+      "matchedHospitals": [
+        "mum_2",
+        "mum_3",
+        "mum_4",
+        "mum_1"
+      ],
+      "matchedHospitalDetails": [
+        {
+          "id": "mum_2",
+          "name": "Fortis Hospital",
+          "city": "Mumbai",
+          "rating": 4.4,
+          "address": "Mulund, Mumbai",
+          "doctors": [
+            "Dr. Anil Kumar",
+            "Dr. Priya Nair"
+          ],
+          "insuranceAccepted": [
+            "Star Health",
+            "ICICI Lombard",
+            "Bajaj Allianz"
+          ],
+          "insuranceMatched": true,
+          "priceMin": 84000,
+          "priceMax": 126000
+        },
+        {
+          "id": "mum_3",
+          "name": "Nanavati Max Hospital",
+          "city": "Mumbai",
+          "rating": 4.3,
+          "address": "Vile Parle, Mumbai",
+          "doctors": [
+            "Dr. Suresh Iyer",
+            "Dr. Meena Shah"
+          ],
+          "insuranceAccepted": [
+            "HDFC Ergo",
+            "Bajaj Allianz",
+            "United India"
+          ],
+          "insuranceMatched": true,
+          "priceMin": 72000,
+          "priceMax": 108000
+        },
+        {
+          "id": "mum_4",
+          "name": "Lilavati Hospital",
+          "city": "Mumbai",
+          "rating": 4.6,
+          "address": "Bandra, Mumbai",
+          "doctors": [
+            "Dr. Deepak Gupta",
+            "Dr. Anita Joshi"
+          ],
+          "insuranceAccepted": [
+            "Star Health",
+            "ICICI Lombard",
+            "New India Assurance",
+            "United India"
+          ],
+          "insuranceMatched": false,
+          "priceMin": 90000,
+          "priceMax": 135000
+        },
+        {
+          "id": "mum_1",
+          "name": "Apollo Spectra Hospital",
+          "city": "Mumbai",
+          "rating": 4.5,
+          "address": "Tardeo, Mumbai",
+          "doctors": [
+            "Dr. Rajesh Mehta",
+            "Dr. Sneha Patil"
+          ],
+          "insuranceAccepted": [
+            "Star Health",
+            "HDFC Ergo",
+            "New India Assurance"
+          ],
+          "insuranceMatched": false,
+          "priceMin": 78000,
+          "priceMax": 117000
+        }
+      ],
+      "estimatedCostMin": 72000,
+      "estimatedCostMax": 135000
+    },
+    "createdAt": "2026-04-11T23:53:30.755Z",
+    "remarks": [
+      {
+        "text": "1st call",
+        "createdAt": "2026-04-11T23:54:53.236Z"
+      }
+    ],
+    "updatedAt": "2026-04-11T23:55:23.397Z"
+  }
+]

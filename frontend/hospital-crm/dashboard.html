@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard – Esticure CRM</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/crm.css" />
+</head>
+<body>
+
+<div class="crm-layout">
+
+  <!-- ── Sidebar ── -->
+  <aside class="sidebar" role="navigation" aria-label="CRM navigation">
+    <div class="sidebar__brand">
+      <div class="sidebar__brand-icon"><i class="fas fa-compass-medical"></i></div>
+      <span>Esti<span>cure</span></span>
+    </div>
+
+    <div class="sidebar__hospital">
+      <div class="sidebar__avatar" id="sidebar-avatar">H</div>
+      <div class="sidebar__hosp-info">
+        <div class="sidebar__hosp-name" id="sidebar-hospital-name">Hospital</div>
+        <div class="sidebar__hosp-city" id="sidebar-hospital-city">City</div>
+      </div>
+    </div>
+
+    <div class="sidebar__nav-label">Main Menu</div>
+    <ul class="sidebar__nav">
+      <li>
+        <a href="dashboard.html" class="active" aria-current="page">
+          <i class="fas fa-chart-line nav-icon"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="leads.html">
+          <i class="fas fa-users nav-icon"></i>
+          <span>All Leads</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="sidebar__footer">
+      <button class="sidebar__logout" data-logout>
+        <i class="fas fa-sign-out-alt nav-icon"></i>
+        <span>Sign Out</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ── Main content ── -->
+  <main class="crm-main" role="main">
+
+    <!-- Topbar -->
+    <div class="crm-topbar">
+      <div>
+        <div class="crm-topbar__title">Dashboard</div>
+        <div class="crm-topbar__sub" id="welcome-msg">Loading…</div>
+      </div>
+      <div class="crm-topbar__actions">
+        <a href="leads.html" class="btn-action-primary">
+          <i class="fas fa-users"></i>View All Leads
+        </a>
+      </div>
+    </div>
+
+    <!-- Stat cards -->
+    <div class="stats-grid" id="stats-grid">
+      <div class="skeleton" style="height:112px"></div>
+      <div class="skeleton" style="height:112px"></div>
+      <div class="skeleton" style="height:112px"></div>
+      <div class="skeleton" style="height:112px"></div>
+    </div>
+
+    <!-- Recent leads table -->
+    <div class="section-header">
+      <h2><i class="fas fa-clock" style="color:#0d9488;margin-right:8px"></i>Recent Leads</h2>
+      <a href="leads.html">View all <i class="fas fa-arrow-right" style="margin-left:4px;font-size:12px"></i></a>
+    </div>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Patient</th>
+            <th>City</th>
+            <th>Treatment</th>
+            <th>Insurance</th>
+            <th>Estimate</th>
+            <th>Status</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody id="recent-tbody">
+          <tr>
+            <td colspan="7">
+              <div class="loading-state">
+                <div class="loading-spinner"></div>
+                <p>Loading leads…</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+</div>
+
+<script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/crm.js"></script>
+<script>
+  const session = requireAuth();
+
+  if (session) {
+    initSidebarInfo();
+    updateSidebarAvatar(session.name);
+
+    document.getElementById('welcome-msg').textContent =
+      `Welcome back, ${session.name} — ${session.city}`;
+
+    loadDashboard(session.hospitalId);
+  }
+
+  function updateSidebarAvatar(name) {
+    const el = document.getElementById('sidebar-avatar');
+    if (el && name) {
+      const parts = name.trim().split(' ');
+      el.textContent = parts.length >= 2
+        ? (parts[0][0] + parts[parts.length - 1][0]).toUpperCase()
+        : name.slice(0,2).toUpperCase();
+    }
+  }
+
+  async function loadDashboard(hospitalId) {
+    try {
+      const leads = await getLeads(hospitalId);
+
+      const total     = leads.length;
+      const newCount  = leads.filter((l) => l.status === 'new').length;
+      const contacted = leads.filter((l) => l.status === 'contacted').length;
+      const converted = leads.filter((l) => l.status === 'converted').length;
+      const rejected  = leads.filter((l) => l.status === 'rejected').length;
+
+      renderStats({ total, newCount, contacted, converted, rejected });
+      renderRecentLeads(leads.slice(0, 10));
+    } catch (err) {
+      showToast(`Failed to load leads: ${err.message}`, 'error');
+      document.getElementById('stats-grid').innerHTML = `
+        <div style="grid-column:1/-1;padding:24px;text-align:center;color:#dc2626;font-size:14px">
+          <i class="fas fa-triangle-exclamation" style="margin-right:6px"></i>${escHtml(err.message)}
+        </div>`;
+    }
+  }
+
+  function renderStats({ total, newCount, contacted, converted, rejected }) {
+    document.getElementById('stats-grid').innerHTML = `
+      <div class="stat-card">
+        <div class="stat-card__icon-box stat-card__icon-box--teal">
+          <i class="fas fa-users"></i>
+        </div>
+        <div class="stat-card__body">
+          <div class="stat-card__label">Total Leads</div>
+          <div class="stat-card__value">${total}</div>
+          <div class="stat-card__sub">All time</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card__icon-box stat-card__icon-box--blue">
+          <i class="fas fa-bell"></i>
+        </div>
+        <div class="stat-card__body">
+          <div class="stat-card__label">New</div>
+          <div class="stat-card__value" style="color:#2563eb">${newCount}</div>
+          <div class="stat-card__sub">Awaiting contact</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card__icon-box stat-card__icon-box--amber">
+          <i class="fas fa-phone"></i>
+        </div>
+        <div class="stat-card__body">
+          <div class="stat-card__label">Contacted</div>
+          <div class="stat-card__value" style="color:#d97706">${contacted}</div>
+          <div class="stat-card__sub">In progress</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card__icon-box stat-card__icon-box--green">
+          <i class="fas fa-circle-check"></i>
+        </div>
+        <div class="stat-card__body">
+          <div class="stat-card__label">Converted</div>
+          <div class="stat-card__value" style="color:#16a34a">${converted}</div>
+          <div class="stat-card__sub">Booked / admitted</div>
+        </div>
+      </div>
+    `;
+  }
+
+  function renderRecentLeads(leads) {
+    const tbody = document.getElementById('recent-tbody');
+
+    if (!leads.length) {
+      tbody.innerHTML = `
+        <tr><td colspan="7">
+          <div class="empty-state">
+            <i class="fas fa-inbox empty-icon" style="font-size:40px;color:#e2e8f0"></i>
+            <h3>No leads yet</h3>
+            <p>Leads from Esticure patients will appear here automatically.</p>
+          </div>
+        </td></tr>`;
+      return;
+    }
+
+    tbody.innerHTML = leads.map((lead) => `
+      <tr onclick="window.location.href='lead-detail.html?id=${escHtml(lead.id)}'">
+        <td>
+          <strong>${escHtml(lead.name)}</strong>
+          <small>${escHtml(lead.mobile)}</small>
+        </td>
+        <td>
+          <span style="display:flex;align-items:center;gap:5px">
+            <i class="fas fa-map-marker-alt" style="color:#94a3b8;font-size:11px"></i>
+            ${escHtml(lead.city)}
+          </span>
+        </td>
+        <td>
+          ${escHtml(lead.medical?.service || '—')}
+          <small>${escHtml(lead.medical?.department || '')}</small>
+        </td>
+        <td>
+          ${lead.insurance?.hasInsurance
+            ? `<span style="color:#16a34a;font-weight:600"><i class="fas fa-shield-check" style="margin-right:4px"></i>${escHtml(lead.insurance.company)}</span>`
+            : '<span style="color:#94a3b8"><i class="fas fa-times" style="margin-right:4px"></i>No</span>'}
+        </td>
+        <td>
+          ${lead.hospitalMatch
+            ? `<span style="font-weight:600;color:#0f172a">${fmtINR(lead.hospitalMatch.estimatedCostMin)}</span>
+               <small>– ${fmtINR(lead.hospitalMatch.estimatedCostMax)}</small>`
+            : '<span style="color:#94a3b8">—</span>'}
+        </td>
+        <td>${statusBadge(lead.status)}</td>
+        <td style="color:#64748b;font-size:13px">${fmtDate(lead.createdAt)}</td>
+      </tr>
+    `).join('');
+  }
+</script>
+
+</body>
+</html>

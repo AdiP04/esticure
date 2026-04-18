@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hospital Login – Esticure CRM</title>
+  <meta name="description" content="Hospital Partner Portal — Sign in to manage your patient leads." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/crm.css" />
+</head>
+<body class="auth-page">
+
+  <div class="auth-card">
+    <!-- Icon -->
+    <div class="auth-icon-box">
+      <i class="fas fa-compass-medical"></i>
+    </div>
+
+    <!-- Logo -->
+    <div class="auth-logo">Esti<span>cure</span></div>
+    <div class="auth-subtitle">Hospital Partner Portal</div>
+
+    <!-- Login form -->
+    <form id="login-form" novalidate>
+      <label class="auth-label" for="login-email">
+        <i class="fas fa-envelope" style="margin-right:5px;color:#94a3b8"></i>Email Address
+      </label>
+      <div class="auth-input-wrap">
+        <i class="fas fa-envelope auth-input-ico"></i>
+        <input
+          id="login-email"
+          class="auth-input"
+          type="email"
+          placeholder="admin@hospital.com"
+          autocomplete="email"
+          required
+        />
+      </div>
+
+      <label class="auth-label" for="login-password" style="margin-top:16px">
+        <i class="fas fa-lock" style="margin-right:5px;color:#94a3b8"></i>Password
+      </label>
+      <div class="auth-input-wrap">
+        <i class="fas fa-lock auth-input-ico"></i>
+        <input
+          id="login-password"
+          class="auth-input"
+          type="password"
+          placeholder="Your password"
+          autocomplete="current-password"
+          required
+        />
+      </div>
+
+      <div id="login-error" class="auth-error" role="alert">
+        <i class="fas fa-exclamation-circle"></i>
+        <span id="login-error-text"></span>
+      </div>
+
+      <button id="login-btn" class="auth-btn" type="submit">
+        <i class="fas fa-sign-in-alt" style="margin-right:8px"></i>Sign In
+      </button>
+    </form>
+
+    <!-- Demo credentials -->
+    <p class="auth-demo" style="margin-top:18px">
+      <i class="fas fa-circle-info" style="color:#94a3b8;margin-right:4px"></i>
+      Demo: <code style="background:#f1f5f9;padding:2px 6px;border-radius:4px;font-size:11.5px">admin@apollomumbai.com</code> /
+      <code style="background:#f1f5f9;padding:2px 6px;border-radius:4px;font-size:11.5px">hospital123</code>
+    </p>
+
+    <!-- API URL Config -->
+    <details class="auth-api-config" id="api-config-details">
+      <summary>
+        <i class="fas fa-cog" style="margin-right:5px"></i>Configure API URL
+      </summary>
+      <div class="auth-api-config-body">
+        <p>If the backend runs on a different host or port, set it here:</p>
+        <div class="auth-input-wrap">
+          <i class="fas fa-link auth-input-ico"></i>
+          <input
+            id="api-url-input"
+            type="text"
+            placeholder="http://your-server:3000"
+            class="auth-input"
+            style="margin-bottom:8px"
+          />
+        </div>
+        <button class="auth-api-save-btn" onclick="saveApiUrl()">
+          <i class="fas fa-save" style="margin-right:6px"></i>Save &amp; Reload
+        </button>
+      </div>
+    </details>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script>
+    // If already logged in, redirect to dashboard
+    if (getSession()) {
+      window.location.replace('dashboard.html');
+    }
+
+    // Pre-fill stored API URL
+    const storedUrl = localStorage.getItem('esticure_api_url') || '';
+    const apiInput  = document.getElementById('api-url-input');
+    if (apiInput && storedUrl) apiInput.value = storedUrl;
+
+    function saveApiUrl() {
+      const val = (document.getElementById('api-url-input').value || '').trim().replace(/\/$/, '');
+      if (val) { localStorage.setItem('esticure_api_url', val); }
+      else      { localStorage.removeItem('esticure_api_url'); }
+      window.location.reload();
+    }
+    window.saveApiUrl = saveApiUrl;
+
+    // Form submission
+    document.getElementById('login-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const email    = document.getElementById('login-email').value.trim();
+      const password = document.getElementById('login-password').value;
+      const errorEl  = document.getElementById('login-error');
+      const errorTxt = document.getElementById('login-error-text');
+      const btn      = document.getElementById('login-btn');
+
+      // Client-side validation
+      if (!email || !password) {
+        errorTxt.textContent = 'Please enter both email and password.';
+        errorEl.classList.add('visible');
+        return;
+      }
+
+      btn.disabled = true;
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin" style="margin-right:8px"></i>Signing in…';
+      errorEl.classList.remove('visible');
+
+      try {
+        const result = await hospitalLogin(email, password);
+        saveSession({ hospitalId: result.hospitalId, name: result.name, city: result.city });
+        window.location.replace('dashboard.html');
+      } catch (err) {
+        errorTxt.textContent = err.message || 'Login failed. Check your credentials.';
+        errorEl.classList.add('visible');
+        btn.disabled = false;
+        btn.innerHTML = '<i class="fas fa-sign-in-alt" style="margin-right:8px"></i>Sign In';
+      }
+    });
+
+    // Allow enter key on both fields
+    ['login-email', 'login-password'].forEach((id) => {
+      document.getElementById(id)?.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') document.getElementById('login-form').dispatchEvent(new Event('submit'));
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+[
+  {
+    "id": "s1",
+    "problem": "piles pain",
+    "keywords": ["piles", "hemorrhoids", "bleeding rectum", "anal pain", "rectal bleeding", "bavasir"],
+    "department": "Proctology",
+    "subsection": "Piles / Hemorrhoids",
+    "service": "Laser Hemorrhoidectomy",
+    "basePrice": 55000
+  },
+  {
+    "id": "s2",
+    "problem": "fissure",
+    "keywords": ["fissure", "anal fissure", "anal crack", "fissure pain", "anal cut"],
+    "department": "Proctology",
+    "subsection": "Anal Fissure",
+    "service": "Laser Fissurectomy",
+    "basePrice": 32000
+  },
+  {
+    "id": "s3",
+    "problem": "fistula",
+    "keywords": ["fistula", "anal fistula", "bhagandara", "discharge near anus", "fistula-in-ano"],
+    "department": "Proctology",
+    "subsection": "Anal Fistula",
+    "service": "VAAFT / Laser Fistula Surgery",
+    "basePrice": 65000
+  },
+  {
+    "id": "s4",
+    "problem": "kidney stone",
+    "keywords": ["kidney stone", "renal stone", "urinary stone", "kidney pain", "stone in kidney", "pathri"],
+    "department": "Urology",
+    "subsection": "Urolithiasis",
+    "service": "Laser Lithotripsy (RIRS / PCNL)",
+    "basePrice": 75000
+  },
+  {
+    "id": "s5",
+    "problem": "gallbladder stone",
+    "keywords": ["gallbladder", "gallstone", "cholecystitis", "pitta ki pathri", "gallbladder pain", "bile stone"],
+    "department": "Gastroenterology",
+    "subsection": "Gallbladder Disease",
+    "service": "Laparoscopic Cholecystectomy",
+    "basePrice": 60000
+  },
+  {
+    "id": "s6",
+    "problem": "hernia",
+    "keywords": ["hernia", "inguinal hernia", "umbilical hernia", "bulge", "hernia repair", "andkosh"],
+    "department": "General Surgery",
+    "subsection": "Hernia",
+    "service": "Laparoscopic Hernia Repair",
+    "basePrice": 55000
+  },
+  {
+    "id": "s7",
+    "problem": "knee pain",
+    "keywords": ["knee pain", "knee replacement", "arthritis", "knee swelling", "joint pain knee", "ghutne ka dard"],
+    "department": "Orthopaedics",
+    "subsection": "Knee Joint",
+    "service": "Total Knee Replacement",
+    "basePrice": 200000
+  },
+  {
+    "id": "s8",
+    "problem": "back pain",
+    "keywords": ["back pain", "spine pain", "disc slip", "spondylosis", "lumbar pain", "sciatica", "kamar dard"],
+    "department": "Orthopaedics",
+    "subsection": "Spine",
+    "service": "Microdiscectomy / Spinal Fusion",
+    "basePrice": 130000
+  },
+  {
+    "id": "s9",
+    "problem": "cataract",
+    "keywords": ["cataract", "eye cataract", "cloudy vision", "motiabind", "white eye", "lens replacement"],
+    "department": "Ophthalmology",
+    "subsection": "Cataract",
+    "service": "Phacoemulsification with IOL",
+    "basePrice": 45000
+  },
+  {
+    "id": "s10",
+    "problem": "sinusitis",
+    "keywords": ["sinusitis", "sinus", "nasal block", "sinus pain", "chronic sinusitis", "FESS"],
+    "department": "ENT",
+    "subsection": "Sinusitis",
+    "service": "Functional Endoscopic Sinus Surgery (FESS)",
+    "basePrice": 50000
+  },
+  {
+    "id": "s11",
+    "problem": "thyroid",
+    "keywords": ["thyroid", "goitre", "thyroid swelling", "hypothyroid", "thyroid surgery", "neck swelling"],
+    "department": "Endocrinology / Surgery",
+    "subsection": "Thyroid",
+    "service": "Thyroidectomy",
+    "basePrice": 85000
+  },
+  {
+    "id": "s12",
+    "problem": "appendix",
+    "keywords": ["appendix", "appendicitis", "appendix pain", "right side pain", "appendix surgery"],
+    "department": "General Surgery",
+    "subsection": "Appendicitis",
+    "service": "Laparoscopic Appendectomy",
+    "basePrice": 45000
+  },
+  {
+    "id": "s13",
+    "problem": "tonsils",
+    "keywords": ["tonsils", "tonsillitis", "throat pain", "swollen tonsils", "recurrent throat infection"],
+    "department": "ENT",
+    "subsection": "Tonsillitis",
+    "service": "Tonsillectomy",
+    "basePrice": 35000
+  },
+  {
+    "id": "s14",
+    "problem": "varicose veins",
+    "keywords": ["varicose veins", "leg veins", "swollen veins", "venous insufficiency", "spider veins"],
+    "department": "Vascular Surgery",
+    "subsection": "Varicose Veins",
+    "service": "Laser Varicose Vein Surgery (EVLA)",
+    "basePrice": 60000
+  },
+  {
+    "id": "s15",
+    "problem": "uterus fibroid",
+    "keywords": ["fibroid", "uterus fibroid", "myoma", "heavy periods", "uterine fibroid", "fibroid removal"],
+    "department": "Gynaecology",
+    "subsection": "Uterine Fibroids",
+    "service": "Laparoscopic Myomectomy",
+    "basePrice": 80000
+  }
+]

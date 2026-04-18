@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Leads – Esticure CRM</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/crm.css" />
+</head>
+<body>
+
+<div class="crm-layout">
+
+  <!-- ── Sidebar ── -->
+  <aside class="sidebar" role="navigation" aria-label="CRM navigation">
+    <div class="sidebar__brand">
+      <div class="sidebar__brand-icon"><i class="fas fa-compass-medical"></i></div>
+      <span>Esti<span>cure</span></span>
+    </div>
+
+    <div class="sidebar__hospital">
+      <div class="sidebar__avatar" id="sidebar-avatar">H</div>
+      <div class="sidebar__hosp-info">
+        <div class="sidebar__hosp-name" id="sidebar-hospital-name">Hospital</div>
+        <div class="sidebar__hosp-city" id="sidebar-hospital-city">City</div>
+      </div>
+    </div>
+
+    <div class="sidebar__nav-label">Main Menu</div>
+    <ul class="sidebar__nav">
+      <li>
+        <a href="dashboard.html">
+          <i class="fas fa-chart-line nav-icon"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="leads.html" class="active" aria-current="page">
+          <i class="fas fa-users nav-icon"></i>
+          <span>All Leads</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="sidebar__footer">
+      <button class="sidebar__logout" data-logout>
+        <i class="fas fa-sign-out-alt nav-icon"></i>
+        <span>Sign Out</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ── Main ── -->
+  <main class="crm-main" role="main">
+
+    <div class="crm-topbar">
+      <div>
+        <div class="crm-topbar__title">All Leads</div>
+        <div class="crm-topbar__sub" id="leads-count-sub">Loading leads…</div>
+      </div>
+    </div>
+
+    <!-- Filter bar -->
+    <div class="filter-bar" role="search">
+      <input
+        id="filter-search"
+        class="filter-search"
+        type="text"
+        placeholder="Search by name, mobile, city or treatment…"
+        aria-label="Search leads"
+      />
+      <select id="filter-status" class="filter-select" aria-label="Filter by status">
+        <option value="">All Statuses</option>
+        <option value="new">New</option>
+        <option value="contacted">Contacted</option>
+        <option value="converted">Converted</option>
+        <option value="rejected">Rejected</option>
+      </select>
+      <select id="filter-city" class="filter-select" aria-label="Filter by city">
+        <option value="">All Cities</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Navi Mumbai">Navi Mumbai</option>
+        <option value="Thane">Thane</option>
+        <option value="Pune">Pune</option>
+      </select>
+      <select id="filter-insurance" class="filter-select" aria-label="Filter by insurance">
+        <option value="">All Insurance</option>
+        <option value="yes">Has Insurance</option>
+        <option value="no">No Insurance</option>
+      </select>
+    </div>
+
+    <!-- Leads table -->
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Patient</th>
+            <th>City</th>
+            <th>Treatment</th>
+            <th>Insurance</th>
+            <th>Estimate</th>
+            <th>Status</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody id="leads-tbody">
+          <tr>
+            <td colspan="7">
+              <div class="loading-state">
+                <div class="loading-spinner"></div>
+                <p>Loading leads…</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     LEAD DRAWER (right slide-out)
+══════════════════════════════════════════════ -->
+
+<!-- Backdrop -->
+<div id="drawer-backdrop" class="drawer-backdrop"></div>
+
+<!-- Drawer -->
+<div id="lead-drawer" class="lead-drawer" role="dialog" aria-modal="true" aria-label="Lead details">
+
+  <!-- Header -->
+  <div class="drawer-header">
+    <div class="drawer-header__top">
+      <div>
+        <div class="drawer-header__name" id="dr-name">—</div>
+        <div class="drawer-header__meta">
+          <span id="dr-status-badge"></span>
+          <span><i class="fas fa-map-marker-alt"></i><span id="dr-city">—</span></span>
+          <span><i class="fas fa-calendar"></i><span id="dr-date">—</span></span>
+        </div>
+      </div>
+      <button class="drawer-close" id="drawer-close-btn" aria-label="Close"><i class="fas fa-times"></i></button>
+    </div>
+
+    <!-- Tabs -->
+    <div class="drawer-tabs">
+      <button class="drawer-tab active" data-tab="overview">
+        <i class="fas fa-user"></i> Patient
+      </button>
+      <button class="drawer-tab" data-tab="actions">
+        <i class="fas fa-bolt"></i> Actions
+      </button>
+      <button class="drawer-tab" data-tab="visit">
+        <i class="fas fa-calendar-check"></i> Dr. Visit
+      </button>
+    </div>
+  </div>
+
+  <!-- Body -->
+  <div class="drawer-body">
+
+    <!-- ── TAB: Overview ── -->
+    <div class="drawer-panel active" id="panel-overview">
+
+      <!-- Cost banner -->
+      <div class="cost-banner" id="dr-cost-banner" style="display:none">
+        <div>
+          <div class="cost-banner__label">Estimated Cost</div>
+          <div class="cost-banner__range" id="dr-cost-range">—</div>
+        </div>
+        <div class="cost-banner__note">
+          <i class="fas fa-hospital" style="display:block;font-size:20px;margin-bottom:4px;color:#16a34a"></i>
+          <span id="dr-hosp-count">—</span> hospitals
+        </div>
+      </div>
+
+      <!-- Personal info -->
+      <div class="dinfo-block">
+        <div class="dinfo-block__title"><i class="fas fa-user"></i> Personal Information</div>
+        <div class="drow">
+          <span class="drow__label">Full Name</span>
+          <span class="drow__value" id="dr-fullname">—</span>
+        </div>
+        <div class="drow">
+          <span class="drow__label">Mobile</span>
+          <span class="drow__value" id="dr-mobile">—</span>
+        </div>
+        <div class="drow">
+          <span class="drow__label">Email</span>
+          <span class="drow__value" id="dr-email">—</span>
+        </div>
+        <div class="drow">
+          <span class="drow__label">City</span>
+          <span class="drow__value" id="dr-city2">—</span>
+        </div>
+      </div>
+
+      <!-- Medical info -->
+      <div class="dinfo-block">
+        <div class="dinfo-block__title"><i class="fas fa-stethoscope"></i> Medical Information</div>
+        <div class="drow">
+          <span class="drow__label">Problem</span>
+          <span class="drow__value" id="dr-problem">—</span>
+        </div>
+        <div class="drow">
+          <span class="drow__label">Department</span>
+          <span class="drow__value" id="dr-dept">—</span>
+        </div>
+        <div class="drow">
+          <span class="drow__label">Service</span>
+          <span class="drow__value" id="dr-service">—</span>
+        </div>
+        <div class="drow">
+          <span class="drow__label">Last Doctor</span>
+          <span class="drow__value" id="dr-lastdoc">—</span>
+        </div>
+        <div class="drow">
+          <span class="drow__label">Consulted Before</span>
+          <span class="drow__value" id="dr-consulted">—</span>
+        </div>
+      </div>
+
+      <!-- Insurance -->
+      <div class="dinfo-block" id="dr-insurance-block">
+        <div class="dinfo-block__title"><i class="fas fa-shield-halved"></i> Insurance</div>
+        <div class="drow">
+          <span class="drow__label">Has Insurance</span>
+          <span class="drow__value" id="dr-has-ins">—</span>
+        </div>
+        <div id="dr-ins-details" style="display:none">
+          <div class="drow">
+            <span class="drow__label">Company</span>
+            <span class="drow__value" id="dr-ins-company">—</span>
+          </div>
+          <div class="drow">
+            <span class="drow__label">Coverage</span>
+            <span class="drow__value" id="dr-ins-limit">—</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /panel-overview -->
+
+    <!-- ── TAB: Actions ── -->
+    <div class="drawer-panel" id="panel-actions">
+
+      <!-- Quick call/whatsapp bar -->
+      <div class="call-bar">
+        <button class="call-bar__btn call-bar__btn--call" id="dr-btn-call">
+          <i class="fas fa-phone"></i> Call Patient
+        </button>
+        <button class="call-bar__btn call-bar__btn--whatsapp" id="dr-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </button>
+      </div>
+
+      <!-- Status update -->
+      <div class="drawer-section-title">
+        <i class="fas fa-circle-dot"></i> Update Status
+      </div>
+      <div class="status-action-grid" style="margin-bottom:20px">
+        <button class="status-action-btn status-action-btn--contacted" data-status="contacted">
+          <i class="fas fa-phone-volume"></i> Contacted
+        </button>
+        <button class="status-action-btn status-action-btn--converted" data-status="converted">
+          <i class="fas fa-circle-check"></i> Converted
+        </button>
+        <button class="status-action-btn status-action-btn--new" data-status="new">
+          <i class="fas fa-rotate-left"></i> Reset to New
+        </button>
+        <button class="status-action-btn status-action-btn--rejected" data-status="rejected">
+          <i class="fas fa-circle-xmark"></i> Rejected
+        </button>
+      </div>
+
+      <!-- Add Remark -->
+      <div class="drawer-section-title">
+        <i class="fas fa-comment-medical"></i> Add Remark / Note
+      </div>
+      <div class="remark-form">
+        <textarea
+          id="remark-input"
+          class="remark-textarea"
+          placeholder="Write a note about this patient, e.g. 'Discussed procedure, patient is interested, follow up next week…'"
+        ></textarea>
+        <button id="remark-submit" class="remark-submit-btn">
+          <i class="fas fa-paper-plane"></i> Add Remark
+        </button>
+      </div>
+
+      <!-- Remarks timeline -->
+      <div class="drawer-section-title">
+        <i class="fas fa-timeline"></i> Remarks History
+      </div>
+      <div id="remarks-timeline" class="remark-timeline">
+        <div class="remark-empty">
+          <i class="fas fa-comment-slash"></i>
+          No remarks yet
+        </div>
+      </div>
+
+    </div><!-- /panel-actions -->
+
+    <!-- ── TAB: Doctor Visit ── -->
+    <div class="drawer-panel" id="panel-visit">
+
+      <!-- Schedule form -->
+      <div class="drawer-section-title">
+        <i class="fas fa-calendar-plus"></i> Schedule Doctor Visit
+      </div>
+      <div class="visit-form">
+        <div class="visit-field">
+          <label>Doctor Name</label>
+          <input id="visit-doctor" class="visit-input" type="text" placeholder="Dr. Rajesh Mehta" />
+        </div>
+        <div class="visit-form-row">
+          <div class="visit-field">
+            <label>Visit Date</label>
+            <input id="visit-date" class="visit-input" type="date" />
+          </div>
+          <div class="visit-field">
+            <label>Visit Time</label>
+            <input id="visit-time" class="visit-input" type="time" />
+          </div>
+        </div>
+        <div class="visit-field">
+          <label>Notes for Patient</label>
+          <input id="visit-notes" class="visit-input" type="text" placeholder="e.g. Please bring all reports, fast for 6 hours before…" />
+        </div>
+        <button id="visit-submit" class="visit-submit-btn">
+          <i class="fas fa-calendar-check"></i> Schedule Visit
+        </button>
+      </div>
+
+      <!-- Visit history -->
+      <div class="drawer-section-title" style="margin-top:8px">
+        <i class="fas fa-history"></i> Visit History
+      </div>
+      <div id="visit-history" class="visit-history">
+        <div class="visit-empty">
+          <i class="fas fa-calendar-xmark"></i>
+          No visits scheduled yet
+        </div>
+      </div>
+
+    </div><!-- /panel-visit -->
+
+  </div><!-- /drawer-body -->
+</div><!-- /lead-drawer -->
+
+<script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/crm.js"></script>
+<script>
+// ══════════════════════════════════════════════════════════
+// Leads page + Drawer logic
+// ══════════════════════════════════════════════════════════
+
+let allLeads    = [];
+let filtered    = [];
+let currentLead = null;
+
+const session = requireAuth();
+if (session) {
+  initSidebarInfo();
+  updateSidebarAvatar(session.name);
+  loadLeads(session.hospitalId);
+}
+
+function updateSidebarAvatar(name) {
+  const el = document.getElementById('sidebar-avatar');
+  if (el && name) {
+    const parts = name.trim().split(' ');
+    el.textContent = parts.length >= 2
+      ? (parts[0][0] + parts[parts.length - 1][0]).toUpperCase()
+      : name.slice(0, 2).toUpperCase();
+  }
+}
+
+// ── Load leads ────────────────────────────────────────────
+async function loadLeads(hospitalId) {
+  try {
+    allLeads = await getLeads(hospitalId);
+    filtered = [...allLeads];
+    renderTable(filtered);
+    updateSubtitle();
+  } catch (err) {
+    showToast(`Failed to load leads: ${err.message}`, 'error');
+    document.getElementById('leads-tbody').innerHTML = `
+      <tr><td colspan="7">
+        <div class="empty-state">
+          <i class="fas fa-triangle-exclamation" style="font-size:40px;color:#fca5a5;margin-bottom:12px;display:block"></i>
+          <h3>Could not load leads</h3>
+          <p>${escHtml(err.message)}</p>
+        </div>
+      </td></tr>`;
+  }
+}
+
+// ── Filters ───────────────────────────────────────────────
+['filter-search','filter-status','filter-city','filter-insurance'].forEach((id) => {
+  document.getElementById(id)?.addEventListener('input', applyFilters);
+});
+
+function applyFilters() {
+  const search    = document.getElementById('filter-search').value.toLowerCase().trim();
+  const status    = document.getElementById('filter-status').value;
+  const city      = document.getElementById('filter-city').value;
+  const insurance = document.getElementById('filter-insurance').value;
+
+  filtered = allLeads.filter((l) => {
+    const matchSearch =
+      !search ||
+      l.name?.toLowerCase().includes(search) ||
+      l.city?.toLowerCase().includes(search) ||
+      l.medical?.service?.toLowerCase().includes(search) ||
+      l.medical?.department?.toLowerCase().includes(search) ||
+      l.mobile?.includes(search) ||
+      l.email?.toLowerCase().includes(search);
+
+    const matchStatus = !status   || l.status === status;
+    const matchCity   = !city     || l.city === city;
+    const matchIns    =
+      !insurance ||
+      (insurance === 'yes' && l.insurance?.hasInsurance) ||
+      (insurance === 'no'  && !l.insurance?.hasInsurance);
+
+    return matchSearch && matchStatus && matchCity && matchIns;
+  });
+
+  renderTable(filtered);
+  updateSubtitle();
+}
+
+function updateSubtitle() {
+  document.getElementById('leads-count-sub').textContent =
+    `Showing ${filtered.length} of ${allLeads.length} lead${allLeads.length !== 1 ? 's' : ''}`;
+}
+
+// ── Render table ──────────────────────────────────────────
+function renderTable(leads) {
+  const tbody = document.getElementById('leads-tbody');
+
+  if (!leads.length) {
+    tbody.innerHTML = `
+      <tr><td colspan="7">
+        <div class="empty-state">
+          <i class="fas fa-magnifying-glass" style="font-size:40px;color:#e2e8f0;margin-bottom:12px;display:block"></i>
+          <h3>No leads found</h3>
+          <p>Try adjusting your search or filters.</p>
+        </div>
+      </td></tr>`;
+    return;
+  }
+
+  tbody.innerHTML = leads.map((lead) => `
+    <tr data-id="${escHtml(lead.id)}" role="button" tabindex="0" title="Click to view details">
+      <td>
+        <strong>${escHtml(lead.name)}</strong>
+        <small>${escHtml(lead.mobile || '')}</small>
+      </td>
+      <td>
+        <span style="display:inline-flex;align-items:center;gap:5px">
+          <i class="fas fa-map-marker-alt" style="color:#94a3b8;font-size:11px"></i>
+          ${escHtml(lead.city)}
+        </span>
+      </td>
+      <td>
+        ${escHtml(lead.medical?.service || '—')}
+        <small>${escHtml(lead.medical?.department || '')}</small>
+      </td>
+      <td>
+        ${lead.insurance?.hasInsurance
+          ? `<span style="color:#16a34a;font-weight:600;display:flex;align-items:center;gap:4px"><i class="fas fa-shield-check"></i>Yes</span>
+             <small>${escHtml(lead.insurance.company || '')}</small>`
+          : '<span style="color:#94a3b8;display:flex;align-items:center;gap:4px"><i class="fas fa-times"></i>No</span>'}
+      </td>
+      <td>
+        ${lead.hospitalMatch
+          ? `<span style="font-weight:700;color:#16a34a">${fmtINR(lead.hospitalMatch.estimatedCostMin)}</span>
+             <small style="color:#64748b">– ${fmtINR(lead.hospitalMatch.estimatedCostMax)}</small>`
+          : '<span style="color:#94a3b8">—</span>'}
+      </td>
+      <td>${statusBadge(lead.status)}</td>
+      <td style="color:#64748b;font-size:13px">${fmtDate(lead.createdAt)}</td>
+    </tr>
+  `).join('');
+
+  tbody.querySelectorAll('tr[role="button"]').forEach((row) => {
+    row.addEventListener('click', () => {
+      const lead = leads.find((l) => l.id === row.dataset.id);
+      if (lead) openDrawer(lead);
+    });
+    row.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') row.click();
+    });
+  });
+}
+
+// ══════════════════════════════════════════════════════════
+// DRAWER
+// ══════════════════════════════════════════════════════════
+
+const drawer   = document.getElementById('lead-drawer');
+const backdrop = document.getElementById('drawer-backdrop');
+
+function openDrawer(lead) {
+  currentLead = lead;
+  populateDrawer(lead);
+  drawer.classList.add('open');
+  backdrop.classList.add('active');
+  document.body.style.overflow = 'hidden';
+  // Reset to first tab
+  switchTab('overview');
+}
+
+function closeDrawer() {
+  drawer.classList.remove('open');
+  backdrop.classList.remove('active');
+  document.body.style.overflow = '';
+  currentLead = null;
+}
+
+document.getElementById('drawer-close-btn').addEventListener('click', closeDrawer);
+backdrop.addEventListener('click', closeDrawer);
+
+// ── Tab switching ─────────────────────────────────────────
+document.querySelectorAll('.drawer-tab').forEach((tab) => {
+  tab.addEventListener('click', () => switchTab(tab.dataset.tab));
+});
+
+function switchTab(name) {
+  document.querySelectorAll('.drawer-tab').forEach((t) =>
+    t.classList.toggle('active', t.dataset.tab === name));
+  document.querySelectorAll('.drawer-panel').forEach((p) =>
+    p.classList.toggle('active', p.id === `panel-${name}`));
+}
+
+// ── Populate drawer ───────────────────────────────────────
+function populateDrawer(lead) {
+  // Header
+  document.getElementById('dr-name').textContent       = lead.name || '—';
+  document.getElementById('dr-status-badge').innerHTML = statusBadge(lead.status);
+  document.getElementById('dr-city').textContent       = lead.city || '—';
+  document.getElementById('dr-date').textContent       = fmtDate(lead.createdAt);
+
+  // Cost banner
+  const match = lead.hospitalMatch;
+  if (match && match.estimatedCostMin) {
+    document.getElementById('dr-cost-banner').style.display = 'flex';
+    document.getElementById('dr-cost-range').textContent =
+      `₹${fmtINR(match.estimatedCostMin)} – ₹${fmtINR(match.estimatedCostMax)}`;
+    document.getElementById('dr-hosp-count').textContent =
+      match.matchedHospitals?.length || match.matchedHospitalDetails?.length || 0;
+  }
+
+  // Personal
+  document.getElementById('dr-fullname').textContent = lead.name || '—';
+  document.getElementById('dr-mobile').innerHTML     = lead.mobile
+    ? `<a href="tel:${escHtml(lead.mobile)}" class="email-chip" style="background:#dbeafe;color:#1d4ed8">
+         <i class="fas fa-phone"></i>${escHtml(lead.mobile)}</a>`
+    : '—';
+  document.getElementById('dr-email').innerHTML      = lead.email
+    ? `<a href="mailto:${escHtml(lead.email)}" class="email-chip">
+         <i class="fas fa-envelope"></i>${escHtml(lead.email)}</a>`
+    : '—';
+  document.getElementById('dr-city2').textContent    = lead.city || '—';
+
+  // Medical
+  document.getElementById('dr-problem').textContent  = lead.medical?.problem    || '—';
+  document.getElementById('dr-dept').textContent     = lead.medical?.department || '—';
+  document.getElementById('dr-service').textContent  = lead.medical?.service    || '—';
+  document.getElementById('dr-lastdoc').textContent  = lead.context?.lastDoctor || 'Not specified';
+  document.getElementById('dr-consulted').innerHTML  = lead.context?.consultedBefore
+    ? '<span style="color:#16a34a;font-weight:600"><i class="fas fa-check" style="margin-right:4px"></i>Yes</span>'
+    : '<span style="color:#94a3b8"><i class="fas fa-times" style="margin-right:4px"></i>No</span>';
+
+  // Insurance
+  const hasIns = lead.insurance?.hasInsurance;
+  document.getElementById('dr-has-ins').innerHTML = hasIns
+    ? '<span style="color:#16a34a;font-weight:600"><i class="fas fa-shield-check" style="margin-right:5px"></i>Yes</span>'
+    : '<span style="color:#94a3b8">No</span>';
+  const insDetails = document.getElementById('dr-ins-details');
+  if (hasIns) {
+    insDetails.style.display = 'block';
+    document.getElementById('dr-ins-company').textContent = lead.insurance.company || '—';
+    document.getElementById('dr-ins-limit').textContent   = lead.insurance.limit
+      ? `₹${Number(lead.insurance.limit).toLocaleString('en-IN')}`
+      : '—';
+  } else {
+    insDetails.style.display = 'none';
+  }
+
+  // Status buttons highlight
+  refreshStatusButtons(lead.status);
+
+  // Clear & populate remarks
+  document.getElementById('remark-input').value = '';
+  renderRemarks(lead.remarks || []);
+
+  // Clear & populate visit history
+  clearVisitForm();
+  renderVisitHistory(lead.doctorVisits || (lead.doctorVisit ? [lead.doctorVisit] : []));
+
+  // Call/WhatsApp buttons
+  document.getElementById('dr-btn-call').onclick = () => {
+    if (lead.mobile) window.location.href = `tel:${lead.mobile}`;
+    showToast(`Calling ${lead.name} (${lead.mobile || 'unknown'})`, 'success');
+  };
+  document.getElementById('dr-btn-whatsapp').onclick = () => {
+    const num = (lead.mobile || '').replace(/\D/g, '');
+    if (num) window.open(`https://wa.me/91${num}`, '_blank');
+    else showToast('No mobile number available', 'error');
+  };
+}
+
+// ── Status update ─────────────────────────────────────────
+function refreshStatusButtons(status) {
+  document.querySelectorAll('.status-action-btn').forEach((btn) => {
+    btn.classList.toggle('active', btn.dataset.status === status);
+    btn.disabled = false;
+  });
+}
+
+document.querySelectorAll('.status-action-btn').forEach((btn) => {
+  btn.addEventListener('click', async () => {
+    if (!currentLead) return;
+    const newStatus = btn.dataset.status;
+    if (currentLead.status === newStatus) return;
+
+    btn.disabled = true;
+    btn.innerHTML = `<i class="fas fa-spinner fa-spin"></i> Updating…`;
+
+    try {
+      const updated = await updateLead(currentLead.id, { status: newStatus });
+      currentLead = updated;
+
+      // Update in allLeads array
+      const idx = allLeads.findIndex((l) => l.id === updated.id);
+      if (idx !== -1) allLeads[idx] = updated;
+
+      refreshStatusButtons(newStatus);
+      document.getElementById('dr-status-badge').innerHTML = statusBadge(newStatus);
+
+      // Re-render table row badge
+      const row = document.querySelector(`tr[data-id="${escHtml(updated.id)}"]`);
+      if (row) {
+        const cells = row.querySelectorAll('td');
+        if (cells[5]) cells[5].innerHTML = statusBadge(newStatus);
+      }
+
+      showToast(`Status updated to "${newStatus}"`, 'success');
+    } catch (err) {
+      showToast(`Failed: ${err.message}`, 'error');
+    }
+
+    // Restore button text
+    const labels = {
+      contacted: '<i class="fas fa-phone-volume"></i> Contacted',
+      converted: '<i class="fas fa-circle-check"></i> Converted',
+      new:       '<i class="fas fa-rotate-left"></i> Reset to New',
+      rejected:  '<i class="fas fa-circle-xmark"></i> Rejected',
+    };
+    btn.innerHTML = labels[newStatus] || newStatus;
+    btn.disabled  = false;
+    refreshStatusButtons(currentLead.status);
+  });
+});
+
+// ── Remarks ───────────────────────────────────────────────
+document.getElementById('remark-submit').addEventListener('click', async () => {
+  const input = document.getElementById('remark-input');
+  const text  = (input.value || '').trim();
+  if (!text || !currentLead) return;
+
+  const btn = document.getElementById('remark-submit');
+  btn.disabled = true;
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Saving…';
+
+  try {
+    const updated = await updateLead(currentLead.id, { remark: text });
+    currentLead   = updated;
+
+    const idx = allLeads.findIndex((l) => l.id === updated.id);
+    if (idx !== -1) allLeads[idx] = updated;
+
+    input.value = '';
+    renderRemarks(updated.remarks || []);
+    showToast('Remark saved', 'success');
+  } catch (err) {
+    showToast(`Failed: ${err.message}`, 'error');
+  }
+
+  btn.disabled  = false;
+  btn.innerHTML = '<i class="fas fa-paper-plane"></i> Add Remark';
+});
+
+function renderRemarks(remarks) {
+  const container = document.getElementById('remarks-timeline');
+  if (!remarks.length) {
+    container.innerHTML = `<div class="remark-empty"><i class="fas fa-comment-slash"></i>No remarks yet</div>`;
+    return;
+  }
+  // Newest first
+  const sorted = [...remarks].sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+  container.innerHTML = sorted.map((r) => `
+    <div class="remark-item">
+      <div class="remark-dot"></div>
+      <div class="remark-body">
+        <div class="remark-body__text">${escHtml(r.text)}</div>
+        <div class="remark-body__date"><i class="fas fa-clock" style="margin-right:4px"></i>${fmtDateTime(r.createdAt)}</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+// ── Doctor Visit ──────────────────────────────────────────
+document.getElementById('visit-submit').addEventListener('click', async () => {
+  const doctorName = (document.getElementById('visit-doctor').value || '').trim();
+  const visitDate  = (document.getElementById('visit-date').value  || '').trim();
+  const visitTime  = (document.getElementById('visit-time').value  || '').trim();
+  const notes      = (document.getElementById('visit-notes').value || '').trim();
+
+  if (!visitDate) {
+    showToast('Please select a visit date', 'error');
+    return;
+  }
+
+  const btn = document.getElementById('visit-submit');
+  btn.disabled = true;
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Scheduling…';
+
+  try {
+    const updated = await updateLead(currentLead.id, {
+      doctorVisit: { doctorName, visitDate, visitTime, notes },
+    });
+    currentLead = updated;
+
+    const idx = allLeads.findIndex((l) => l.id === updated.id);
+    if (idx !== -1) allLeads[idx] = updated;
+
+    clearVisitForm();
+    renderVisitHistory(updated.doctorVisits || []);
+    showToast('Visit scheduled', 'success');
+  } catch (err) {
+    showToast(`Failed: ${err.message}`, 'error');
+  }
+
+  btn.disabled  = false;
+  btn.innerHTML = '<i class="fas fa-calendar-check"></i> Schedule Visit';
+});
+
+function clearVisitForm() {
+  document.getElementById('visit-doctor').value = '';
+  document.getElementById('visit-date').value   = '';
+  document.getElementById('visit-time').value   = '';
+  document.getElementById('visit-notes').value  = '';
+}
+
+function renderVisitHistory(visits) {
+  const container = document.getElementById('visit-history');
+  if (!visits || !visits.length) {
+    container.innerHTML = `<div class="visit-empty"><i class="fas fa-calendar-xmark"></i>No visits scheduled yet</div>`;
+    return;
+  }
+  const sorted = [...visits].sort((a, b) =>
+    new Date(b.scheduledAt || b.visitDate) - new Date(a.scheduledAt || a.visitDate));
+  container.innerHTML = sorted.map((v, i) => `
+    <div class="visit-card">
+      <div class="visit-card__header">
+        <div class="visit-card__doctor">
+          <i class="fas fa-user-doctor" style="margin-right:6px;color:#0d9488"></i>
+          ${escHtml(v.doctorName || 'Doctor TBD')}
+        </div>
+        ${i === 0 ? '<span class="visit-card__badge">Latest</span>' : ''}
+      </div>
+      <div class="visit-card__row">
+        <i class="fas fa-calendar"></i>
+        <span>${escHtml(formatVisitDate(v.visitDate))}</span>
+      </div>
+      ${v.visitTime ? `<div class="visit-card__row"><i class="fas fa-clock"></i><span>${escHtml(v.visitTime)}</span></div>` : ''}
+      ${v.notes ? `<div class="visit-card__notes"><i class="fas fa-note-sticky" style="color:#0d9488;margin-right:5px"></i>${escHtml(v.notes)}</div>` : ''}
+    </div>
+  `).join('');
+}
+
+// ── Helpers ───────────────────────────────────────────────
+function escHtml(str) {
+  const d = document.createElement('div');
+  d.textContent = str || '';
+  return d.innerHTML;
+}
+
+function fmtINR(n) {
+  return Number(n || 0).toLocaleString('en-IN');
+}
+
+function fmtDateTime(iso) {
+  if (!iso) return '—';
+  return new Date(iso).toLocaleString('en-IN', {
+    day: '2-digit', month: 'short', year: 'numeric',
+    hour: '2-digit', minute: '2-digit',
+  });
+}
+
+function formatVisitDate(d) {
+  if (!d) return '—';
+  try {
+    return new Date(d).toLocaleDateString('en-IN', {
+      weekday: 'short', day: '2-digit', month: 'short', year: 'numeric',
+    });
+  } catch { return d; }
+}
+</script>
+
+</body>
+</html>

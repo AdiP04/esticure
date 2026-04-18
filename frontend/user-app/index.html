@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Esticure – India's Healthcare Cost Discovery Platform</title>
+  <meta name="description" content="Find your treatment cost in minutes. Compare hospitals, see real prices, and choose the best option. Free for patients." />
+  <meta name="theme-color" content="#0d9488" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════ -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="navbar__logo">
+    <div class="logo-icon"><i class="fas fa-compass-medical"></i></div>
+    Esti<span>cure</span>
+  </a>
+
+  <ul class="navbar__links" id="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#how-it-works">How it Works</a></li>
+    <li><a href="#hospitals">Hospitals</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <button class="navbar__cta btn-ripple" id="nav-cta" aria-label="Get free estimate">
+    <i class="fas fa-search-dollar" style="margin-right:6px"></i>Get Free Estimate
+  </button>
+  <button class="navbar__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<section id="home" class="hero">
+  <div class="hero-blob-1" aria-hidden="true"></div>
+  <div class="hero-blob-2" aria-hidden="true"></div>
+
+  <div class="hero__inner">
+    <!-- Left: text content -->
+    <div class="anim-fade-up">
+      <div class="hero__badge">
+        <span class="dot" aria-hidden="true"></span>
+        India's First Healthcare Cost Navigator
+      </div>
+
+      <h1 class="hero__headline">
+        Find Your<br>
+        <span class="accent">Treatment Cost</span><br>
+        in Minutes
+      </h1>
+
+      <p class="hero__subtext">
+        Compare real hospital prices, check insurance coverage, and choose the best care option.
+        Expert-matched results. Always free for patients.
+      </p>
+
+      <div class="hero__actions">
+        <button class="btn-hero-primary btn-ripple" id="hero-cta">
+          <i class="fas fa-search-dollar"></i>
+          Get Free Treatment Estimate
+        </button>
+        <a href="#how-it-works" class="btn-hero-secondary">
+          <i class="fas fa-play-circle"></i>
+          See How It Works
+        </a>
+      </div>
+
+      <div class="hero__trust">
+        <div class="hero__trust-item"><i class="fas fa-shield-halved"></i>100% Confidential</div>
+        <div class="hero__trust-item"><i class="fas fa-bolt"></i>Results in 30 sec</div>
+        <div class="hero__trust-item"><i class="fas fa-star"></i>4.8 / 5 Rating</div>
+        <div class="hero__trust-item"><i class="fas fa-indian-rupee-sign"></i>Free for Patients</div>
+      </div>
+    </div>
+
+    <!-- Right: hero card -->
+    <div class="hero__card-wrap anim-fade-up" style="transition-delay:.2s" aria-hidden="true">
+      <div class="hero__card">
+        <div class="hero__card-title-row">
+          <div>
+            <div class="hero__card-label">Treatment Estimate Ready</div>
+            <div class="hero__card-name">Laser Hemorrhoidectomy</div>
+          </div>
+          <span class="hero__card-badge">3 matches</span>
+        </div>
+
+        <div class="hero-hosp-row">
+          <div class="hosp-icon hosp-icon--teal"><i class="fas fa-hospital"></i></div>
+          <div class="hosp-info">
+            <div class="hosp-name">Apollo Spectra Hospital</div>
+            <div class="hosp-meta">Mumbai &nbsp;·&nbsp; ⭐ 4.5</div>
+          </div>
+          <div class="hosp-price">
+            <div class="hosp-price-val hosp-price-val--teal">₹52K</div>
+            <div class="hosp-price-avg">avg.</div>
+          </div>
+        </div>
+
+        <div class="hero-hosp-row">
+          <div class="hosp-icon hosp-icon--blue"><i class="fas fa-hospital"></i></div>
+          <div class="hosp-info">
+            <div class="hosp-name">Fortis Hospital</div>
+            <div class="hosp-meta">Mumbai &nbsp;·&nbsp; ⭐ 4.4</div>
+          </div>
+          <div class="hosp-price">
+            <div class="hosp-price-val hosp-price-val--blue">₹61K</div>
+            <div class="hosp-price-avg">avg.</div>
+          </div>
+        </div>
+
+        <div class="hero-hosp-row">
+          <div class="hosp-icon hosp-icon--purple"><i class="fas fa-hospital"></i></div>
+          <div class="hosp-info">
+            <div class="hosp-name">Lilavati Hospital</div>
+            <div class="hosp-meta">Mumbai &nbsp;·&nbsp; ⭐ 4.6</div>
+          </div>
+          <div class="hosp-price">
+            <div class="hosp-price-val hosp-price-val--purple">₹66K</div>
+            <div class="hosp-price-avg">avg.</div>
+          </div>
+        </div>
+
+        <div class="hero__card-footer">
+          <span class="hero__card-note"><i class="fas fa-circle-check"></i> Insurance matched</span>
+          <span class="hero__card-link">View Full Report →</span>
+        </div>
+      </div>
+
+      <!-- Floating badges -->
+      <div class="float-badge float-badge-1">
+        <div class="badge-icon badge-icon--green"><i class="fas fa-check"></i></div>
+        <span>NABH Accredited</span>
+      </div>
+      <div class="float-badge float-badge-2">
+        <div class="badge-icon badge-icon--amber"><i class="fas fa-clock"></i></div>
+        <span>Est. 15–20 days</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     STATS
+══════════════════════════════════════ -->
+<section class="stats" aria-label="Platform statistics">
+  <div class="stats__inner">
+    <div class="stat-item anim-fade-up">
+      <div class="value"><span class="counter" data-target="10000">0</span>+</div>
+      <div class="label">Patients Helped</div>
+    </div>
+    <div class="stat-item anim-fade-up" style="transition-delay:.1s">
+      <div class="value"><span class="counter" data-target="100">0</span>+</div>
+      <div class="label">Partner Hospitals</div>
+    </div>
+    <div class="stat-item anim-fade-up" style="transition-delay:.2s">
+      <div class="value">₹<span class="counter" data-target="2.3" data-decimal>0</span>Cr</div>
+      <div class="label">Patient Savings</div>
+    </div>
+    <div class="stat-item anim-fade-up" style="transition-delay:.3s">
+      <div class="value"><span class="counter" data-target="4.8" data-decimal>0</span>/5</div>
+      <div class="label">Patient Rating</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     TRUST STRIP
+══════════════════════════════════════ -->
+<section class="trust" aria-label="Trust indicators">
+  <div class="trust__inner">
+    <div class="trust__item"><i class="fas fa-hospital"></i> 100+ Partner Hospitals</div>
+    <div class="trust__item"><i class="fas fa-heart-pulse"></i> Free for Patients</div>
+    <div class="trust__item"><i class="fas fa-shield-check"></i> Insurance Matched</div>
+    <div class="trust__item"><i class="fas fa-bolt"></i> Instant Estimates</div>
+    <div class="trust__item"><i class="fas fa-lock"></i> 100% Confidential</div>
+    <div class="trust__item"><i class="fas fa-award"></i> NABH Hospitals</div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     HOW IT WORKS
+══════════════════════════════════════ -->
+<section id="how-it-works" class="hiw">
+  <div class="hiw__inner">
+    <div class="hiw__head reveal">
+      <span class="section-badge">How It Works</span>
+      <h2 class="section-title">From Confused to Confident in <span>4 Simple Steps</span></h2>
+      <p class="section-sub">Our platform guides you through every step — from understanding your diagnosis to finding the best hospital at the right price.</p>
+    </div>
+
+    <div class="hiw__steps">
+      <div class="step-card reveal">
+        <div class="step-num">1</div>
+        <div class="step-icon-wrap step-icon-wrap--teal"><i class="fas fa-file-medical"></i></div>
+        <h3>Describe Your Problem</h3>
+        <p>Tell us your symptoms or condition in plain language — no medical jargon required.</p>
+        <div class="step-tag step-tag--teal"><i class="fas fa-clock"></i> Takes 2 minutes</div>
+      </div>
+
+      <div class="step-card reveal" style="transition-delay:.1s">
+        <div class="step-num">2</div>
+        <div class="step-icon-wrap step-icon-wrap--orange"><i class="fas fa-user-doctor"></i></div>
+        <h3>Smart Matching</h3>
+        <p>We match your case with the best hospitals and specialists in your city, filtered by insurance.</p>
+        <div class="step-tag step-tag--orange"><i class="fas fa-bolt"></i> Instant results</div>
+      </div>
+
+      <div class="step-card reveal" style="transition-delay:.2s">
+        <div class="step-num">3</div>
+        <div class="step-icon-wrap step-icon-wrap--blue"><i class="fas fa-file-invoice-dollar"></i></div>
+        <h3>Get Cost Estimate</h3>
+        <p>See real price ranges from verified hospitals with insurance coverage details included.</p>
+        <div class="step-tag step-tag--blue"><i class="fas fa-star"></i> Always free</div>
+      </div>
+
+      <div class="step-card reveal" style="transition-delay:.3s">
+        <div class="step-num">4</div>
+        <div class="step-icon-wrap step-icon-wrap--purple"><i class="fas fa-stethoscope"></i></div>
+        <h3>Choose &amp; Book</h3>
+        <p>Compare hospitals, check ratings, and book your consultation directly with full confidence.</p>
+        <div class="step-tag step-tag--purple"><i class="fas fa-calendar-check"></i> Book instantly</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     HOSPITAL NETWORK
+══════════════════════════════════════ -->
+<section id="hospitals" class="hospital-network">
+  <div class="hospital-network__inner">
+    <div class="hospital-network__head reveal">
+      <span class="section-badge">Our Network</span>
+      <h2 class="section-title">100+ Partner Hospitals <span>Across Maharashtra</span></h2>
+      <p class="section-sub">Premium NABH-accredited hospitals across major cities, verified for quality, pricing transparency, and insurance support.</p>
+    </div>
+
+    <!-- City tab switcher -->
+    <div class="city-tabs" role="tablist" aria-label="City filter">
+      <button class="city-tab active" role="tab" aria-selected="true" data-city="mumbai">
+        <i class="fas fa-city" style="margin-right:6px"></i>Mumbai
+      </button>
+      <button class="city-tab" role="tab" aria-selected="false" data-city="pune">
+        <i class="fas fa-building" style="margin-right:6px"></i>Pune
+      </button>
+      <button class="city-tab" role="tab" aria-selected="false" data-city="navi-mumbai">
+        <i class="fas fa-map-pin" style="margin-right:6px"></i>Navi Mumbai
+      </button>
+      <button class="city-tab" role="tab" aria-selected="false" data-city="thane">
+        <i class="fas fa-location-dot" style="margin-right:6px"></i>Thane
+      </button>
+    </div>
+
+    <!-- Mumbai -->
+    <div class="city-panel active" id="panel-mumbai" role="tabpanel">
+      <div class="net-hosp-card">
+        <div class="net-hosp-card__bar net-hosp-card__bar--teal"></div>
+        <div class="net-hosp-card__body">
+          <div class="net-hosp-card__top">
+            <div class="net-hosp-icon"><i class="fas fa-hospital"></i></div>
+            <div>
+              <div class="net-hosp-card__name">Apollo Spectra Hospital</div>
+              <div class="net-hosp-card__stars">★★★★★ <span style="color:#64748b;font-weight:500">4.5</span></div>
+            </div>
+          </div>
+          <div class="net-hosp-card__tags">
+            <span class="net-hosp-tag">Proctology</span>
+            <span class="net-hosp-tag">Urology</span>
+            <span class="net-hosp-tag">Orthopaedics</span>
+          </div>
+          <div class="net-hosp-card__bottom">
+            <div class="net-hosp-price">From ₹35,000 <span>onwards</span></div>
+            <span class="net-hosp-badge"><i class="fas fa-award" style="margin-right:4px"></i>NABH</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="net-hosp-card">
+        <div class="net-hosp-card__bar net-hosp-card__bar--blue"></div>
+        <div class="net-hosp-card__body">
+          <div class="net-hosp-card__top">
+            <div class="net-hosp-icon" style="background:#eff6ff;color:#2563eb"><i class="fas fa-hospital"></i></div>
+            <div>
+              <div class="net-hosp-card__name">Fortis Hospital Mulund</div>
+              <div class="net-hosp-card__stars">★★★★½ <span style="color:#64748b;font-weight:500">4.4</span></div>
+            </div>
+          </div>
+          <div class="net-hosp-card__tags">
+            <span class="net-hosp-tag">Cardiology</span>
+            <span class="net-hosp-tag">Oncology</span>
+            <span class="net-hosp-tag">Neurology</span>
+          </div>
+          <div class="net-hosp-card__bottom">
+            <div class="net-hosp-price">From ₹45,000 <span>onwards</span></div>
+            <span class="net-hosp-badge"><i class="fas fa-award" style="margin-right:4px"></i>NABH</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="net-hosp-card">
+        <div class="net-hosp-card__bar net-hosp-card__bar--purple"></div>
+        <div class="net-hosp-card__body">
+          <div class="net-hosp-card__top">
+            <div class="net-hosp-icon" style="background:#faf5ff;color:#7c3aed"><i class="fas fa-hospital"></i></div>
+            <div>
+              <div class="net-hosp-card__name">Lilavati Hospital</div>
+              <div class="net-hosp-card__stars">★★★★★ <span style="color:#64748b;font-weight:500">4.6</span></div>
+            </div>
+          </div>
+          <div class="net-hosp-card__tags">
+            <span class="net-hosp-tag">Gastro</span>
+            <span class="net-hosp-tag">Transplant</span>
+            <span class="net-hosp-tag">ENT</span>
+          </div>
+          <div class="net-hosp-card__bottom">
+            <div class="net-hosp-price">From ₹40,000 <span>onwards</span></div>
+            <span class="net-hosp-badge"><i class="fas fa-award" style="margin-right:4px"></i>NABH</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="net-hosp-card">
+        <div class="net-hosp-card__bar net-hosp-card__bar--orange"></div>
+        <div class="net-hosp-card__body">
+          <div class="net-hosp-card__top">
+            <div class="net-hosp-icon" style="background:#fff7ed;color:#ea580c"><i class="fas fa-hospital"></i></div>
+            <div>
+              <div class="net-hosp-card__name">Kokilaben Dhirubhai Ambani</div>
+              <div class="net-hosp-card__stars">★★★★★ <span style="color:#64748b;font-weight:500">4.7</span></div>
+            </div>
+          </div>
+          <div class="net-hosp-card__tags">
+            <span class="net-hosp-tag">Robotic Surgery</span>
+            <span class="net-hosp-tag">Cancer Care</span>
+          </div>
+          <div class="net-hosp-card__bottom">
+            <div class="net-hosp-price">From ₹60,000 <span>onwards</span></div>
+            <span class="net-hosp-badge"><i class="fas fa-award" style="margin-right:4px"></i>NABH</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="net-hosp-card">
+        <div class="net-hosp-card__bar net-hosp-card__bar--cyan"></div>
+        <div class="net-hosp-card__body">
+          <div class="net-hosp-card__top">
+            <div class="net-hosp-icon" style="background:#ecfeff;color:#0e7490"><i class="fas fa-hospital"></i></div>
+            <div>
+              <div class="net-hosp-card__name">HN Reliance Foundation</div>
+              <div class="net-hosp-card__stars">★★★★½ <span style="color:#64748b;font-weight:500">4.3</span></div>
+            </div>
+          </div>
+          <div class="net-hosp-card__tags">
+            <span class="net-hosp-tag">Obstetrics</span>
+            <span class="net-hosp-tag">Paediatrics</span>
+            <span class="net-hosp-tag">Spine</span>
+          </div>
+          <div class="net-hosp-card__bottom">
+            <div class="net-hosp-price">From ₹32,000 <span>onwards</span></div>
+            <span class="net-hosp-badge"><i class="fas fa-award" style="margin-right:4px"></i>NABH</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="net-more-card" onclick="window.openFormOverlay && window.openFormOverlay()">
+        <div class="net-more-card__num">45+</div>
+        <div class="net-more-card__label">More hospitals in Mumbai</div>
+        <span class="net-more-card__btn"><i class="fas fa-search-dollar" style="margin-right:6px"></i>Find My Hospital</span>
+      </div>
+    </div>
+
+    <!-- Pune -->
+    <div class="city-panel" id="panel-pune" role="tabpanel">
+      <div class="net-hosp-card">
+        <div class="net-hosp-card__bar net-hosp-card__bar--teal"></div>
+        <div class="net-hosp-card__body">
+          <div class="net-hosp-card__top">
+            <div class="net-hosp-icon"><i class="fas fa-hospital"></i></div>
+            <div>
+              <div class="net-hosp-card__name">Ruby Hall Clinic</div>
+              <div class="net-hosp-card__stars">★★★★★ <span style="color:#64748b;font-weight:500">4.5</span></div>
+            </div>
+          </div>
+          <div class="net-hosp-card__tags">
+            <span class="net-hosp-tag">Cardiology</span>
+            <span class="net-hosp-tag">Neurology</span>
+            <span class="net-hosp-tag">Ortho</span>
+          </div>
+          <div class="net-hosp-card__bottom">
+            <div class="net-hosp-price">From ₹28,000 <span>onwards</span></div>
+            <span class="net-hosp-badge"><i class="fas fa-award" style="margin-right:4px"></i>NABH</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="net-hosp-card">
+        <div class="net-hosp-card__bar net-hosp-card__bar--blue"></div>
+        <div class="net-hosp-card__body">
+          <div class="net-hosp-card__top">
+            <div class="net-hosp-icon" style="background:#eff6ff;color:#2563eb"><i class="fas fa-hospital"></i></div>
+            <div>
+              <div class="net-hosp-card__name">Jehangir Hospital</div>
+              <div class="net-hosp-card__stars">★★★★½ <span style="color:#64748b;font-weight:500">4.2</span></div>
+            </div>
+          </div>
+          <div class="net-hosp-card__tags">
+            <span class="net-hosp-tag">Gastro</span>
+            <span class="net-hosp-tag">ENT</span>
+            <span class="net-hosp-tag">Laparoscopy</span>
+          </div>
+          <div class="net-hosp-card__bottom">
+            <div class="net-hosp-price">From ₹22,000 <span>onwards</span></div>
+            <span class="net-hosp-badge"><i class="fas fa-award" style="margin-right:4px"></i>NABH</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="net-hosp-card">
+        <div class="net-hosp-card__bar net-hosp-card__bar--purple"></div>
+        <div class="net-hosp-card__body">
+          <div class="net-hosp-card__top">
+            <div class="net-hosp-icon" style="background:#faf5ff;color:#7c3aed"><i class="fas fa-hospital"></i></div>
+            <div>
+              <div class="net-hosp-card__name">Aditya Birla Memorial</div>
+              <div class="net-hosp-card__stars">★★★★★ <span style="color:#64748b;font-weight:500">4.6</span></div>
+            </div>
+          </div>
+          <div class="net-hosp-card__tags">
+            <span class="net-hosp-tag">Oncology</span>
+            <span class="net-hosp-tag">Transplant</span>
+          </div>
+          <div class="net-hosp-card__bottom">
+            <div class="net-hosp-price">From ₹50,000 <span>onwards</span></div>
+            <span class="net-hosp-badge"><i class="fas fa-award" style="margin-right:4px"></i>NABH</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="net-more-card" onclick="window.openFormOverlay && window.openFormOverlay()">
+        <div class="net-more-card__num">20+</div>
+        <div class="net-more-card__label">More hospitals in Pune</div>
+        <span class="net-more-card__btn"><i class="fas fa-search-dollar" style="margin-right:6px"></i>Find My Hospital</span>
+      </div>
+    </div>
+
+    <!-- Navi Mumbai -->
+    <div class="city-panel" id="panel-navi-mumbai" role="tabpanel">
+      <div class="net-hosp-card">
+        <div class="net-hosp-card__bar net-hosp-card__bar--teal"></div>
+        <div class="net-hosp-card__body">
+          <div class="net-hosp-card__top">
+            <div class="net-hosp-icon"><i class="fas fa-hospital"></i></div>
+            <div>
+              <div class="net-hosp-card__name">Apollo Hospital Navi Mumbai</div>
+              <div class="net-hosp-card__stars">★★★★★ <span style="color:#64748b;font-weight:500">4.4</span></div>
+            </div>
+          </div>
+          <div class="net-hosp-card__tags">
+            <span class="net-hosp-tag">Cardiology</span>
+            <span class="net-hosp-tag">Ortho</span>
+            <span class="net-hosp-tag">Urology</span>
+          </div>
+          <div class="net-hosp-card__bottom">
+            <div class="net-hosp-price">From ₹30,000 <span>onwards</span></div>
+            <span class="net-hosp-badge"><i class="fas fa-award" style="margin-right:4px"></i>NABH</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="net-hosp-card">
+        <div class="net-hosp-card__bar net-hosp-card__bar--orange"></div>
+        <div class="net-hosp-card__body">
+          <div class="net-hosp-card__top">
+            <div class="net-hosp-icon" style="background:#fff7ed;color:#ea580c"><i class="fas fa-hospital"></i></div>
+            <div>
+              <div class="net-hosp-card__name">MGM Healthcare</div>
+              <div class="net-hosp-card__stars">★★★★☆ <span style="color:#64748b;font-weight:500">4.1</span></div>
+            </div>
+          </div>
+          <div class="net-hosp-card__tags">
+            <span class="net-hosp-tag">Nephrology</span>
+            <span class="net-hosp-tag">Gastro</span>
+          </div>
+          <div class="net-hosp-card__bottom">
+            <div class="net-hosp-price">From ₹25,000 <span>onwards</span></div>
+            <span class="net-hosp-badge"><i class="fas fa-award" style="margin-right:4px"></i>NABH</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="net-more-card" onclick="window.openFormOverlay && window.openFormOverlay()">
+        <div class="net-more-card__num">15+</div>
+        <div class="net-more-card__label">More hospitals in Navi Mumbai</div>
+        <span class="net-more-card__btn"><i class="fas fa-search-dollar" style="margin-right:6px"></i>Find My Hospital</span>
+      </div>
+    </div>
+
+    <!-- Thane -->
+    <div class="city-panel" id="panel-thane" role="tabpanel">
+      <div class="net-hosp-card">
+        <div class="net-hosp-card__bar net-hosp-card__bar--teal"></div>
+        <div class="net-hosp-card__body">
+          <div class="net-hosp-card__top">
+            <div class="net-hosp-icon"><i class="fas fa-hospital"></i></div>
+            <div>
+              <div class="net-hosp-card__name">Jupiter Hospital Thane</div>
+              <div class="net-hosp-card__stars">★★★★★ <span style="color:#64748b;font-weight:500">4.5</span></div>
+            </div>
+          </div>
+          <div class="net-hosp-card__tags">
+            <span class="net-hosp-tag">Proctology</span>
+            <span class="net-hosp-tag">Bariatrics</span>
+            <span class="net-hosp-tag">Spine</span>
+          </div>
+          <div class="net-hosp-card__bottom">
+            <div class="net-hosp-price">From ₹28,000 <span>onwards</span></div>
+            <span class="net-hosp-badge"><i class="fas fa-award" style="margin-right:4px"></i>NABH</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="net-hosp-card">
+        <div class="net-hosp-card__bar net-hosp-card__bar--blue"></div>
+        <div class="net-hosp-card__body">
+          <div class="net-hosp-card__top">
+            <div class="net-hosp-icon" style="background:#eff6ff;color:#2563eb"><i class="fas fa-hospital"></i></div>
+            <div>
+              <div class="net-hosp-card__name">Hiranandani Hospital</div>
+              <div class="net-hosp-card__stars">★★★★½ <span style="color:#64748b;font-weight:500">4.3</span></div>
+            </div>
+          </div>
+          <div class="net-hosp-card__tags">
+            <span class="net-hosp-tag">ENT</span>
+            <span class="net-hosp-tag">Laparoscopy</span>
+          </div>
+          <div class="net-hosp-card__bottom">
+            <div class="net-hosp-price">From ₹20,000 <span>onwards</span></div>
+            <span class="net-hosp-badge"><i class="fas fa-award" style="margin-right:4px"></i>NABH</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="net-more-card" onclick="window.openFormOverlay && window.openFormOverlay()">
+        <div class="net-more-card__num">12+</div>
+        <div class="net-more-card__label">More hospitals in Thane</div>
+        <span class="net-more-card__btn"><i class="fas fa-search-dollar" style="margin-right:6px"></i>Find My Hospital</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     CTA SECTION
+══════════════════════════════════════ -->
+<section class="cta-section">
+  <div class="cta-section__inner reveal">
+    <h2>Ready to Find Your Treatment Cost?</h2>
+    <p>Join 10,000+ patients who made informed healthcare decisions with Esticure. It's completely free.</p>
+    <button class="btn-cta-white btn-ripple" onclick="window.openFormOverlay && window.openFormOverlay()">
+      <i class="fas fa-search-dollar"></i>
+      Get My Free Estimate
+    </button>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer id="contact">
+  <div class="footer__inner">
+    <div>
+      <div class="footer__brand">Esti<span>cure</span></div>
+      <p class="footer__tagline">
+        India's smartest healthcare cost discovery platform.
+        Helping patients make informed, confident decisions — always free.
+      </p>
+      <div class="footer__social">
+        <a href="#" class="footer__social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="footer__social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="footer__social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="footer__social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer__col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#how-it-works">How it Works</a></li>
+        <li><a href="#hospitals">Hospitals</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>For Hospitals</h4>
+      <ul>
+        <li><a href="../hospital-crm/login.html">Hospital Login</a></li>
+        <li><a href="#">Partner With Us</a></li>
+        <li><a href="#">Pricing Plans</a></li>
+        <li><a href="#">CRM Demo</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:hello@esticure.in">hello@esticure.in</a></li>
+        <li><a href="tel:+919000000000">+91 90000 00000</a></li>
+        <li><a href="#">Mumbai, India</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>© 2025 Esticure. All rights reserved. &nbsp;|&nbsp; <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Service</a></p>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════
+     FORM OVERLAY (8 steps)
+══════════════════════════════════════ -->
+<div id="form-overlay" class="form-overlay" role="dialog" aria-modal="true" aria-label="Treatment estimate form">
+  <div class="form-card">
+    <button id="form-close" class="form-close" aria-label="Close form">
+      <i class="fas fa-times"></i>
+    </button>
+
+    <!-- Gradient header band -->
+    <div class="form-header-band">
+      <div class="form-header-band__label">Treatment Navigator</div>
+      <div class="form-header-band__title">Get Your Free Cost Estimate</div>
+    </div>
+
+    <!-- Progress -->
+    <div class="form-progress">
+      <div id="progress-bar" class="form-progress__bar" style="width:0%"></div>
+    </div>
+    <div class="form-step-label">
+      <span id="step-label">Step 1 of 8</span>
+      <span id="step-name">Name</span>
+    </div>
+
+    <!-- ── Step 1: Name ── -->
+    <div class="form-step active" data-step="1">
+      <h2>What's your name? 👋</h2>
+      <p>We'll personalise your experience and results just for you.</p>
+      <label class="form-label" for="input-name">Full Name</label>
+      <div class="inp-wrap">
+        <i class="fas fa-user inp-ico"></i>
+        <input id="input-name" class="form-control" type="text" placeholder="Enter your full name" autocomplete="name" />
+      </div>
+    </div>
+
+    <!-- ── Step 2: Mobile ── -->
+    <div class="form-step" data-step="2">
+      <h2>Your mobile number 📱</h2>
+      <p>We'll send an OTP to verify your identity securely.</p>
+      <label class="form-label" for="input-mobile">Mobile Number</label>
+      <div class="inp-wrap">
+        <i class="fas fa-phone inp-ico"></i>
+        <input id="input-mobile" class="form-control" type="tel" placeholder="10-digit mobile number" maxlength="10" autocomplete="tel" />
+      </div>
+    </div>
+
+    <!-- ── Step 3: OTP ── -->
+    <div class="form-step" data-step="3">
+      <h2>Enter OTP 🔐</h2>
+      <p>A 6-digit code was sent to your number. <strong style="color:#0d9488">Use 123123 for demo.</strong></p>
+      <div class="otp-inputs" role="group" aria-label="OTP input boxes">
+        <input class="otp-input" type="tel" maxlength="1" aria-label="OTP digit 1" />
+        <input class="otp-input" type="tel" maxlength="1" aria-label="OTP digit 2" />
+        <input class="otp-input" type="tel" maxlength="1" aria-label="OTP digit 3" />
+        <input class="otp-input" type="tel" maxlength="1" aria-label="OTP digit 4" />
+        <input class="otp-input" type="tel" maxlength="1" aria-label="OTP digit 5" />
+        <input class="otp-input" type="tel" maxlength="1" aria-label="OTP digit 6" />
+      </div>
+    </div>
+
+    <!-- ── Step 4: Email + City ── -->
+    <div class="form-step" data-step="4">
+      <h2>Location &amp; contact 📍</h2>
+      <p>We'll find the best hospitals in your city and send your estimate by email.</p>
+      <label class="form-label" for="input-email">Email Address</label>
+      <div class="inp-wrap">
+        <i class="fas fa-envelope inp-ico"></i>
+        <input id="input-email" class="form-control" type="email" placeholder="you@email.com" autocomplete="email" />
+      </div>
+      <label class="form-label" for="input-city">Your City</label>
+      <div class="inp-wrap">
+        <i class="fas fa-map-marker-alt inp-ico"></i>
+        <select id="input-city" class="form-control">
+          <option value="">Select your city</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Navi Mumbai">Navi Mumbai</option>
+          <option value="Thane">Thane</option>
+          <option value="Pune">Pune</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- ── Step 5: Insurance ── -->
+    <div class="form-step" data-step="5">
+      <h2>Do you have insurance? 🛡️</h2>
+      <p>We'll show hospitals and costs covered by your specific plan.</p>
+      <div class="radio-group">
+        <label class="radio-option">
+          <input type="radio" name="has_insurance" value="yes" />
+          <i class="fas fa-shield-check" style="color:#0d9488"></i> Yes, I have insurance
+        </label>
+        <label class="radio-option">
+          <input type="radio" name="has_insurance" value="no" />
+          <i class="fas fa-wallet" style="color:#64748b"></i> No / Self-pay
+        </label>
+      </div>
+      <div id="insurance-extra">
+        <label class="form-label" for="input-ins-company">Insurance Company</label>
+        <div class="inp-wrap">
+          <i class="fas fa-building inp-ico"></i>
+          <select id="input-ins-company" class="form-control">
+            <option value="">Select insurance company</option>
+            <option>Star Health</option>
+            <option>HDFC Ergo</option>
+            <option>ICICI Lombard</option>
+            <option>Bajaj Allianz</option>
+            <option>New India Assurance</option>
+            <option>United India</option>
+            <option>Care Health Insurance</option>
+            <option>Niva Bupa</option>
+          </select>
+        </div>
+        <label class="form-label" for="input-ins-limit">Coverage Limit (₹)</label>
+        <div class="inp-wrap">
+          <i class="fas fa-indian-rupee-sign inp-ico"></i>
+          <input id="input-ins-limit" class="form-control" type="number" placeholder="e.g. 500000" min="0" />
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Step 6: Problem ── -->
+    <div class="form-step" data-step="6">
+      <h2>Describe your problem 🏥</h2>
+      <p>Type in plain language — we'll intelligently match the right treatment.</p>
+      <div class="search-wrapper">
+        <div class="inp-wrap">
+          <i class="fas fa-search inp-ico"></i>
+          <input
+            id="problem-input"
+            class="form-control"
+            type="text"
+            placeholder="e.g., piles pain, kidney stone, knee pain…"
+            autocomplete="off"
+            style="margin-bottom:0"
+          />
+        </div>
+        <div id="suggestions-list" class="suggestions-list" role="listbox" aria-label="Suggestions"></div>
+      </div>
+      <p style="font-size:12px;color:#94a3b8;margin-top:10px;margin-bottom:0">
+        <i class="fas fa-lightbulb" style="color:#f59e0b"></i>
+        Select a suggestion to auto-fill the next step
+      </p>
+    </div>
+
+    <!-- ── Step 7: Treatment Details (OPTIONAL) ── -->
+    <div class="form-step" data-step="7">
+      <h2>Treatment details ✏️</h2>
+      <div class="optional-notice">
+        <i class="fas fa-info-circle"></i>
+        <div>
+          <strong>This step is optional.</strong> These fields are auto-filled from your problem description.
+          You can edit them, leave them blank, or click <strong>Skip →</strong> below.
+        </div>
+      </div>
+      <label class="form-label">Department <span style="color:#94a3b8;font-weight:400">(optional)</span></label>
+      <div class="inp-wrap">
+        <i class="fas fa-hospital inp-ico"></i>
+        <input id="input-dept" class="form-control" type="text" placeholder="e.g. Proctology, Urology, Orthopaedics" />
+      </div>
+      <label class="form-label">Subsection <span style="color:#94a3b8;font-weight:400">(optional)</span></label>
+      <div class="inp-wrap">
+        <i class="fas fa-list inp-ico"></i>
+        <input id="input-subsection" class="form-control" type="text" placeholder="e.g. Piles / Hemorrhoids" />
+      </div>
+      <label class="form-label">Specific Service / Procedure <span style="color:#94a3b8;font-weight:400">(optional)</span></label>
+      <div class="inp-wrap">
+        <i class="fas fa-syringe inp-ico"></i>
+        <input id="input-service" class="form-control" type="text" placeholder="e.g. Laser Hemorrhoidectomy" />
+      </div>
+    </div>
+
+    <!-- ── Step 8: Context ── -->
+    <div class="form-step" data-step="8">
+      <h2>A little more context 📋</h2>
+      <p>Optional details to help us find the most relevant hospitals and specialists.</p>
+      <label class="form-label">Last doctor consulted <span style="color:#94a3b8;font-weight:400">(optional)</span></label>
+      <div class="inp-wrap">
+        <i class="fas fa-user-doctor inp-ico"></i>
+        <input id="input-last-doctor" class="form-control" type="text" placeholder="Doctor's name (optional)" />
+      </div>
+      <p style="font-size:14px;font-weight:600;color:#334155;margin-top:16px;margin-bottom:12px">
+        Have you consulted a doctor for this before?
+      </p>
+      <div class="radio-group">
+        <label class="radio-option">
+          <input type="radio" name="consulted_before" value="yes" />
+          <i class="fas fa-check" style="color:#16a34a"></i> Yes, I have consulted before
+        </label>
+        <label class="radio-option">
+          <input type="radio" name="consulted_before" value="no" checked />
+          <i class="fas fa-times" style="color:#64748b"></i> No, this is my first time
+        </label>
+      </div>
+    </div>
+
+    <!-- Error -->
+    <div id="form-error" class="form-error" role="alert" aria-live="assertive">
+      <i class="fas fa-exclamation-circle"></i>
+      <span id="form-error-text"></span>
+    </div>
+
+    <!-- Navigation -->
+    <div class="form-nav">
+      <button id="btn-back" class="btn-back" type="button" style="visibility:hidden">
+        <i class="fas fa-arrow-left" style="margin-right:6px"></i> Back
+      </button>
+      <button id="btn-skip" class="btn-skip" type="button" style="display:none">
+        Skip <i class="fas fa-forward" style="margin-left:6px"></i>
+      </button>
+      <button id="btn-next" class="btn-next btn-ripple" type="button">
+        Next <i class="fas fa-arrow-right" style="margin-left:6px"></i>
+      </button>
+      <button id="btn-submit" class="btn-next btn-submit btn-ripple" type="button" style="display:none">
+        <i class="fas fa-search-dollar" style="margin-right:6px"></i> Get My Estimate
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PROCESSING OVERLAY
+══════════════════════════════════════ -->
+<div id="processing-overlay" class="processing-overlay" role="status" aria-live="polite" aria-label="Processing your request">
+  <div class="processing-spinner" aria-hidden="true"></div>
+  <div id="processing-message" class="processing-message">Analysing your condition…</div>
+  <div class="processing-sub">Finding the best hospitals for you</div>
+</div>
+
+<script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+<script src="js/app.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lead Detail – Esticure CRM</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/crm.css" />
+</head>
+<body>
+
+<div class="crm-layout">
+
+  <!-- ── Sidebar ── -->
+  <aside class="sidebar" role="navigation" aria-label="CRM navigation">
+    <div class="sidebar__brand">
+      <div class="sidebar__brand-icon"><i class="fas fa-compass-medical"></i></div>
+      <span>Esti<span>cure</span></span>
+    </div>
+
+    <div class="sidebar__hospital">
+      <div class="sidebar__avatar" id="sidebar-avatar">H</div>
+      <div class="sidebar__hosp-info">
+        <div class="sidebar__hosp-name" id="sidebar-hospital-name">Hospital</div>
+        <div class="sidebar__hosp-city" id="sidebar-hospital-city">City</div>
+      </div>
+    </div>
+
+    <div class="sidebar__nav-label">Main Menu</div>
+    <ul class="sidebar__nav">
+      <li>
+        <a href="dashboard.html"><i class="fas fa-chart-line nav-icon"></i><span>Dashboard</span></a>
+      </li>
+      <li>
+        <a href="leads.html"><i class="fas fa-users nav-icon"></i><span>All Leads</span></a>
+      </li>
+    </ul>
+
+    <div class="sidebar__footer">
+      <button class="sidebar__logout" data-logout>
+        <i class="fas fa-sign-out-alt nav-icon"></i><span>Sign Out</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ── Main ── -->
+  <main class="crm-main" role="main">
+
+    <a href="leads.html" class="btn-back-nav">
+      <i class="fas fa-arrow-left"></i> Back to Leads
+    </a>
+
+    <!-- Loading -->
+    <div id="detail-loading" class="loading-state">
+      <div class="loading-spinner"></div>
+      <p>Loading lead details…</p>
+    </div>
+
+    <!-- Content -->
+    <div id="detail-content" style="display:none">
+
+      <!-- Header -->
+      <div class="crm-topbar">
+        <div>
+          <div class="crm-topbar__title" id="lead-name">—</div>
+          <div class="crm-topbar__sub" id="lead-meta">—</div>
+        </div>
+        <div id="lead-status-badge"></div>
+      </div>
+
+      <!-- 2-col grid -->
+      <div class="detail-grid">
+
+        <!-- Left: info + remarks + visits -->
+        <div>
+
+          <!-- Personal -->
+          <div class="detail-card">
+            <h3>
+              <div class="detail-card-icon detail-card-icon--blue"><i class="fas fa-user"></i></div>
+              Personal Information
+            </h3>
+            <div class="detail-row">
+              <span class="detail-row__label">Full Name</span>
+              <span class="detail-row__value" id="d-name">—</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-row__label">Mobile</span>
+              <span class="detail-row__value" id="d-mobile">—</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-row__label">Email</span>
+              <span class="detail-row__value" id="d-email">—</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-row__label">City</span>
+              <span class="detail-row__value" id="d-city">—</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-row__label">Lead Date</span>
+              <span class="detail-row__value" id="d-date">—</span>
+            </div>
+          </div>
+
+          <!-- Medical -->
+          <div class="detail-card">
+            <h3>
+              <div class="detail-card-icon detail-card-icon--teal"><i class="fas fa-stethoscope"></i></div>
+              Medical Information
+            </h3>
+            <div class="detail-row">
+              <span class="detail-row__label">Problem</span>
+              <span class="detail-row__value" id="d-problem">—</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-row__label">Department</span>
+              <span class="detail-row__value" id="d-dept">—</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-row__label">Subsection</span>
+              <span class="detail-row__value" id="d-subsection">—</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-row__label">Service / Procedure</span>
+              <span class="detail-row__value" id="d-service">—</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-row__label">Last Doctor</span>
+              <span class="detail-row__value" id="d-lastdoctor">—</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-row__label">Consulted Before</span>
+              <span class="detail-row__value" id="d-consulted">—</span>
+            </div>
+          </div>
+
+          <!-- Insurance -->
+          <div class="detail-card">
+            <h3>
+              <div class="detail-card-icon detail-card-icon--amber"><i class="fas fa-shield-halved"></i></div>
+              Insurance Details
+            </h3>
+            <div class="detail-row">
+              <span class="detail-row__label">Has Insurance</span>
+              <span class="detail-row__value" id="d-has-insurance">—</span>
+            </div>
+            <div id="d-insurance-extra" style="display:none">
+              <div class="detail-row">
+                <span class="detail-row__label">Company</span>
+                <span class="detail-row__value" id="d-ins-company">—</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-row__label">Coverage Limit</span>
+                <span class="detail-row__value" id="d-ins-limit">—</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cost Estimate -->
+          <div class="detail-card">
+            <h3>
+              <div class="detail-card-icon detail-card-icon--green"><i class="fas fa-indian-rupee-sign"></i></div>
+              Cost Estimate
+            </h3>
+            <div class="detail-row">
+              <span class="detail-row__label">Estimate Range</span>
+              <span class="detail-row__value" id="d-estimate" style="color:#16a34a;font-size:17px;font-weight:800">—</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-row__label">Matched Hospitals</span>
+              <span class="detail-row__value" id="d-hospital-count">—</span>
+            </div>
+          </div>
+
+          <!-- Remarks timeline -->
+          <div class="detail-card">
+            <h3>
+              <div class="detail-card-icon" style="background:#ede9fe"><i class="fas fa-comment-medical" style="color:#7c3aed"></i></div>
+              Remarks &amp; Notes
+            </h3>
+            <div id="detail-remarks-list" class="remark-timeline" style="margin-bottom:16px">
+              <div class="remark-empty"><i class="fas fa-comment-slash"></i>No remarks yet</div>
+            </div>
+            <!-- Add remark inline -->
+            <div class="remark-form">
+              <textarea id="detail-remark-input" class="remark-textarea" placeholder="Add a note about this patient…"></textarea>
+              <button id="detail-remark-btn" class="remark-submit-btn">
+                <i class="fas fa-paper-plane"></i> Add Remark
+              </button>
+            </div>
+          </div>
+
+          <!-- Doctor visits -->
+          <div class="detail-card">
+            <h3>
+              <div class="detail-card-icon detail-card-icon--teal"><i class="fas fa-calendar-check"></i></div>
+              Doctor Visit Schedule
+            </h3>
+            <div id="detail-visit-history" class="visit-history" style="margin-bottom:16px">
+              <div class="visit-empty"><i class="fas fa-calendar-xmark"></i>No visits scheduled yet</div>
+            </div>
+            <!-- Schedule visit inline -->
+            <div class="visit-form" style="border-top:1px solid var(--c-border);padding-top:16px;margin-top:4px">
+              <div class="visit-field">
+                <label>Doctor Name</label>
+                <input id="detail-visit-doctor" class="visit-input" type="text" placeholder="Dr. Name" />
+              </div>
+              <div class="visit-form-row">
+                <div class="visit-field">
+                  <label>Visit Date</label>
+                  <input id="detail-visit-date" class="visit-input" type="date" />
+                </div>
+                <div class="visit-field">
+                  <label>Visit Time</label>
+                  <input id="detail-visit-time" class="visit-input" type="time" />
+                </div>
+              </div>
+              <div class="visit-field">
+                <label>Notes</label>
+                <input id="detail-visit-notes" class="visit-input" type="text" placeholder="Instructions, prep notes…" />
+              </div>
+              <button id="detail-visit-btn" class="visit-submit-btn">
+                <i class="fas fa-calendar-check"></i> Schedule Visit
+              </button>
+            </div>
+          </div>
+
+        </div><!-- /left col -->
+
+        <!-- Right: sticky actions -->
+        <div>
+          <div class="actions-card">
+            <h3><i class="fas fa-bolt" style="color:#d97706;margin-right:6px"></i>Actions</h3>
+
+            <!-- Quick contact -->
+            <div class="call-bar" style="margin-bottom:16px">
+              <button class="call-bar__btn call-bar__btn--call" id="btn-call">
+                <i class="fas fa-phone"></i> Call
+              </button>
+              <button class="call-bar__btn call-bar__btn--whatsapp" id="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+              </button>
+            </div>
+
+            <div class="current-status-label">
+              Current status: <span id="action-current-status"></span>
+            </div>
+
+            <div class="status-action-grid" style="grid-template-columns:1fr;gap:8px">
+              <button class="status-action-btn status-action-btn--contacted" data-status="contacted">
+                <i class="fas fa-phone-volume"></i> Mark as Contacted
+              </button>
+              <button class="status-action-btn status-action-btn--converted" data-status="converted">
+                <i class="fas fa-circle-check"></i> Mark as Converted
+              </button>
+              <button class="status-action-btn status-action-btn--new" data-status="new">
+                <i class="fas fa-rotate-left"></i> Reset to New
+              </button>
+              <button class="status-action-btn status-action-btn--rejected" data-status="rejected">
+                <i class="fas fa-circle-xmark"></i> Reject Lead
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/crm.js"></script>
+<script>
+let currentLead = null;
+
+const session = requireAuth();
+if (session) {
+  initSidebarInfo();
+  updateSidebarAvatar(session.name);
+  loadLead();
+}
+
+function updateSidebarAvatar(name) {
+  const el = document.getElementById('sidebar-avatar');
+  if (el && name) {
+    const parts = name.trim().split(' ');
+    el.textContent = parts.length >= 2
+      ? (parts[0][0] + parts[parts.length - 1][0]).toUpperCase()
+      : name.slice(0, 2).toUpperCase();
+  }
+}
+
+async function loadLead() {
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get('id');
+  if (!id) { window.location.replace('leads.html'); return; }
+
+  try {
+    currentLead = await getLeadById(id);
+    renderLead(currentLead);
+  } catch (err) {
+    document.getElementById('detail-loading').innerHTML = `
+      <div class="empty-state">
+        <i class="fas fa-triangle-exclamation" style="font-size:40px;color:#fca5a5;margin-bottom:12px;display:block"></i>
+        <h3>Could not load lead</h3><p>${escHtml(err.message)}</p>
+      </div>`;
+  }
+}
+
+function renderLead(lead) {
+  document.getElementById('detail-loading').style.display = 'none';
+  document.getElementById('detail-content').style.display = 'block';
+
+  document.title = `${lead.name || 'Lead'} – Esticure CRM`;
+  document.getElementById('lead-name').textContent   = lead.name || '—';
+  document.getElementById('lead-meta').textContent   =
+    `${lead.city} · ${lead.medical?.service || 'Unknown treatment'} · Added ${fmtDate(lead.createdAt)}`;
+  document.getElementById('lead-status-badge').innerHTML = statusBadge(lead.status);
+
+  // Personal
+  document.getElementById('d-name').textContent  = lead.name || '—';
+  document.getElementById('d-mobile').innerHTML  = lead.mobile
+    ? `<a href="tel:${escHtml(lead.mobile)}" class="email-chip" style="background:#dbeafe;color:#1d4ed8">
+         <i class="fas fa-phone"></i>${escHtml(lead.mobile)}</a>` : '—';
+  document.getElementById('d-email').innerHTML   = lead.email
+    ? `<a href="mailto:${escHtml(lead.email)}" class="email-chip">
+         <i class="fas fa-envelope"></i>${escHtml(lead.email)}</a>` : '—';
+  document.getElementById('d-city').textContent  = lead.city || '—';
+  document.getElementById('d-date').textContent  = fmtDate(lead.createdAt);
+
+  // Medical
+  document.getElementById('d-problem').textContent    = lead.medical?.problem    || '—';
+  document.getElementById('d-dept').textContent       = lead.medical?.department || '—';
+  document.getElementById('d-subsection').textContent = lead.medical?.subsection || '—';
+  document.getElementById('d-service').textContent    = lead.medical?.service    || '—';
+  document.getElementById('d-lastdoctor').textContent = lead.context?.lastDoctor || 'Not specified';
+  document.getElementById('d-consulted').innerHTML    = lead.context?.consultedBefore
+    ? '<span style="color:#16a34a;font-weight:600"><i class="fas fa-check" style="margin-right:4px"></i>Yes</span>'
+    : '<span style="color:#94a3b8"><i class="fas fa-times" style="margin-right:4px"></i>No</span>';
+
+  // Insurance
+  const hasIns = lead.insurance?.hasInsurance;
+  document.getElementById('d-has-insurance').innerHTML = hasIns
+    ? '<span style="color:#16a34a;font-weight:600"><i class="fas fa-shield-check" style="margin-right:5px"></i>Yes</span>'
+    : '<span style="color:#94a3b8">No</span>';
+  if (hasIns) {
+    document.getElementById('d-insurance-extra').style.display = 'block';
+    document.getElementById('d-ins-company').textContent = lead.insurance.company || '—';
+    document.getElementById('d-ins-limit').textContent   = lead.insurance.limit
+      ? `₹${Number(lead.insurance.limit).toLocaleString('en-IN')}` : '—';
+  }
+
+  // Cost
+  const match = lead.hospitalMatch;
+  if (match) {
+    document.getElementById('d-estimate').textContent =
+      `₹${fmtINR(match.estimatedCostMin)} – ₹${fmtINR(match.estimatedCostMax)}`;
+    document.getElementById('d-hospital-count').textContent =
+      `${match.matchedHospitals?.length || match.matchedHospitalDetails?.length || 0} hospitals`;
+  }
+
+  // Remarks
+  renderRemarks(lead.remarks || []);
+
+  // Visits
+  renderVisitHistory(lead.doctorVisits || (lead.doctorVisit ? [lead.doctorVisit] : []));
+
+  // Status
+  refreshStatusButtons(lead.status);
+
+  // Call / WhatsApp
+  document.getElementById('btn-call').onclick = () => {
+    if (lead.mobile) window.location.href = `tel:${lead.mobile}`;
+    showToast(`Calling ${lead.name}`, 'success');
+  };
+  document.getElementById('btn-whatsapp').onclick = () => {
+    const num = (lead.mobile || '').replace(/\D/g,'');
+    if (num) window.open(`https://wa.me/91${num}`, '_blank');
+    else showToast('No mobile number', 'error');
+  };
+}
+
+// ── Status ────────────────────────────────────────────────
+function refreshStatusButtons(status) {
+  document.getElementById('action-current-status').innerHTML = statusBadge(status);
+  document.querySelectorAll('.status-action-btn').forEach((btn) => {
+    btn.classList.toggle('active', btn.dataset.status === status);
+    btn.disabled = false;
+  });
+}
+
+document.querySelectorAll('.status-action-btn').forEach((btn) => {
+  btn.addEventListener('click', async () => {
+    if (!currentLead) return;
+    const s = btn.dataset.status;
+    btn.disabled = true;
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Updating…';
+    try {
+      const updated = await updateLead(currentLead.id, { status: s });
+      currentLead = updated;
+      document.getElementById('lead-status-badge').innerHTML = statusBadge(s);
+      refreshStatusButtons(s);
+      showToast(`Status → ${s}`, 'success');
+    } catch (err) {
+      showToast(`Failed: ${err.message}`, 'error');
+    }
+    const icons = { contacted:'fa-phone-volume', converted:'fa-circle-check', new:'fa-rotate-left', rejected:'fa-circle-xmark' };
+    const labels = { contacted:'Mark as Contacted', converted:'Mark as Converted', new:'Reset to New', rejected:'Reject Lead' };
+    btn.innerHTML = `<i class="fas ${icons[s]}"></i> ${labels[s]}`;
+    btn.disabled = false;
+    refreshStatusButtons(currentLead.status);
+  });
+});
+
+// ── Remarks ───────────────────────────────────────────────
+document.getElementById('detail-remark-btn').addEventListener('click', async () => {
+  const input = document.getElementById('detail-remark-input');
+  const text  = (input.value || '').trim();
+  if (!text || !currentLead) return;
+
+  const btn = document.getElementById('detail-remark-btn');
+  btn.disabled = true;
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Saving…';
+
+  try {
+    const updated = await updateLead(currentLead.id, { remark: text });
+    currentLead = updated;
+    input.value = '';
+    renderRemarks(updated.remarks || []);
+    showToast('Remark saved', 'success');
+  } catch (err) {
+    showToast(`Failed: ${err.message}`, 'error');
+  }
+
+  btn.disabled = false;
+  btn.innerHTML = '<i class="fas fa-paper-plane"></i> Add Remark';
+});
+
+function renderRemarks(remarks) {
+  const c = document.getElementById('detail-remarks-list');
+  if (!remarks.length) {
+    c.innerHTML = `<div class="remark-empty"><i class="fas fa-comment-slash"></i>No remarks yet</div>`;
+    return;
+  }
+  const sorted = [...remarks].sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+  c.innerHTML = sorted.map((r) => `
+    <div class="remark-item">
+      <div class="remark-dot"></div>
+      <div class="remark-body">
+        <div class="remark-body__text">${escHtml(r.text)}</div>
+        <div class="remark-body__date"><i class="fas fa-clock" style="margin-right:4px"></i>${fmtDateTime(r.createdAt)}</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+// ── Doctor Visit ──────────────────────────────────────────
+document.getElementById('detail-visit-btn').addEventListener('click', async () => {
+  const doctorName = (document.getElementById('detail-visit-doctor').value || '').trim();
+  const visitDate  = (document.getElementById('detail-visit-date').value  || '').trim();
+  const visitTime  = (document.getElementById('detail-visit-time').value  || '').trim();
+  const notes      = (document.getElementById('detail-visit-notes').value || '').trim();
+
+  if (!visitDate) { showToast('Please select a date', 'error'); return; }
+
+  const btn = document.getElementById('detail-visit-btn');
+  btn.disabled = true;
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Scheduling…';
+
+  try {
+    const updated = await updateLead(currentLead.id, {
+      doctorVisit: { doctorName, visitDate, visitTime, notes },
+    });
+    currentLead = updated;
+    document.getElementById('detail-visit-doctor').value = '';
+    document.getElementById('detail-visit-date').value   = '';
+    document.getElementById('detail-visit-time').value   = '';
+    document.getElementById('detail-visit-notes').value  = '';
+    renderVisitHistory(updated.doctorVisits || []);
+    showToast('Visit scheduled', 'success');
+  } catch (err) {
+    showToast(`Failed: ${err.message}`, 'error');
+  }
+
+  btn.disabled = false;
+  btn.innerHTML = '<i class="fas fa-calendar-check"></i> Schedule Visit';
+});
+
+function renderVisitHistory(visits) {
+  const c = document.getElementById('detail-visit-history');
+  if (!visits || !visits.length) {
+    c.innerHTML = `<div class="visit-empty"><i class="fas fa-calendar-xmark"></i>No visits scheduled yet</div>`;
+    return;
+  }
+  const sorted = [...visits].sort((a, b) =>
+    new Date(b.scheduledAt || b.visitDate) - new Date(a.scheduledAt || a.visitDate));
+  c.innerHTML = sorted.map((v, i) => `
+    <div class="visit-card">
+      <div class="visit-card__header">
+        <div class="visit-card__doctor">
+          <i class="fas fa-user-doctor" style="margin-right:6px;color:#0d9488"></i>
+          ${escHtml(v.doctorName || 'Doctor TBD')}
+        </div>
+        ${i === 0 ? '<span class="visit-card__badge">Latest</span>' : ''}
+      </div>
+      <div class="visit-card__row"><i class="fas fa-calendar"></i><span>${escHtml(formatVisitDate(v.visitDate))}</span></div>
+      ${v.visitTime ? `<div class="visit-card__row"><i class="fas fa-clock"></i><span>${escHtml(v.visitTime)}</span></div>` : ''}
+      ${v.notes ? `<div class="visit-card__notes"><i class="fas fa-note-sticky" style="color:#0d9488;margin-right:5px"></i>${escHtml(v.notes)}</div>` : ''}
+    </div>
+  `).join('');
+}
+
+// ── Helpers ───────────────────────────────────────────────
+function escHtml(str) {
+  const d = document.createElement('div');
+  d.textContent = str || '';
+  return d.innerHTML;
+}
+function fmtINR(n) { return Number(n||0).toLocaleString('en-IN'); }
+function fmtDateTime(iso) {
+  if (!iso) return '—';
+  return new Date(iso).toLocaleString('en-IN', {
+    day:'2-digit', month:'short', year:'numeric', hour:'2-digit', minute:'2-digit',
+  });
+}
+function formatVisitDate(d) {
+  if (!d) return '—';
+  try { return new Date(d).toLocaleDateString('en-IN', { weekday:'short', day:'2-digit', month:'short', year:'numeric' }); }
+  catch { return d; }
+}
+</script>
+
+</body>
+</html>

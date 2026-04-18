@@ -1,0 +1,162 @@
+[
+  {
+    "id": "mum_1",
+    "name": "Apollo Spectra Hospital",
+    "city": "Mumbai",
+    "rating": 4.5,
+    "priceMultiplier": 1.3,
+    "insuranceAccepted": ["Star Health", "HDFC Ergo", "New India Assurance"],
+    "doctors": ["Dr. Rajesh Mehta", "Dr. Sneha Patil"],
+    "address": "Tardeo, Mumbai"
+  },
+  {
+    "id": "mum_2",
+    "name": "Fortis Hospital",
+    "city": "Mumbai",
+    "rating": 4.4,
+    "priceMultiplier": 1.4,
+    "insuranceAccepted": ["Star Health", "ICICI Lombard", "Bajaj Allianz"],
+    "doctors": ["Dr. Anil Kumar", "Dr. Priya Nair"],
+    "address": "Mulund, Mumbai"
+  },
+  {
+    "id": "mum_3",
+    "name": "Nanavati Max Hospital",
+    "city": "Mumbai",
+    "rating": 4.3,
+    "priceMultiplier": 1.2,
+    "insuranceAccepted": ["HDFC Ergo", "Bajaj Allianz", "United India"],
+    "doctors": ["Dr. Suresh Iyer", "Dr. Meena Shah"],
+    "address": "Vile Parle, Mumbai"
+  },
+  {
+    "id": "mum_4",
+    "name": "Lilavati Hospital",
+    "city": "Mumbai",
+    "rating": 4.6,
+    "priceMultiplier": 1.5,
+    "insuranceAccepted": ["Star Health", "ICICI Lombard", "New India Assurance", "United India"],
+    "doctors": ["Dr. Deepak Gupta", "Dr. Anita Joshi"],
+    "address": "Bandra, Mumbai"
+  },
+  {
+    "id": "nm_1",
+    "name": "MGM Hospital",
+    "city": "Navi Mumbai",
+    "rating": 4.2,
+    "priceMultiplier": 1.0,
+    "insuranceAccepted": ["Star Health", "New India Assurance", "United India"],
+    "doctors": ["Dr. Ramesh Patil", "Dr. Kavita More"],
+    "address": "Sector 3, Vashi, Navi Mumbai"
+  },
+  {
+    "id": "nm_2",
+    "name": "Kokilaben Hospital",
+    "city": "Navi Mumbai",
+    "rating": 4.5,
+    "priceMultiplier": 1.3,
+    "insuranceAccepted": ["HDFC Ergo", "ICICI Lombard", "Star Health"],
+    "doctors": ["Dr. Vinod Sharma", "Dr. Rekha Desai"],
+    "address": "Kharghar, Navi Mumbai"
+  },
+  {
+    "id": "nm_3",
+    "name": "Terna Speciality Hospital",
+    "city": "Navi Mumbai",
+    "rating": 4.1,
+    "priceMultiplier": 0.95,
+    "insuranceAccepted": ["United India", "New India Assurance"],
+    "doctors": ["Dr. Prakash Naik", "Dr. Sunita Kadam"],
+    "address": "Nerul, Navi Mumbai"
+  },
+  {
+    "id": "nm_4",
+    "name": "NMMC Hospital",
+    "city": "Navi Mumbai",
+    "rating": 3.9,
+    "priceMultiplier": 0.8,
+    "insuranceAccepted": ["United India", "Bajaj Allianz"],
+    "doctors": ["Dr. Santosh Rane", "Dr. Lata Sawant"],
+    "address": "Belapur, Navi Mumbai"
+  },
+  {
+    "id": "th_1",
+    "name": "Thane Medicare Centre",
+    "city": "Thane",
+    "rating": 4.2,
+    "priceMultiplier": 1.0,
+    "insuranceAccepted": ["Star Health", "Bajaj Allianz", "New India Assurance"],
+    "doctors": ["Dr. Milind Joshi", "Dr. Sushma Tiwari"],
+    "address": "Ghodbunder Road, Thane"
+  },
+  {
+    "id": "th_2",
+    "name": "Bethany Hospital",
+    "city": "Thane",
+    "rating": 4.0,
+    "priceMultiplier": 0.9,
+    "insuranceAccepted": ["HDFC Ergo", "United India"],
+    "doctors": ["Dr. Rohit Kulkarni", "Dr. Nirmala Shetty"],
+    "address": "Thane West"
+  },
+  {
+    "id": "th_3",
+    "name": "Apple Hospital",
+    "city": "Thane",
+    "rating": 4.1,
+    "priceMultiplier": 0.95,
+    "insuranceAccepted": ["Star Health", "ICICI Lombard"],
+    "doctors": ["Dr. Arvind Pawar", "Dr. Deepa Gaikwad"],
+    "address": "Thane East"
+  },
+  {
+    "id": "th_4",
+    "name": "Shree Hospital",
+    "city": "Thane",
+    "rating": 3.8,
+    "priceMultiplier": 0.85,
+    "insuranceAccepted": ["Bajaj Allianz", "United India"],
+    "doctors": ["Dr. Ganesh Borse", "Dr. Archana Wagh"],
+    "address": "Kalwa, Thane"
+  },
+  {
+    "id": "pn_1",
+    "name": "Ruby Hall Clinic",
+    "city": "Pune",
+    "rating": 4.5,
+    "priceMultiplier": 1.2,
+    "insuranceAccepted": ["Star Health", "HDFC Ergo", "ICICI Lombard", "New India Assurance"],
+    "doctors": ["Dr. Shashikant Deshpande", "Dr. Madhuri Kulkarni"],
+    "address": "Wanowrie, Pune"
+  },
+  {
+    "id": "pn_2",
+    "name": "Jehangir Hospital",
+    "city": "Pune",
+    "rating": 4.3,
+    "priceMultiplier": 1.15,
+    "insuranceAccepted": ["Bajaj Allianz", "Star Health", "United India"],
+    "doctors": ["Dr. Rajendra Thorat", "Dr. Smita Kale"],
+    "address": "Sassoon Road, Pune"
+  },
+  {
+    "id": "pn_3",
+    "name": "Sahyadri Hospital",
+    "city": "Pune",
+    "rating": 4.2,
+    "priceMultiplier": 1.05,
+    "insuranceAccepted": ["HDFC Ergo", "New India Assurance", "United India"],
+    "doctors": ["Dr. Nitin Potdar", "Dr. Vrushali Gupte"],
+    "address": "Deccan, Pune"
+  },
+  {
+    "id": "pn_4",
+    "name": "Deenanath Mangeshkar Hospital",
+    "city": "Pune",
+    "rating": 4.4,
+    "priceMultiplier": 1.1,
+    "insuranceAccepted": ["Star Health", "ICICI Lombard", "Bajaj Allianz"],
+    "doctors": ["Dr. Suhas Bhagwat", "Dr. Aparna Sathe"],
+    "address": "Erandwane, Pune"
+  }
+]

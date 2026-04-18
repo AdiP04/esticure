@@ -1,0 +1,473 @@
+/* ============================================================
+   ESTICURE — Custom Styles
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+/* ── Google Font fallback ── */
+body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+
+/* ============================================================
+   KEYFRAME ANIMATIONS
+   ============================================================ */
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(110%); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}
+
+@keyframes slideOutRight {
+  from { transform: translateX(0);    opacity: 1; }
+  to   { transform: translateX(110%); opacity: 0; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes bounceDot {
+  0%, 80%, 100% { transform: scale(0);   opacity: .4; }
+  40%           { transform: scale(1.2); opacity: 1;  }
+}
+
+@keyframes floatUp {
+  0%, 100% { transform: translateY(0px); }
+  50%      { transform: translateY(-12px); }
+}
+
+@keyframes floatDown {
+  0%, 100% { transform: translateY(0px); }
+  50%      { transform: translateY(9px); }
+}
+
+@keyframes rippleEffect {
+  to { transform: scale(5); opacity: 0; }
+}
+
+@keyframes pulseGreen {
+  0%   { box-shadow: 0 0 0 0   rgba(34,197,94,.5); }
+  70%  { box-shadow: 0 0 0 8px rgba(34,197,94,0);  }
+  100% { box-shadow: 0 0 0 0   rgba(34,197,94,0);  }
+}
+
+@keyframes shimmer {
+  from { background-position: -200% 0; }
+  to   { background-position:  200% 0; }
+}
+
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes barGrow {
+  from { height: 0 !important; }
+}
+
+/* ============================================================
+   SCROLL REVEAL
+   ============================================================ */
+
+.anim-fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .55s ease-out, transform .55s ease-out;
+}
+.anim-fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+
+.hero-section {
+  background: linear-gradient(135deg, #0f766e 0%, #0d9488 42%, #0369a1 100%);
+  position: relative;
+}
+
+.hero-blob-1 {
+  position: absolute; top: -60px; right: -80px;
+  width: 420px; height: 420px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,.07) 0%, transparent 70%);
+  animation: floatUp 7s ease-in-out infinite;
+  pointer-events: none;
+}
+.hero-blob-2 {
+  position: absolute; bottom: -40px; left: -60px;
+  width: 320px; height: 320px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,.05) 0%, transparent 70%);
+  animation: floatDown 9s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Hero card */
+.hero-card {
+  animation: fadeInUp .8s ease-out .3s both;
+  position: relative; z-index: 1;
+}
+
+.float-badge-1 {
+  animation: floatUp 4s ease-in-out infinite;
+}
+.float-badge-2 {
+  animation: floatDown 5s ease-in-out infinite;
+}
+
+.hero-hosp-row { transition: background .18s; }
+.hero-hosp-row:hover { background: #f1f5f9 !important; }
+
+/* ============================================================
+   NAV
+   ============================================================ */
+
+#navbar.scrolled {
+  box-shadow: 0 2px 20px rgba(0,0,0,.08);
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+
+.btn-primary {
+  background: #0d9488; color: #fff;
+  transition: background .18s, transform .1s, box-shadow .18s;
+  box-shadow: 0 2px 8px rgba(13,148,136,.28);
+}
+.btn-primary:hover {
+  background: #0f766e;
+  box-shadow: 0 4px 18px rgba(13,148,136,.38);
+  transform: translateY(-1px);
+}
+.btn-primary:active { transform: translateY(0); }
+
+.btn-hero-primary {
+  background: #fff; color: #0d9488; font-weight: 700;
+  box-shadow: 0 4px 24px rgba(0,0,0,.16);
+  transition: all .2s;
+}
+.btn-hero-primary:hover {
+  background: #f0fdfa;
+  box-shadow: 0 8px 32px rgba(0,0,0,.22);
+  transform: translateY(-2px);
+}
+
+.btn-hero-secondary {
+  background: rgba(255,255,255,.15); color: #fff;
+  border: 2px solid rgba(255,255,255,.4);
+  backdrop-filter: blur(4px);
+  transition: all .2s;
+}
+.btn-hero-secondary:hover {
+  background: rgba(255,255,255,.25);
+  border-color: rgba(255,255,255,.7);
+  transform: translateY(-2px);
+}
+
+.btn-submit {
+  background: linear-gradient(135deg, #0d9488, #0369a1);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(13,148,136,.38);
+  transition: all .2s;
+}
+.btn-submit:hover {
+  box-shadow: 0 8px 28px rgba(13,148,136,.48);
+  transform: translateY(-2px);
+}
+.btn-submit:active  { transform: translateY(0); }
+.btn-submit:disabled { opacity: .65; cursor: not-allowed; transform: none; }
+
+/* Ripple */
+.btn-ripple {
+  position: relative; overflow: hidden;
+}
+.btn-ripple .ripple-circle {
+  position: absolute; border-radius: 50%;
+  background: rgba(255,255,255,.32);
+  width: 12px; height: 12px;
+  transform: scale(0);
+  animation: rippleEffect .55s linear;
+  pointer-events: none;
+  margin-top: -6px; margin-left: -6px;
+}
+
+/* ============================================================
+   SECTION BADGES
+   ============================================================ */
+
+.section-badge {
+  display: inline-block;
+  background: #f0fdfa; color: #0d9488;
+  border: 1px solid #99f6e4;
+  font-size: .7rem; font-weight: 700;
+  padding: .3rem .9rem;
+  border-radius: 9999px;
+  letter-spacing: .06em; text-transform: uppercase;
+}
+
+.section-badge-light {
+  display: inline-block;
+  background: rgba(255,255,255,.15); color: #fff;
+  border: 1px solid rgba(255,255,255,.3);
+  font-size: .7rem; font-weight: 700;
+  padding: .3rem .9rem;
+  border-radius: 9999px;
+  letter-spacing: .06em; text-transform: uppercase;
+}
+
+/* ============================================================
+   FORMS
+   ============================================================ */
+
+.form-label {
+  display: block; font-size: .875rem; font-weight: 600;
+  color: #334155; margin-bottom: .35rem;
+}
+
+.inp-wrap { position: relative; }
+
+.inp-ico {
+  position: absolute; left: .85rem; top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8; font-size: .82rem;
+  pointer-events: none; z-index: 1;
+}
+
+.form-inp {
+  width: 100%;
+  padding: .72rem .85rem .72rem 2.4rem;
+  border: 1.5px solid #e2e8f0;
+  border-radius: .75rem;
+  font-size: .875rem; color: #1e293b;
+  background: #f8fafc;
+  transition: border-color .2s, box-shadow .2s, background .2s;
+  outline: none;
+  font-family: inherit;
+  appearance: none;
+}
+.form-inp:focus {
+  border-color: #0d9488;
+  box-shadow: 0 0 0 3px rgba(13,148,136,.12);
+  background: #fff;
+}
+.form-inp::placeholder { color: #94a3b8; }
+.form-inp.error { border-color: #ef4444; box-shadow: 0 0 0 3px rgba(239,68,68,.1); }
+
+.form-textarea {
+  padding-left: .85rem !important;
+  resize: vertical; min-height: 80px;
+}
+.form-sel { cursor: pointer; }
+
+/* ============================================================
+   LOADING SPINNER
+   ============================================================ */
+
+.loading-spinner {
+  width: 48px; height: 48px;
+  border: 3px solid #e2e8f0;
+  border-top-color: #0d9488;
+  border-radius: 50%;
+  animation: spin .75s linear infinite;
+}
+
+.loading-spinner-sm {
+  display: inline-block;
+  width: 16px; height: 16px;
+  border: 2px solid rgba(255,255,255,.35);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin .7s linear infinite;
+  vertical-align: middle;
+}
+
+.bounce-dot {
+  animation: bounceDot 1.3s infinite ease-in-out both;
+}
+
+/* ============================================================
+   CARDS
+   ============================================================ */
+
+.step-card, .consult-card, .hosp-card {
+  transition: box-shadow .25s, transform .25s;
+}
+.step-card:hover, .consult-card:hover, .hosp-card:hover {
+  box-shadow: 0 16px 40px rgba(0,0,0,.1);
+  transform: translateY(-4px);
+}
+
+/* ============================================================
+   CITY TABS
+   ============================================================ */
+
+.city-tab {
+  cursor: pointer; background: transparent; border: none;
+  transition: all .18s;
+}
+.city-tab.active-tab {
+  background: #fff; color: #0d9488;
+  box-shadow: 0 2px 10px rgba(0,0,0,.07);
+}
+
+/* ============================================================
+   SPECIALTY TAGS
+   ============================================================ */
+
+.spec-tag {
+  font-size: .68rem; font-weight: 700;
+  background: #f0fdfa; color: #0d9488;
+  border: 1px solid #99f6e4;
+  padding: .18rem .55rem; border-radius: 9999px;
+}
+
+/* ============================================================
+   TOAST
+   ============================================================ */
+
+.toast {
+  animation: slideInRight .3s ease-out;
+  pointer-events: all;
+}
+.toast.toast-out {
+  animation: slideOutRight .3s ease-out forwards;
+}
+
+/* ============================================================
+   MODALS
+   ============================================================ */
+
+.modal-wrap { animation: fadeIn .2s ease-out; }
+.modal-box  { animation: fadeInUp .25s ease-out; }
+
+/* ============================================================
+   DASHBOARD
+   ============================================================ */
+
+#dashboard-panel.dash-open { transform: translateX(0) !important; }
+
+/* ============================================================
+   REVENUE BARS
+   ============================================================ */
+
+.revenue-bar {
+  transition: height 1s cubic-bezier(.4,0,.2,1);
+}
+.revenue-bar.bar-animated {
+  animation: barGrow 1s cubic-bezier(.4,0,.2,1) both;
+}
+
+/* ============================================================
+   GLASS CARD (Tourism)
+   ============================================================ */
+
+.glass-card {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.18);
+  backdrop-filter: blur(8px);
+}
+
+/* ============================================================
+   TOURISM SECTION
+   ============================================================ */
+
+.tourism-blob {
+  position: absolute; top: -120px; right: -100px;
+  width: 500px; height: 500px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(13,148,136,.25) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ============================================================
+   VIDEO PLACEHOLDER
+   ============================================================ */
+
+.video-placeholder {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  border-radius: 12px; overflow: hidden;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 10px; color: #fff; min-height: 140px;
+  position: relative;
+}
+.video-placeholder::before {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(13,148,136,.25), transparent);
+}
+.video-placeholder > * { position: relative; z-index: 1; }
+
+/* ============================================================
+   STATUS DOT
+   ============================================================ */
+
+.status-dot {
+  display: inline-block; width: 8px; height: 8px;
+  border-radius: 50%; background: #22c55e;
+  animation: pulseGreen 2s infinite;
+}
+
+/* ============================================================
+   CHAT BUBBLE
+   ============================================================ */
+
+.chat-box {
+  max-height: 220px; overflow-y: auto;
+  scroll-behavior: smooth;
+}
+.chat-box::-webkit-scrollbar { width: 4px; }
+.chat-box::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 2px; }
+
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+/* ============================================================
+   WHATSAPP BUTTON
+   ============================================================ */
+
+.wa-btn {
+  box-shadow: 0 4px 24px rgba(37,211,102,.4);
+  transition: all .22s;
+}
+.wa-btn:hover {
+  box-shadow: 0 8px 32px rgba(37,211,102,.55);
+}
+
+/* ============================================================
+   PAYMENT OPTIONS
+   ============================================================ */
+
+.pay-opt { transition: border-color .15s, background .15s; cursor: pointer; }
+.pay-opt-active { border-color: #0d9488 !important; background: #f0fdfa !important; }
+.pay-opt-active label { color: #0d9488 !important; }
+
+/* ============================================================
+   RESPONSIVE HELPERS
+   ============================================================ */
+
+@media (max-width: 640px) {
+  .hero-card-wrap { display: none; }
+  #dashboard-panel { max-width: 100%; }
+}
+
+/* Dashboard overlay fade */
+#dashboard-overlay {
+  animation: fadeIn .2s ease-out;
+}

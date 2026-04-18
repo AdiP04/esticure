@@ -1,0 +1,114 @@
+[
+  {
+    "hospitalId": "mum_1",
+    "name": "Apollo Spectra Hospital",
+    "city": "Mumbai",
+    "email": "admin@apollomumbai.com",
+    "password": "hospital123"
+  },
+  {
+    "hospitalId": "mum_2",
+    "name": "Fortis Hospital",
+    "city": "Mumbai",
+    "email": "admin@fortismumbai.com",
+    "password": "hospital123"
+  },
+  {
+    "hospitalId": "mum_3",
+    "name": "Nanavati Max Hospital",
+    "city": "Mumbai",
+    "email": "admin@nanavatimax.com",
+    "password": "hospital123"
+  },
+  {
+    "hospitalId": "mum_4",
+    "name": "Lilavati Hospital",
+    "city": "Mumbai",
+    "email": "admin@lilavati.com",
+    "password": "hospital123"
+  },
+  {
+    "hospitalId": "nm_1",
+    "name": "MGM Hospital",
+    "city": "Navi Mumbai",
+    "email": "admin@mgmnavimumbai.com",
+    "password": "hospital123"
+  },
+  {
+    "hospitalId": "nm_2",
+    "name": "Kokilaben Hospital",
+    "city": "Navi Mumbai",
+    "email": "admin@kokilabennavi.com",
+    "password": "hospital123"
+  },
+  {
+    "hospitalId": "nm_3",
+    "name": "Terna Speciality Hospital",
+    "city": "Navi Mumbai",
+    "email": "admin@terna.com",
+    "password": "hospital123"
+  },
+  {
+    "hospitalId": "nm_4",
+    "name": "NMMC Hospital",
+    "city": "Navi Mumbai",
+    "email": "admin@nmmc.com",
+    "password": "hospital123"
+  },
+  {
+    "hospitalId": "th_1",
+    "name": "Thane Medicare Centre",
+    "city": "Thane",
+    "email": "admin@thanemedicare.com",
+    "password": "hospital123"
+  },
+  {
+    "hospitalId": "th_2",
+    "name": "Bethany Hospital",
+    "city": "Thane",
+    "email": "admin@bethanythane.com",
+    "password": "hospital123"
+  },
+  {
+    "hospitalId": "th_3",
+    "name": "Apple Hospital",
+    "city": "Thane",
+    "email": "admin@applethane.com",
+    "password": "hospital123"
+  },
+  {
+    "hospitalId": "th_4",
+    "name": "Shree Hospital",
+    "city": "Thane",
+    "email": "admin@shreethane.com",
+    "password": "hospital123"
+  },
+  {
+    "hospitalId": "pn_1",
+    "name": "Ruby Hall Clinic",
+    "city": "Pune",
+    "email": "admin@rubyhallpune.com",
+    "password": "hospital123"
+  },
+  {
+    "hospitalId": "pn_2",
+    "name": "Jehangir Hospital",
+    "city": "Pune",
+    "email": "admin@jehangirpune.com",
+    "password": "hospital123"
+  },
+  {
+    "hospitalId": "pn_3",
+    "name": "Sahyadri Hospital",
+    "city": "Pune",
+    "email": "admin@sahyadripune.com",
+    "password": "hospital123"
+  },
+  {
+    "hospitalId": "pn_4",
+    "name": "Deenanath Mangeshkar Hospital",
+    "city": "Pune",
+    "email": "admin@dmhpune.com",
+    "password": "hospital123"
+  }
+]

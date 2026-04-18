@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Esticure – India's first human-powered healthcare navigation platform. Expert hospital recommendations, cost estimates, and second opinions in minutes.">
+  <meta name="theme-color" content="#0d9488">
+  <meta property="og:title" content="Esticure – Healthcare Navigation Platform">
+  <meta property="og:description" content="Navigate your healthcare journey with confidence. Free treatment estimates, expert consultations, and hospital matching.">
+  <title>Esticure – India's First Human-Powered Healthcare Navigation Platform</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50:  '#f0fdfa', 100: '#ccfbf1', 200: '#99f6e4',
+              300: '#5eead4', 400: '#2dd4bf', 500: '#14b8a6',
+              600: '#0d9488', 700: '#0f766e', 800: '#115e59', 900: '#134e4a'
+            }
+          },
+          fontFamily: { sans: ['Inter','system-ui','-apple-system','sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-white text-slate-800 antialiased">
+
+  <!-- ── DEMO BADGE ── -->
+  <div id="demo-badge" class="fixed top-0 inset-x-0 z-50 bg-amber-500 text-white text-center text-xs py-1.5 font-semibold tracking-wide">
+    <i class="fas fa-database mr-1.5"></i>Live Demo – Data stored in your browser
+    <button onclick="this.closest('#demo-badge').remove()" class="ml-3 opacity-70 hover:opacity-100 transition-opacity">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+
+  <!-- ── NAVIGATION ── -->
+  <nav id="navbar" class="fixed inset-x-0 z-40 bg-white/95 backdrop-blur-sm border-b border-slate-100 transition-all duration-300" style="top:28px">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+
+        <a href="#hero" class="flex items-center gap-2.5 group">
+          <div class="w-9 h-9 bg-primary-600 rounded-xl flex items-center justify-center shadow-md group-hover:bg-primary-700 transition-colors">
+            <i class="fas fa-compass-medical text-white text-sm"></i>
+          </div>
+          <span class="text-xl font-extrabold text-slate-900">Esti<span class="text-primary-600">cure</span></span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-0.5">
+          <a href="#how-it-works" class="nav-link px-3 py-2 text-sm font-medium text-slate-600 hover:text-primary-600 rounded-lg hover:bg-primary-50 transition-all">How It Works</a>
+          <a href="#estimator"    class="nav-link px-3 py-2 text-sm font-medium text-slate-600 hover:text-primary-600 rounded-lg hover:bg-primary-50 transition-all">Free Estimate</a>
+          <a href="#consultation" class="nav-link px-3 py-2 text-sm font-medium text-slate-600 hover:text-primary-600 rounded-lg hover:bg-primary-50 transition-all">Consult</a>
+          <a href="#hospitals"   class="nav-link px-3 py-2 text-sm font-medium text-slate-600 hover:text-primary-600 rounded-lg hover:bg-primary-50 transition-all">Hospitals</a>
+          <a href="#tourism"     class="nav-link px-3 py-2 text-sm font-medium text-slate-600 hover:text-primary-600 rounded-lg hover:bg-primary-50 transition-all">Tourism</a>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <button onclick="openDashboard()" class="hidden sm:flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-slate-600 hover:text-primary-600 rounded-lg hover:bg-primary-50 transition-all">
+            <i class="fas fa-table-columns text-xs"></i>My Dashboard
+          </button>
+          <a href="#estimator" class="btn-primary px-4 py-2 text-sm font-semibold rounded-xl">Get Free Estimate</a>
+          <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars text-slate-600"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 py-3 space-y-1">
+      <a href="#how-it-works" onclick="closeMobileMenu()" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-primary-600 rounded-lg hover:bg-primary-50">How It Works</a>
+      <a href="#estimator"    onclick="closeMobileMenu()" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-primary-600 rounded-lg hover:bg-primary-50">Free Estimate</a>
+      <a href="#consultation" onclick="closeMobileMenu()" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-primary-600 rounded-lg hover:bg-primary-50">Consult</a>
+      <a href="#hospitals"    onclick="closeMobileMenu()" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-primary-600 rounded-lg hover:bg-primary-50">Hospitals</a>
+      <a href="#tourism"      onclick="closeMobileMenu()" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-primary-600 rounded-lg hover:bg-primary-50">Medical Tourism</a>
+      <button onclick="openDashboard();closeMobileMenu()" class="w-full text-left px-3 py-2 text-sm font-medium text-primary-600 rounded-lg hover:bg-primary-50">
+        <i class="fas fa-table-columns mr-2 text-xs"></i>My Dashboard
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════ HERO ═══════════════════════════════════════ -->
+  <section id="hero" class="hero-section relative overflow-hidden pt-32 pb-20 md:pt-44 md:pb-28">
+    <div class="hero-blob-1"></div>
+    <div class="hero-blob-2"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+        <!-- Left text -->
+        <div class="anim-fade-up">
+          <div class="inline-flex items-center gap-2 bg-white/15 border border-white/30 text-white text-xs font-bold px-3.5 py-1.5 rounded-full mb-6 backdrop-blur-sm">
+            <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+            India's First Human-Powered Healthcare Navigator
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-[1.1] mb-6">
+            Navigate Your<br>
+            <span class="text-amber-400">Healthcare</span><br>
+            Journey with Confidence
+          </h1>
+
+          <p class="text-lg text-primary-100 leading-relaxed mb-8 max-w-lg">
+            Expert-curated hospital recommendations, accurate cost estimates, and second opinions — guided by real healthcare navigators, not just algorithms.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-3 mb-10">
+            <a href="#estimator" class="btn-hero-primary flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl font-bold text-base">
+              <i class="fas fa-search-dollar"></i>Get Free Treatment Estimate
+            </a>
+            <a href="#consultation" class="btn-hero-secondary flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl font-bold text-base">
+              <i class="fas fa-video"></i>Book Expert Consultation
+            </a>
+          </div>
+
+          <div class="flex flex-wrap gap-5">
+            <div class="flex items-center gap-1.5 text-primary-200 text-sm"><i class="fas fa-shield-halved text-amber-400"></i>100% Confidential</div>
+            <div class="flex items-center gap-1.5 text-primary-200 text-sm"><i class="fas fa-bolt text-amber-400"></i>Response in 30 min</div>
+            <div class="flex items-center gap-1.5 text-primary-200 text-sm"><i class="fas fa-star text-amber-400"></i>4.8/5 Patient Rating</div>
+          </div>
+        </div>
+
+        <!-- Right hero card -->
+        <div class="hidden lg:block anim-fade-up" style="animation-delay:.25s">
+          <div class="hero-card-wrap relative max-w-sm mx-auto">
+            <!-- Main card -->
+            <div class="hero-card bg-white rounded-2xl p-6 shadow-2xl">
+              <div class="flex items-start justify-between mb-4">
+                <div>
+                  <p class="text-xs text-slate-400 mb-0.5">Treatment Estimate Ready</p>
+                  <p class="text-base font-bold text-slate-900">Cardiac Bypass Surgery</p>
+                </div>
+                <span class="bg-green-100 text-green-700 text-xs font-bold px-2.5 py-1 rounded-full">3 matches</span>
+              </div>
+              <div class="space-y-2.5 mb-4">
+                <div class="hero-hosp-row flex items-center gap-3 p-3 bg-slate-50 rounded-xl">
+                  <div class="w-9 h-9 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0"><i class="fas fa-hospital text-primary-600 text-xs"></i></div>
+                  <div class="flex-1 min-w-0"><p class="text-sm font-semibold text-slate-800">Kokilaben Hospital</p><p class="text-xs text-slate-400">Mumbai · ⭐ 4.9</p></div>
+                  <div class="text-right"><p class="text-sm font-bold text-primary-600">₹2.2L</p><p class="text-xs text-slate-400">avg.</p></div>
+                </div>
+                <div class="hero-hosp-row flex items-center gap-3 p-3 bg-slate-50 rounded-xl">
+                  <div class="w-9 h-9 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0"><i class="fas fa-hospital text-blue-600 text-xs"></i></div>
+                  <div class="flex-1 min-w-0"><p class="text-sm font-semibold text-slate-800">Fortis Hospital</p><p class="text-xs text-slate-400">Mumbai · ⭐ 4.7</p></div>
+                  <div class="text-right"><p class="text-sm font-bold text-blue-600">₹2.5L</p><p class="text-xs text-slate-400">avg.</p></div>
+                </div>
+                <div class="hero-hosp-row flex items-center gap-3 p-3 bg-slate-50 rounded-xl">
+                  <div class="w-9 h-9 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0"><i class="fas fa-hospital text-purple-600 text-xs"></i></div>
+                  <div class="flex-1 min-w-0"><p class="text-sm font-semibold text-slate-800">Apollo Spectra</p><p class="text-xs text-slate-400">Mumbai · ⭐ 4.8</p></div>
+                  <div class="text-right"><p class="text-sm font-bold text-purple-600">₹1.9L</p><p class="text-xs text-slate-400">avg.</p></div>
+                </div>
+              </div>
+              <div class="border-t border-slate-100 pt-3 flex items-center justify-between">
+                <span class="text-xs text-slate-400"><i class="fas fa-circle-check mr-1 text-primary-500"></i>Expert analysis complete</span>
+                <span class="text-xs font-semibold text-primary-600 cursor-pointer">View Report →</span>
+              </div>
+            </div>
+            <!-- Floating badges -->
+            <div class="float-badge-1 absolute -top-4 -right-4 bg-white rounded-2xl shadow-lg px-3 py-2 flex items-center gap-2">
+              <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center"><i class="fas fa-check text-green-600 text-xs"></i></div>
+              <span class="text-xs font-bold text-slate-700">NABH Accredited</span>
+            </div>
+            <div class="float-badge-2 absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-lg px-3 py-2 flex items-center gap-2">
+              <div class="w-6 h-6 bg-amber-100 rounded-full flex items-center justify-center"><i class="fas fa-clock text-amber-600 text-xs"></i></div>
+              <span class="text-xs font-bold text-slate-700">Est. 15–20 days</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ STATS ═══════════════════════════════════════ -->
+  <section class="bg-white border-b border-slate-100 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="anim-fade-up">
+          <div class="text-3xl md:text-4xl font-extrabold text-primary-600 mb-1"><span class="counter" data-target="10000">0</span>+</div>
+          <div class="text-sm text-slate-500 font-medium">Patients Helped</div>
+        </div>
+        <div class="anim-fade-up" style="animation-delay:.1s">
+          <div class="text-3xl md:text-4xl font-extrabold text-primary-600 mb-1"><span class="counter" data-target="100">0</span>+</div>
+          <div class="text-sm text-slate-500 font-medium">Partner Hospitals</div>
+        </div>
+        <div class="anim-fade-up" style="animation-delay:.2s">
+          <div class="text-3xl md:text-4xl font-extrabold text-primary-600 mb-1">₹<span class="counter" data-target="2.3">0</span>Cr</div>
+          <div class="text-sm text-slate-500 font-medium">Patient Savings</div>
+        </div>
+        <div class="anim-fade-up" style="animation-delay:.3s">
+          <div class="text-3xl md:text-4xl font-extrabold text-primary-600 mb-1"><span class="counter" data-target="4.8">0</span>/5</div>
+          <div class="text-sm text-slate-500 font-medium">Patient Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ HOW IT WORKS ═══════════════════════════════════════ -->
+  <section id="how-it-works" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14 anim-fade-up">
+        <span class="section-badge">How It Works</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-4 mb-4">From Confused to Confident in <span class="text-primary-600">4 Simple Steps</span></h2>
+        <p class="text-slate-500 max-w-2xl mx-auto">Our healthcare navigators guide you through every step — from understanding your diagnosis to finding the best hospital at the best price.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="step-card anim-fade-up bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
+          <div class="w-10 h-10 bg-primary-600 text-white rounded-xl flex items-center justify-center font-extrabold text-lg mb-5">1</div>
+          <div class="w-12 h-12 bg-primary-50 rounded-2xl flex items-center justify-center mb-4"><i class="fas fa-file-medical text-primary-600 text-xl"></i></div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Submit Your Case</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Fill our simple form with your condition, location, and budget. It takes just 2 minutes.</p>
+          <div class="mt-4 text-xs font-semibold text-primary-500 flex items-center gap-1.5"><i class="fas fa-clock"></i>Takes 2 min</div>
+        </div>
+        <div class="step-card anim-fade-up bg-white rounded-2xl p-6 shadow-sm border border-slate-100" style="animation-delay:.1s">
+          <div class="w-10 h-10 bg-primary-600 text-white rounded-xl flex items-center justify-center font-extrabold text-lg mb-5">2</div>
+          <div class="w-12 h-12 bg-orange-50 rounded-2xl flex items-center justify-center mb-4"><i class="fas fa-user-doctor text-orange-500 text-xl"></i></div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Expert Analysis</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Our healthcare navigators review your case and match it with the best hospitals and specialists.</p>
+          <div class="mt-4 text-xs font-semibold text-orange-500 flex items-center gap-1.5"><i class="fas fa-bolt"></i>Response in 30 min</div>
+        </div>
+        <div class="step-card anim-fade-up bg-white rounded-2xl p-6 shadow-sm border border-slate-100" style="animation-delay:.2s">
+          <div class="w-10 h-10 bg-primary-600 text-white rounded-xl flex items-center justify-center font-extrabold text-lg mb-5">3</div>
+          <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center mb-4"><i class="fas fa-file-invoice-dollar text-blue-500 text-xl"></i></div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Get Estimation</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Receive top 3 hospital recommendations with detailed cost breakdowns, specialist info, and timelines.</p>
+          <div class="mt-4 text-xs font-semibold text-blue-500 flex items-center gap-1.5"><i class="fas fa-star"></i>FREE service</div>
+        </div>
+        <div class="step-card anim-fade-up bg-white rounded-2xl p-6 shadow-sm border border-slate-100" style="animation-delay:.3s">
+          <div class="w-10 h-10 bg-primary-600 text-white rounded-xl flex items-center justify-center font-extrabold text-lg mb-5">4</div>
+          <div class="w-12 h-12 bg-purple-50 rounded-2xl flex items-center justify-center mb-4"><i class="fas fa-stethoscope text-purple-500 text-xl"></i></div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Second Opinion</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Book a video or chat consult with a senior specialist for a second opinion before your surgery.</p>
+          <div class="mt-4 text-xs font-semibold text-purple-500 flex items-center gap-1.5"><i class="fas fa-indian-rupee-sign"></i>Starts at ₹199</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ FREE ESTIMATOR ═══════════════════════════════════════ -->
+  <section id="estimator" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14 anim-fade-up">
+        <span class="section-badge">Free Service</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-4 mb-4">Get Your Free <span class="text-primary-600">Treatment Estimate</span></h2>
+        <p class="text-slate-500 max-w-2xl mx-auto">Tell us about your condition and we'll instantly match you with the best hospitals, cost estimates, and specialist recommendations.</p>
+      </div>
+
+      <div class="max-w-3xl mx-auto">
+        <div class="bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden anim-fade-up">
+          <div class="bg-gradient-to-r from-primary-700 to-primary-600 px-7 py-6">
+            <h3 class="text-white font-bold text-xl flex items-center gap-2.5">
+              <i class="fas fa-magnifying-glass-chart"></i>Treatment Navigator Form
+            </h3>
+            <p class="text-primary-200 text-sm mt-1">All information is confidential and used only to match you with the best care.</p>
+          </div>
+
+          <form id="estimator-form" class="p-7 space-y-5" onsubmit="handleEstimatorSubmit(event)" novalidate>
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label class="form-label">Full Name <span class="text-red-500">*</span></label>
+                <div class="inp-wrap">
+                  <i class="fas fa-user inp-ico"></i>
+                  <input type="text" id="est-name" placeholder="Enter your name" class="form-inp" required>
+                </div>
+              </div>
+              <div>
+                <label class="form-label">Age <span class="text-red-500">*</span></label>
+                <div class="inp-wrap">
+                  <i class="fas fa-cake-candles inp-ico"></i>
+                  <input type="number" id="est-age" placeholder="Your age" min="1" max="120" class="form-inp" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label class="form-label">Preferred City <span class="text-red-500">*</span></label>
+                <div class="inp-wrap">
+                  <i class="fas fa-map-marker-alt inp-ico"></i>
+                  <select id="est-city" class="form-inp form-sel" required>
+                    <option value="">Select city</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Kolhapur">Kolhapur</option>
+                    <option value="Any">Any / Not sure</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label class="form-label">Approximate Budget</label>
+                <div class="inp-wrap">
+                  <i class="fas fa-indian-rupee-sign inp-ico"></i>
+                  <select id="est-budget" class="form-inp form-sel">
+                    <option value="any">Not sure / Any</option>
+                    <option value="under-1L">Under ₹1 Lakh</option>
+                    <option value="1L-3L">₹1 Lakh – ₹3 Lakh</option>
+                    <option value="3L-5L">₹3 Lakh – ₹5 Lakh</option>
+                    <option value="above-5L">Above ₹5 Lakh</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label class="form-label">Mobile Number <span class="text-red-500">*</span></label>
+              <div class="inp-wrap">
+                <i class="fas fa-phone inp-ico"></i>
+                <input type="tel" id="est-phone" placeholder="+91 98765 43210" class="form-inp" required>
+              </div>
+            </div>
+
+            <div>
+              <label class="form-label">Condition / Symptoms <span class="text-red-500">*</span></label>
+              <textarea id="est-condition" rows="3" placeholder="Describe your condition or symptoms (e.g., chest pain, knee pain, cancer diagnosis, need bypass surgery…)" class="form-inp form-textarea" required></textarea>
+              <p class="text-xs text-slate-400 mt-1.5"><i class="fas fa-info-circle mr-1"></i>The more detail you provide, the better we can match you.</p>
+            </div>
+
+            <div>
+              <label class="form-label">Do you have health insurance?</label>
+              <div class="flex flex-wrap gap-5 mt-1">
+                <label class="flex items-center gap-2 cursor-pointer text-sm text-slate-700"><input type="radio" name="insurance" value="yes" class="accent-primary-600"> Yes</label>
+                <label class="flex items-center gap-2 cursor-pointer text-sm text-slate-700"><input type="radio" name="insurance" value="no" class="accent-primary-600" checked> No</label>
+                <label class="flex items-center gap-2 cursor-pointer text-sm text-slate-700"><input type="radio" name="insurance" value="not-sure" class="accent-primary-600"> Not Sure</label>
+              </div>
+            </div>
+
+            <button type="submit" id="estimator-submit-btn" class="w-full btn-submit py-4 rounded-xl font-bold text-base flex items-center justify-center gap-2.5">
+              <i class="fas fa-search-dollar"></i>Get Free Treatment Estimate
+            </button>
+
+            <p class="text-center text-xs text-slate-400"><i class="fas fa-lock mr-1"></i>Your data is stored locally in your browser. We never share your information.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ PAID CONSULTATION ═══════════════════════════════════════ -->
+  <section id="consultation" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14 anim-fade-up">
+        <span class="section-badge">Expert Consultation</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-4 mb-4">Book a <span class="text-primary-600">Doctor Consultation</span></h2>
+        <p class="text-slate-500 max-w-2xl mx-auto">Connect with senior specialists for second opinions, pre-surgery consultations, or comprehensive treatment planning.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <!-- Basic -->
+        <div class="consult-card anim-fade-up bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+          <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-comment-medical text-green-600 text-xl"></i></div>
+          <h3 class="text-lg font-bold text-slate-900 mb-1">Basic Opinion</h3>
+          <p class="text-slate-400 text-sm mb-4">Chat-based second opinion on your diagnosis</p>
+          <div class="mb-5"><span class="text-3xl font-extrabold text-slate-900">₹199</span><span class="text-slate-400 text-sm ml-1">one-time</span></div>
+          <ul class="space-y-2.5 mb-6 text-sm text-slate-600">
+            <li class="flex gap-2"><i class="fas fa-check text-green-500 text-xs mt-1 flex-shrink-0"></i>Written expert opinion</li>
+            <li class="flex gap-2"><i class="fas fa-check text-green-500 text-xs mt-1 flex-shrink-0"></i>Hospital shortlist (top 2)</li>
+            <li class="flex gap-2"><i class="fas fa-check text-green-500 text-xs mt-1 flex-shrink-0"></i>Cost estimate included</li>
+            <li class="flex gap-2"><i class="fas fa-check text-green-500 text-xs mt-1 flex-shrink-0"></i>Response in 2–4 hours</li>
+          </ul>
+          <button onclick="openConsultationModal('Basic Opinion',199)" class="w-full py-3 rounded-xl font-semibold text-sm bg-green-600 text-white hover:bg-green-700 active:scale-95 transition-all btn-ripple">Start Consultation</button>
+        </div>
+
+        <!-- Standard – POPULAR -->
+        <div class="consult-card anim-fade-up relative bg-white rounded-2xl p-6 shadow-xl border-2 border-primary-500" style="animation-delay:.1s">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2">
+            <span class="bg-primary-600 text-white text-xs font-extrabold px-4 py-1.5 rounded-full tracking-wide">MOST POPULAR</span>
+          </div>
+          <div class="mt-3 w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-video text-primary-600 text-xl"></i></div>
+          <h3 class="text-lg font-bold text-slate-900 mb-1">Video Consultation</h3>
+          <p class="text-slate-400 text-sm mb-4">Live video call with a senior specialist</p>
+          <div class="mb-5"><span class="text-3xl font-extrabold text-primary-600">₹499</span><span class="text-slate-400 text-sm ml-1">one-time</span></div>
+          <ul class="space-y-2.5 mb-6 text-sm text-slate-600">
+            <li class="flex gap-2"><i class="fas fa-check text-primary-500 text-xs mt-1 flex-shrink-0"></i>30-min video consultation</li>
+            <li class="flex gap-2"><i class="fas fa-check text-primary-500 text-xs mt-1 flex-shrink-0"></i>Hospital shortlist (top 3)</li>
+            <li class="flex gap-2"><i class="fas fa-check text-primary-500 text-xs mt-1 flex-shrink-0"></i>Detailed cost breakdown</li>
+            <li class="flex gap-2"><i class="fas fa-check text-primary-500 text-xs mt-1 flex-shrink-0"></i>Specialist recommendation</li>
+            <li class="flex gap-2"><i class="fas fa-check text-primary-500 text-xs mt-1 flex-shrink-0"></i>7-day follow-up support</li>
+          </ul>
+          <button onclick="openConsultationModal('Video Consultation',499)" class="w-full py-3 rounded-xl font-semibold text-sm bg-primary-600 text-white hover:bg-primary-700 active:scale-95 transition-all btn-ripple">Start Consultation</button>
+        </div>
+
+        <!-- Premium -->
+        <div class="consult-card anim-fade-up bg-white rounded-2xl p-6 shadow-sm border border-slate-200" style="animation-delay:.2s">
+          <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-crown text-purple-600 text-xl"></i></div>
+          <h3 class="text-lg font-bold text-slate-900 mb-1">Premium Navigation</h3>
+          <p class="text-slate-400 text-sm mb-4">Complete end-to-end healthcare navigation</p>
+          <div class="mb-5"><span class="text-3xl font-extrabold text-slate-900">₹999</span><span class="text-slate-400 text-sm ml-1">one-time</span></div>
+          <ul class="space-y-2.5 mb-6 text-sm text-slate-600">
+            <li class="flex gap-2"><i class="fas fa-check text-purple-500 text-xs mt-1 flex-shrink-0"></i>60-min expert session</li>
+            <li class="flex gap-2"><i class="fas fa-check text-purple-500 text-xs mt-1 flex-shrink-0"></i>Full hospital negotiation</li>
+            <li class="flex gap-2"><i class="fas fa-check text-purple-500 text-xs mt-1 flex-shrink-0"></i>Insurance claim guidance</li>
+            <li class="flex gap-2"><i class="fas fa-check text-purple-500 text-xs mt-1 flex-shrink-0"></i>Treatment roadmap</li>
+            <li class="flex gap-2"><i class="fas fa-check text-purple-500 text-xs mt-1 flex-shrink-0"></i>30-day follow-up support</li>
+          </ul>
+          <button onclick="openConsultationModal('Premium Navigation',999)" class="w-full py-3 rounded-xl font-semibold text-sm bg-purple-600 text-white hover:bg-purple-700 active:scale-95 transition-all btn-ripple">Start Consultation</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ HOSPITAL NETWORK ═══════════════════════════════════════ -->
+  <section id="hospitals" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14 anim-fade-up">
+        <span class="section-badge">Hospital Network</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-4 mb-4">100+ Partner Hospitals Across <span class="text-primary-600">Maharashtra</span></h2>
+        <p class="text-slate-500 max-w-2xl mx-auto">Our curated network includes the best NABH & JCI accredited hospitals with verified quality scores.</p>
+      </div>
+
+      <!-- City tabs -->
+      <div class="flex justify-center mb-10">
+        <div class="bg-slate-100 p-1 rounded-xl inline-flex gap-1">
+          <button onclick="showCityTab('mumbai')"   id="tab-mumbai"   class="city-tab active-tab px-5 py-2.5 rounded-lg text-sm font-semibold transition-all"><i class="fas fa-city mr-1.5"></i>Mumbai <span class="opacity-60 text-xs">(50+)</span></button>
+          <button onclick="showCityTab('pune')"     id="tab-pune"     class="city-tab px-5 py-2.5 rounded-lg text-sm font-semibold text-slate-600 transition-all"><i class="fas fa-building mr-1.5"></i>Pune <span class="opacity-60 text-xs">(30+)</span></button>
+          <button onclick="showCityTab('kolhapur')" id="tab-kolhapur" class="city-tab px-5 py-2.5 rounded-lg text-sm font-semibold text-slate-600 transition-all"><i class="fas fa-hospital mr-1.5"></i>Kolhapur <span class="opacity-60 text-xs">(20+)</span></button>
+        </div>
+      </div>
+
+      <!-- Mumbai -->
+      <div id="city-mumbai" class="city-panel">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div class="hosp-card anim-fade-up bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+            <div class="h-1.5 bg-gradient-to-r from-primary-500 to-primary-600"></div>
+            <div class="p-5">
+              <div class="flex items-start justify-between mb-3">
+                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-primary-100 rounded-xl flex items-center justify-center"><i class="fas fa-hospital text-primary-600 text-sm"></i></div><div><h3 class="font-bold text-slate-900 text-sm">Apollo Spectra</h3><p class="text-xs text-slate-400"><i class="fas fa-location-dot text-primary-400 mr-0.5"></i>Tardeo, Mumbai</p></div></div>
+                <div class="flex items-center gap-0.5 text-amber-400 text-xs font-bold"><i class="fas fa-star"></i>4.8</div>
+              </div>
+              <div class="flex flex-wrap gap-1.5 mb-3"><span class="spec-tag">Cardiac</span><span class="spec-tag">Orthopedics</span><span class="spec-tag">Laparoscopy</span></div>
+              <div class="border-t border-slate-100 pt-3 flex items-center justify-between text-xs text-slate-500"><span>₹1.8L–₹2.5L (Cardiac)</span><span class="text-green-600 font-bold flex items-center gap-1"><i class="fas fa-circle-check"></i>NABH</span></div>
+            </div>
+          </div>
+          <div class="hosp-card anim-fade-up bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden" style="animation-delay:.07s">
+            <div class="h-1.5 bg-gradient-to-r from-blue-500 to-blue-600"></div>
+            <div class="p-5">
+              <div class="flex items-start justify-between mb-3">
+                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center"><i class="fas fa-hospital text-blue-600 text-sm"></i></div><div><h3 class="font-bold text-slate-900 text-sm">Kokilaben Hospital</h3><p class="text-xs text-slate-400"><i class="fas fa-location-dot text-blue-400 mr-0.5"></i>Andheri, Mumbai</p></div></div>
+                <div class="flex items-center gap-0.5 text-amber-400 text-xs font-bold"><i class="fas fa-star"></i>4.9</div>
+              </div>
+              <div class="flex flex-wrap gap-1.5 mb-3"><span class="spec-tag">Oncology</span><span class="spec-tag">Neurology</span><span class="spec-tag">Robotic Surgery</span></div>
+              <div class="border-t border-slate-100 pt-3 flex items-center justify-between text-xs text-slate-500"><span>₹1.2L–₹1.8L (Oncology)</span><span class="text-green-600 font-bold flex items-center gap-1"><i class="fas fa-circle-check"></i>JCI</span></div>
+            </div>
+          </div>
+          <div class="hosp-card anim-fade-up bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden" style="animation-delay:.14s">
+            <div class="h-1.5 bg-gradient-to-r from-red-500 to-red-600"></div>
+            <div class="p-5">
+              <div class="flex items-start justify-between mb-3">
+                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center"><i class="fas fa-hospital text-red-600 text-sm"></i></div><div><h3 class="font-bold text-slate-900 text-sm">Fortis Hospital</h3><p class="text-xs text-slate-400"><i class="fas fa-location-dot text-red-400 mr-0.5"></i>Mulund, Mumbai</p></div></div>
+                <div class="flex items-center gap-0.5 text-amber-400 text-xs font-bold"><i class="fas fa-star"></i>4.7</div>
+              </div>
+              <div class="flex flex-wrap gap-1.5 mb-3"><span class="spec-tag">Cardiac</span><span class="spec-tag">Urology</span><span class="spec-tag">Transplant</span></div>
+              <div class="border-t border-slate-100 pt-3 flex items-center justify-between text-xs text-slate-500"><span>₹2.0L–₹2.8L (Cardiac)</span><span class="text-green-600 font-bold flex items-center gap-1"><i class="fas fa-circle-check"></i>NABH</span></div>
+            </div>
+          </div>
+          <div class="hosp-card anim-fade-up bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden" style="animation-delay:.21s">
+            <div class="h-1.5 bg-gradient-to-r from-amber-500 to-amber-600"></div>
+            <div class="p-5">
+              <div class="flex items-start justify-between mb-3">
+                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center"><i class="fas fa-hospital text-amber-600 text-sm"></i></div><div><h3 class="font-bold text-slate-900 text-sm">Nanavati Max Hospital</h3><p class="text-xs text-slate-400"><i class="fas fa-location-dot text-amber-400 mr-0.5"></i>Vile Parle, Mumbai</p></div></div>
+                <div class="flex items-center gap-0.5 text-amber-400 text-xs font-bold"><i class="fas fa-star"></i>4.7</div>
+              </div>
+              <div class="flex flex-wrap gap-1.5 mb-3"><span class="spec-tag">Orthopedics</span><span class="spec-tag">Gastroenterology</span><span class="spec-tag">Nephrology</span></div>
+              <div class="border-t border-slate-100 pt-3 flex items-center justify-between text-xs text-slate-500"><span>₹0.9L–₹1.6L (Ortho)</span><span class="text-green-600 font-bold flex items-center gap-1"><i class="fas fa-circle-check"></i>NABH</span></div>
+            </div>
+          </div>
+          <div class="hosp-card anim-fade-up bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden" style="animation-delay:.28s">
+            <div class="h-1.5 bg-gradient-to-r from-purple-500 to-purple-600"></div>
+            <div class="p-5">
+              <div class="flex items-start justify-between mb-3">
+                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center"><i class="fas fa-hospital text-purple-600 text-sm"></i></div><div><h3 class="font-bold text-slate-900 text-sm">Lilavati Hospital</h3><p class="text-xs text-slate-400"><i class="fas fa-location-dot text-purple-400 mr-0.5"></i>Bandra, Mumbai</p></div></div>
+                <div class="flex items-center gap-0.5 text-amber-400 text-xs font-bold"><i class="fas fa-star"></i>4.8</div>
+              </div>
+              <div class="flex flex-wrap gap-1.5 mb-3"><span class="spec-tag">Gynecology</span><span class="spec-tag">General Surgery</span><span class="spec-tag">ENT</span></div>
+              <div class="border-t border-slate-100 pt-3 flex items-center justify-between text-xs text-slate-500"><span>₹0.3L–₹0.7L (Gynec)</span><span class="text-green-600 font-bold flex items-center gap-1"><i class="fas fa-circle-check"></i>NABH</span></div>
+            </div>
+          </div>
+          <div class="anim-fade-up bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl border border-primary-200 p-5 flex flex-col items-center justify-center text-center" style="animation-delay:.35s">
+            <div class="w-12 h-12 bg-primary-200 rounded-full flex items-center justify-center mb-3"><i class="fas fa-plus text-primary-700 text-xl"></i></div>
+            <p class="font-bold text-primary-800 text-lg">45+ More Hospitals</p>
+            <p class="text-primary-600 text-sm mt-1">Access our full network after submitting your case</p>
+            <a href="#estimator" class="mt-3 text-xs font-bold text-primary-700 underline">Get matched now →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pune -->
+      <div id="city-pune" class="city-panel hidden">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div class="hosp-card bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+            <div class="h-1.5 bg-gradient-to-r from-red-500 to-pink-600"></div>
+            <div class="p-5">
+              <div class="flex items-start justify-between mb-3"><div class="flex items-center gap-3"><div class="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center"><i class="fas fa-hospital text-red-600 text-sm"></i></div><div><h3 class="font-bold text-slate-900 text-sm">Ruby Hall Clinic</h3><p class="text-xs text-slate-400"><i class="fas fa-location-dot text-red-400 mr-0.5"></i>Wanowrie, Pune</p></div></div><div class="flex items-center gap-0.5 text-amber-400 text-xs font-bold"><i class="fas fa-star"></i>4.7</div></div>
+              <div class="flex flex-wrap gap-1.5 mb-3"><span class="spec-tag">Cardiac</span><span class="spec-tag">Nephrology</span><span class="spec-tag">Neurology</span></div>
+              <div class="border-t border-slate-100 pt-3 flex items-center justify-between text-xs text-slate-500"><span>₹1.5L–₹2.2L (Cardiac)</span><span class="text-green-600 font-bold flex items-center gap-1"><i class="fas fa-circle-check"></i>NABH</span></div>
+            </div>
+          </div>
+          <div class="hosp-card bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+            <div class="h-1.5 bg-gradient-to-r from-blue-500 to-indigo-600"></div>
+            <div class="p-5">
+              <div class="flex items-start justify-between mb-3"><div class="flex items-center gap-3"><div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center"><i class="fas fa-hospital text-blue-600 text-sm"></i></div><div><h3 class="font-bold text-slate-900 text-sm">Jehangir Hospital</h3><p class="text-xs text-slate-400"><i class="fas fa-location-dot text-blue-400 mr-0.5"></i>Sassoon Rd, Pune</p></div></div><div class="flex items-center gap-0.5 text-amber-400 text-xs font-bold"><i class="fas fa-star"></i>4.6</div></div>
+              <div class="flex flex-wrap gap-1.5 mb-3"><span class="spec-tag">Orthopedics</span><span class="spec-tag">ENT</span><span class="spec-tag">Ophthalmology</span></div>
+              <div class="border-t border-slate-100 pt-3 flex items-center justify-between text-xs text-slate-500"><span>₹0.7L–₹1.3L (Ortho)</span><span class="text-green-600 font-bold flex items-center gap-1"><i class="fas fa-circle-check"></i>NABH</span></div>
+            </div>
+          </div>
+          <div class="hosp-card bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+            <div class="h-1.5 bg-gradient-to-r from-green-500 to-emerald-600"></div>
+            <div class="p-5">
+              <div class="flex items-start justify-between mb-3"><div class="flex items-center gap-3"><div class="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center"><i class="fas fa-hospital text-green-600 text-sm"></i></div><div><h3 class="font-bold text-slate-900 text-sm">Sahyadri Hospitals</h3><p class="text-xs text-slate-400"><i class="fas fa-location-dot text-green-400 mr-0.5"></i>Deccan, Pune</p></div></div><div class="flex items-center gap-0.5 text-amber-400 text-xs font-bold"><i class="fas fa-star"></i>4.6</div></div>
+              <div class="flex flex-wrap gap-1.5 mb-3"><span class="spec-tag">Neurology</span><span class="spec-tag">Spine Surgery</span><span class="spec-tag">Critical Care</span></div>
+              <div class="border-t border-slate-100 pt-3 flex items-center justify-between text-xs text-slate-500"><span>₹1.2L–₹1.9L (Neuro)</span><span class="text-green-600 font-bold flex items-center gap-1"><i class="fas fa-circle-check"></i>NABH</span></div>
+            </div>
+          </div>
+          <div class="hosp-card bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+            <div class="h-1.5 bg-gradient-to-r from-amber-500 to-orange-600"></div>
+            <div class="p-5">
+              <div class="flex items-start justify-between mb-3"><div class="flex items-center gap-3"><div class="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center"><i class="fas fa-hospital text-amber-600 text-sm"></i></div><div><h3 class="font-bold text-slate-900 text-sm">Deenanath Mangeshkar</h3><p class="text-xs text-slate-400"><i class="fas fa-location-dot text-amber-400 mr-0.5"></i>Erandwane, Pune</p></div></div><div class="flex items-center gap-0.5 text-amber-400 text-xs font-bold"><i class="fas fa-star"></i>4.8</div></div>
+              <div class="flex flex-wrap gap-1.5 mb-3"><span class="spec-tag">Oncology</span><span class="spec-tag">Pediatrics</span><span class="spec-tag">Cardiology</span></div>
+              <div class="border-t border-slate-100 pt-3 flex items-center justify-between text-xs text-slate-500"><span>₹1.0L–₹1.6L (Oncology)</span><span class="text-green-600 font-bold flex items-center gap-1"><i class="fas fa-circle-check"></i>NABH</span></div>
+            </div>
+          </div>
+          <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl border border-blue-200 p-5 flex flex-col items-center justify-center text-center">
+            <div class="w-12 h-12 bg-blue-200 rounded-full flex items-center justify-center mb-3"><i class="fas fa-plus text-blue-700 text-xl"></i></div>
+            <p class="font-bold text-blue-800 text-lg">26+ More Hospitals</p>
+            <p class="text-blue-600 text-sm mt-1">Get matched with all Pune hospitals</p>
+            <a href="#estimator" class="mt-3 text-xs font-bold text-blue-700 underline">Get matched now →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kolhapur -->
+      <div id="city-kolhapur" class="city-panel hidden">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div class="hosp-card bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+            <div class="h-1.5 bg-gradient-to-r from-teal-500 to-cyan-600"></div>
+            <div class="p-5">
+              <div class="flex items-start justify-between mb-3"><div class="flex items-center gap-3"><div class="w-10 h-10 bg-teal-100 rounded-xl flex items-center justify-center"><i class="fas fa-hospital text-teal-600 text-sm"></i></div><div><h3 class="font-bold text-slate-900 text-sm">CPR Hospital</h3><p class="text-xs text-slate-400"><i class="fas fa-location-dot text-teal-400 mr-0.5"></i>Kasba Bavada, Kolhapur</p></div></div><div class="flex items-center gap-0.5 text-amber-400 text-xs font-bold"><i class="fas fa-star"></i>4.5</div></div>
+              <div class="flex flex-wrap gap-1.5 mb-3"><span class="spec-tag">General Surgery</span><span class="spec-tag">Orthopedics</span></div>
+              <div class="border-t border-slate-100 pt-3 flex items-center justify-between text-xs text-slate-500"><span>₹0.3L–₹0.6L (Gen. Surgery)</span><span class="text-green-600 font-bold flex items-center gap-1"><i class="fas fa-circle-check"></i>NABH</span></div>
+            </div>
+          </div>
+          <div class="hosp-card bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+            <div class="h-1.5 bg-gradient-to-r from-violet-500 to-purple-600"></div>
+            <div class="p-5">
+              <div class="flex items-start justify-between mb-3"><div class="flex items-center gap-3"><div class="w-10 h-10 bg-violet-100 rounded-xl flex items-center justify-center"><i class="fas fa-hospital text-violet-600 text-sm"></i></div><div><h3 class="font-bold text-slate-900 text-sm">Oturkar Hospital</h3><p class="text-xs text-slate-400"><i class="fas fa-location-dot text-violet-400 mr-0.5"></i>Shahupuri, Kolhapur</p></div></div><div class="flex items-center gap-0.5 text-amber-400 text-xs font-bold"><i class="fas fa-star"></i>4.6</div></div>
+              <div class="flex flex-wrap gap-1.5 mb-3"><span class="spec-tag">Cardiac</span><span class="spec-tag">Urology</span></div>
+              <div class="border-t border-slate-100 pt-3 flex items-center justify-between text-xs text-slate-500"><span>₹1.2L–₹1.8L (Cardiac)</span><span class="text-green-600 font-bold flex items-center gap-1"><i class="fas fa-circle-check"></i>NABH</span></div>
+            </div>
+          </div>
+          <div class="hosp-card bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+            <div class="h-1.5 bg-gradient-to-r from-rose-500 to-pink-600"></div>
+            <div class="p-5">
+              <div class="flex items-start justify-between mb-3"><div class="flex items-center gap-3"><div class="w-10 h-10 bg-rose-100 rounded-xl flex items-center justify-center"><i class="fas fa-hospital text-rose-600 text-sm"></i></div><div><h3 class="font-bold text-slate-900 text-sm">Kotnis Hospital</h3><p class="text-xs text-slate-400"><i class="fas fa-location-dot text-rose-400 mr-0.5"></i>Station Rd, Kolhapur</p></div></div><div class="flex items-center gap-0.5 text-amber-400 text-xs font-bold"><i class="fas fa-star"></i>4.4</div></div>
+              <div class="flex flex-wrap gap-1.5 mb-3"><span class="spec-tag">Gynecology</span><span class="spec-tag">Obstetrics</span><span class="spec-tag">Pediatrics</span></div>
+              <div class="border-t border-slate-100 pt-3 flex items-center justify-between text-xs text-slate-500"><span>₹0.2L–₹0.5L (Gynec)</span><span class="text-green-600 font-bold flex items-center gap-1"><i class="fas fa-circle-check"></i>Registered</span></div>
+            </div>
+          </div>
+          <div class="bg-gradient-to-br from-teal-50 to-teal-100 rounded-2xl border border-teal-200 p-5 flex flex-col items-center justify-center text-center">
+            <div class="w-12 h-12 bg-teal-200 rounded-full flex items-center justify-center mb-3"><i class="fas fa-plus text-teal-700 text-xl"></i></div>
+            <p class="font-bold text-teal-800 text-lg">17+ More Hospitals</p>
+            <p class="text-teal-600 text-sm mt-1">Explore Kolhapur's full network</p>
+            <a href="#estimator" class="mt-3 text-xs font-bold text-teal-700 underline">Get matched now →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ MEDICAL TOURISM ═══════════════════════════════════════ -->
+  <section id="tourism" class="py-20 bg-gradient-to-br from-slate-900 via-primary-900 to-slate-900 text-white relative overflow-hidden">
+    <div class="tourism-blob"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center mb-14 anim-fade-up">
+        <span class="section-badge-light">Medical Tourism</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-4 mb-4">World-Class Treatment, <span class="text-amber-400">Indian Prices</span></h2>
+        <p class="text-slate-400 max-w-2xl mx-auto">International patients save 60–80% compared to US/UK/South Africa prices while receiving the same quality of care in JCI & NABH accredited hospitals.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="anim-fade-up glass-card rounded-2xl p-6">
+          <div class="flex items-center gap-3 mb-5">
+            <span class="text-3xl">🇿🇦</span>
+            <div><h3 class="font-bold text-white text-lg">South Africa Focus</h3><p class="text-slate-400 text-xs">Our primary international market</p></div>
+          </div>
+          <div class="space-y-3 text-sm">
+            <div class="flex justify-between py-2 border-b border-white/10"><span class="text-slate-300">Cardiac Surgery</span><div class="text-right"><span class="text-slate-500 line-through text-xs">ZAR 450K</span><span class="text-green-400 font-bold ml-2">₹1.8L</span></div></div>
+            <div class="flex justify-between py-2 border-b border-white/10"><span class="text-slate-300">Hip Replacement</span><div class="text-right"><span class="text-slate-500 line-through text-xs">ZAR 220K</span><span class="text-green-400 font-bold ml-2">₹0.9L</span></div></div>
+            <div class="flex justify-between py-2 border-b border-white/10"><span class="text-slate-300">Cancer Treatment</span><div class="text-right"><span class="text-slate-500 line-through text-xs">ZAR 380K</span><span class="text-green-400 font-bold ml-2">₹1.5L</span></div></div>
+            <div class="flex justify-between py-2"><span class="text-slate-300">Knee Replacement</span><div class="text-right"><span class="text-slate-500 line-through text-xs">ZAR 180K</span><span class="text-green-400 font-bold ml-2">₹0.8L</span></div></div>
+          </div>
+          <div class="mt-4 bg-green-500/20 rounded-xl p-3 text-center"><span class="text-green-400 font-extrabold text-xl">Save up to 75%</span><span class="text-slate-300 text-sm ml-2">on costs</span></div>
+        </div>
+
+        <div class="anim-fade-up glass-card rounded-2xl p-6" style="animation-delay:.1s">
+          <h3 class="font-bold text-white text-lg mb-4 flex items-center gap-2"><i class="fas fa-suitcase-medical text-amber-400"></i>Package Includes</h3>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-2.5 text-slate-200"><i class="fas fa-circle-check text-green-400 flex-shrink-0"></i>VISA assistance & documentation</li>
+            <li class="flex items-center gap-2.5 text-slate-200"><i class="fas fa-circle-check text-green-400 flex-shrink-0"></i>Airport pickup & drop</li>
+            <li class="flex items-center gap-2.5 text-slate-200"><i class="fas fa-circle-check text-green-400 flex-shrink-0"></i>Accommodation near hospital</li>
+            <li class="flex items-center gap-2.5 text-slate-200"><i class="fas fa-circle-check text-green-400 flex-shrink-0"></i>Dedicated healthcare navigator</li>
+            <li class="flex items-center gap-2.5 text-slate-200"><i class="fas fa-circle-check text-green-400 flex-shrink-0"></i>Translation & interpreter support</li>
+            <li class="flex items-center gap-2.5 text-slate-200"><i class="fas fa-circle-check text-green-400 flex-shrink-0"></i>Post-treatment follow-up care</li>
+            <li class="flex items-center gap-2.5 text-slate-200"><i class="fas fa-circle-check text-green-400 flex-shrink-0"></i>24/7 emergency support</li>
+            <li class="flex items-center gap-2.5 text-slate-200"><i class="fas fa-circle-check text-green-400 flex-shrink-0"></i>Insurance claim guidance</li>
+          </ul>
+        </div>
+
+        <div class="anim-fade-up bg-amber-500/20 border border-amber-500/30 rounded-2xl p-6 flex flex-col justify-between" style="animation-delay:.2s">
+          <div>
+            <h3 class="font-bold text-white text-lg mb-2">Plan Your Medical Trip</h3>
+            <p class="text-slate-300 text-sm mb-5 leading-relaxed">All-inclusive packages from ₹50,000. Our experts handle everything from diagnosis to departure and return.</p>
+            <div class="space-y-2 mb-6">
+              <div class="flex items-center gap-2 text-sm text-slate-200"><i class="fas fa-plane text-amber-400"></i>Mumbai, Pune & Kolhapur hospitals</div>
+              <div class="flex items-center gap-2 text-sm text-slate-200"><i class="fas fa-language text-amber-400"></i>English, Hindi, Marathi support</div>
+              <div class="flex items-center gap-2 text-sm text-slate-200"><i class="fas fa-shield-halved text-amber-400"></i>100% transparent pricing</div>
+              <div class="flex items-center gap-2 text-sm text-slate-200"><i class="fas fa-clock text-amber-400"></i>Average savings of 70%</div>
+            </div>
+          </div>
+          <button onclick="openTourismEnquiry()" class="w-full py-3.5 bg-amber-500 hover:bg-amber-400 text-white font-bold rounded-xl transition-all active:scale-95 flex items-center justify-center gap-2 btn-ripple">
+            <i class="fas fa-globe"></i>Enquire for Tourism Package
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ BUSINESS MODEL ═══════════════════════════════════════ -->
+  
+
+  <!-- ═══════════════════════════════════════ REFER A FRIEND ═══════════════════════════════════════ -->
+  <section class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="anim-fade-up bg-gradient-to-r from-primary-50 to-blue-50 rounded-3xl p-10 border border-primary-100 text-center">
+        <div class="w-16 h-16 bg-primary-600 rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-lg shadow-primary-200"><i class="fas fa-share-nodes text-white text-2xl"></i></div>
+        <h2 class="text-2xl font-extrabold text-slate-900 mb-3">Refer a Friend, Help Them Heal</h2>
+        <p class="text-slate-500 mb-7 max-w-md mx-auto">Know someone who needs healthcare guidance? Share Esticure and help them navigate their treatment journey. You both get priority support.</p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <button onclick="handleReferral('whatsapp')" class="flex items-center justify-center gap-2.5 px-5 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded-xl transition-all active:scale-95 btn-ripple"><i class="fab fa-whatsapp text-lg"></i>Share on WhatsApp</button>
+          <button onclick="handleReferral('copy')"     class="flex items-center justify-center gap-2.5 px-5 py-3 bg-slate-800 hover:bg-slate-900 text-white font-bold rounded-xl transition-all active:scale-95 btn-ripple"><i class="fas fa-copy"></i>Copy Referral Link</button>
+          <button onclick="handleReferral('twitter')"  class="flex items-center justify-center gap-2.5 px-5 py-3 bg-sky-500 hover:bg-sky-600 text-white font-bold rounded-xl transition-all active:scale-95 btn-ripple"><i class="fab fa-x-twitter"></i>Share on X</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ CONTACT / FOOTER ═══════════════════════════════════════ -->
+  <footer id="contact" class="py-20 bg-slate-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 mb-14">
+        <div>
+          <div class="flex items-center gap-2.5 mb-5">
+            <div class="w-10 h-10 bg-primary-600 rounded-xl flex items-center justify-center"><i class="fas fa-compass-medical text-white text-sm"></i></div>
+            <span class="text-2xl font-extrabold">Esti<span class="text-primary-400">cure</span></span>
+          </div>
+          <p class="text-slate-400 leading-relaxed mb-6 max-w-sm">India's first human-powered healthcare navigation platform — helping patients find the right hospital at the right price with complete transparency.</p>
+          <div class="space-y-3 text-sm text-slate-400 mb-6">
+            <div class="flex items-center gap-2.5"><i class="fas fa-location-dot text-primary-400 w-4"></i>Mumbai, Maharashtra, India</div>
+            <div class="flex items-center gap-2.5"><i class="fas fa-envelope text-primary-400 w-4"></i>hello@esticure.in</div>
+            <div class="flex items-center gap-2.5"><i class="fas fa-phone text-primary-400 w-4"></i>+91 98765 43210</div>
+          </div>
+          <div class="flex gap-2">
+            <a href="#" class="w-9 h-9 bg-white/10 hover:bg-primary-600 rounded-lg flex items-center justify-center transition-colors"><i class="fab fa-linkedin-in text-sm"></i></a>
+            <a href="#" class="w-9 h-9 bg-white/10 hover:bg-primary-600 rounded-lg flex items-center justify-center transition-colors"><i class="fab fa-x-twitter text-sm"></i></a>
+            <a href="#" class="w-9 h-9 bg-white/10 hover:bg-primary-600 rounded-lg flex items-center justify-center transition-colors"><i class="fab fa-instagram text-sm"></i></a>
+            <a href="#" class="w-9 h-9 bg-white/10 hover:bg-primary-600 rounded-lg flex items-center justify-center transition-colors"><i class="fab fa-whatsapp text-sm"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-bold mb-5">Quick Contact</h3>
+          <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-3" novalidate>
+            <input type="text"  placeholder="Your Name"        class="contact-inp w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-primary-400 transition-colors text-sm" required>
+            <input type="email" placeholder="Email Address"    class="contact-inp w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-primary-400 transition-colors text-sm" required>
+            <textarea rows="3"  placeholder="Your message…"    class="contact-inp w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-primary-400 transition-colors text-sm resize-none" required></textarea>
+            <button type="submit" class="w-full py-3 bg-primary-600 hover:bg-primary-500 text-white font-semibold rounded-xl transition-all active:scale-95 flex items-center justify-center gap-2">
+              <i class="fas fa-paper-plane"></i>Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-sm text-slate-500">© 2024 Esticure Technologies Pvt. Ltd. All rights reserved.</p>
+        <div class="flex gap-5 text-xs text-slate-600">
+          <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+          <a href="#" class="hover:text-white transition-colors">HIPAA Compliance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════ FLOATING BUTTONS ═══════════════════════════════════════ -->
+  <button onclick="openWhatsAppChat()" class="wa-btn fixed bottom-6 right-6 z-40 w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-2xl flex items-center justify-center transition-all hover:scale-110 active:scale-95" title="Chat with Expert">
+    <i class="fab fa-whatsapp text-2xl"></i>
+    <div class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full flex items-center justify-center"><span class="text-white text-[9px] font-extrabold">1</span></div>
+  </button>
+
+  <!-- ═══════════════════════════════════════ MODALS ═══════════════════════════════════════ -->
+
+  <!-- Loading Modal -->
+  <div id="loading-modal-wrap" class="modal-wrap fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+    <div class="modal-backdrop absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeAllModals()"></div>
+    <div class="modal-box relative z-10 bg-white rounded-2xl p-8 w-80 text-center">
+      <div class="loading-spinner mx-auto mb-4"></div>
+      <h3 class="font-bold text-slate-900 text-lg mb-2">Expert Analyzing Your Case</h3>
+      <p class="text-slate-500 text-sm" id="loading-text">Our healthcare navigators are reviewing your information…</p>
+      <div class="mt-5 flex justify-center gap-1.5">
+        <div class="w-2.5 h-2.5 bg-primary-500 rounded-full bounce-dot"></div>
+        <div class="w-2.5 h-2.5 bg-primary-500 rounded-full bounce-dot" style="animation-delay:.15s"></div>
+        <div class="w-2.5 h-2.5 bg-primary-500 rounded-full bounce-dot" style="animation-delay:.3s"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Estimation Result Modal -->
+  <div id="result-modal-wrap" class="modal-wrap fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+    <div class="modal-backdrop absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeAllModals()"></div>
+    <div class="modal-box relative z-10 bg-white rounded-2xl w-full max-w-xl max-h-[90vh] overflow-y-auto">
+      <div id="result-modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Consultation / Payment Modal -->
+  <div id="payment-modal-wrap" class="modal-wrap fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+    <div class="modal-backdrop absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeAllModals()"></div>
+    <div class="modal-box relative z-10 bg-white rounded-2xl w-full max-w-md max-h-[90vh] overflow-y-auto">
+      <div id="payment-modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Dashboard Slide-over -->
+  <div id="dashboard-overlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden" onclick="closeDashboard()"></div>
+  <div id="dashboard-panel" class="fixed top-0 right-0 h-full w-full max-w-lg bg-white z-50 shadow-2xl translate-x-full flex flex-col" style="transition:transform .3s cubic-bezier(.4,0,.2,1)">
+    <div id="dashboard-content" class="flex-1 overflow-y-auto"></div>
+  </div>
+
+  <!-- Toast Container -->
+  <div id="toast-container" class="fixed top-24 right-4 z-[60] flex flex-col gap-2 items-end pointer-events-none"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

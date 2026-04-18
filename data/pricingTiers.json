@@ -1,0 +1,56 @@
+[
+  {
+    "Pricing Tier Reference — Esticure Estimation Logic": "Tier",
+    "field2": "Typical INR Range",
+    "field3": "Use Case / Examples",
+    "field4": "Estimation Category"
+  },
+  {
+    "Pricing Tier Reference — Esticure Estimation Logic": "Low",
+    "field2": "₹ 50 – 5,000",
+    "field3": "Lab tests, OPD consultations, dressings, vaccines",
+    "field4": "Out-of-pocket / OPD"
+  },
+  {
+    "Pricing Tier Reference — Esticure Estimation Logic": "Low-Medium",
+    "field2": "₹ 500 – 15,000",
+    "field3": "Basic imaging (USG/X-Ray), physiotherapy, packages",
+    "field4": "Daycare / Diagnostic"
+  },
+  {
+    "Pricing Tier Reference — Esticure Estimation Logic": "Medium",
+    "field2": "₹ 1,000 – 40,000",
+    "field3": "CT scans, endoscopy, minor procedures, dental RCT",
+    "field4": "Procedure / Diagnostic"
+  },
+  {
+    "Pricing Tier Reference — Esticure Estimation Logic": "Medium-High",
+    "field2": "₹ 5,000 – 1,00,000",
+    "field3": "MRI, laparoscopic surgery, joint surgeries",
+    "field4": "Surgical / Inpatient"
+  },
+  {
+    "Pricing Tier Reference — Esticure Estimation Logic": "High",
+    "field2": "₹ 20,000 – 2,50,000",
+    "field3": "Cataract, LASIK, cardiac stents, joint replacement",
+    "field4": "Specialist Surgical"
+  },
+  {
+    "Pricing Tier Reference — Esticure Estimation Logic": "Very High",
+    "field2": "₹ 1,00,000 – 30,00,000",
+    "field3": "Bypass, transplants, cancer surgery, BMT, NICU",
+    "field4": "Complex / Critical Care"
+  },
+  {
+    "Pricing Tier Reference — Esticure Estimation Logic": "",
+    "field2": "",
+    "field3": "",
+    "field4": ""
+  },
+  {
+    "Pricing Tier Reference — Esticure Estimation Logic": "Note: Price ranges are indicative estimates for Indian private hospitals (2024-25). Actual costs vary by city tier, hospital grade, implant brand, and insurance coverage.",
+    "field2": "",
+    "field3": "",
+    "field4": ""
+  }
+]
